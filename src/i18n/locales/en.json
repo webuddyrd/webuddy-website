@@ -1,0 +1,208 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "cta": {
+      "startProject": "Start your project",
+      "viewPortfolio": "View portfolio",
+      "viewAll": "View all projects",
+      "learnMore": "Learn more",
+      "contactUs": "Contact us"
+    },
+    "footer": {
+      "quickLinks": "Quick Links",
+      "followUs": "Follow Us",
+      "rights": "© 2025 Webuddy. All rights reserved."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "We build digital experiences that make businesses grow.",
+      "subtitle": "Webuddy delivers websites, mobile apps, and brand experiences that convert."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive digital solutions for modern businesses",
+      "website": {
+        "title": "Websites",
+        "description": "Beautiful, fast, and conversion-optimized websites that represent your brand perfectly."
+      },
+      "mobileApp": {
+        "title": "Mobile Apps",
+        "description": "Native and cross-platform mobile applications that users love."
+      },
+      "social": {
+        "title": "Social Media Management",
+        "description": "Strategic content and community management that grows your audience."
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Complete brand identity systems that make you stand out."
+      },
+      "strategy": {
+        "title": "Digital Strategy",
+        "description": "Data-driven strategies that align technology with your business goals."
+      }
+    },
+    "portfolio": {
+      "title": "Featured Work",
+      "subtitle": "Projects we're proud of"
+    },
+    "process": {
+      "title": "Our Process",
+      "subtitle": "How we bring your vision to life",
+      "strategy": {
+        "title": "Strategy",
+        "description": "Understanding your goals and planning the perfect approach."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Creating beautiful, user-centered experiences."
+      },
+      "development": {
+        "title": "Development",
+        "description": "Building with cutting-edge technology and best practices."
+      },
+      "launch": {
+        "title": "Launch",
+        "description": "Deploying your project with comprehensive testing."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "Continuous optimization and support for ongoing success."
+      }
+    },
+    "testimonials": {
+      "title": "What Clients Say",
+      "subtitle": "Trusted by businesses around the world",
+      "testimonial1": {
+        "quote": "Webuddy transformed our online presence. The attention to detail and technical expertise is unmatched.",
+        "author": "Sarah Johnson",
+        "role": "CEO, Spring Tours"
+      },
+      "testimonial2": {
+        "quote": "Professional, reliable, and innovative. They delivered beyond our expectations.",
+        "author": "Carlos Mendez",
+        "role": "Director, Alsike Group"
+      },
+      "testimonial3": {
+        "quote": "Working with Webuddy was seamless. They understood our vision and made it a reality.",
+        "author": "Emily Chen",
+        "role": "Founder, TechStart"
+      }
+    },
+    "cta": {
+      "title": "Let's build something amazing together.",
+      "subtitle": "Ready to take your business digital? Get in touch today."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Webuddy",
+      "subtitle": "Your partner in digital transformation"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We help businesses succeed in the digital world by creating exceptional software solutions. With a focus on quality, innovation, and results, we transform ideas into powerful digital products that drive growth."
+    },
+    "differentiators": {
+      "title": "What Sets Us Apart",
+      "quality": {
+        "title": "Premium Quality",
+        "description": "Every project is built with meticulous attention to detail and industry best practices."
+      },
+      "expertise": {
+        "title": "Deep Expertise",
+        "description": "Our team brings years of experience across design, development, and digital strategy."
+      },
+      "partnership": {
+        "title": "True Partnership",
+        "description": "We're invested in your success and work as an extension of your team."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "A diverse group of designers, developers, and strategists passionate about creating exceptional digital experiences."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Services",
+      "subtitle": "Comprehensive digital solutions tailored to your needs"
+    },
+    "websites": {
+      "title": "Websites",
+      "description": "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
+      "features": ["Responsive Design", "SEO Optimization", "Performance Focused", "CMS Integration"]
+    },
+    "mobileApps": {
+      "title": "Mobile Apps",
+      "description": "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
+      "features": ["iOS & Android", "Cross-Platform", "User-Centered Design", "App Store Optimization"]
+    },
+    "social": {
+      "title": "Social Media Management",
+      "description": "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
+      "features": ["Content Strategy", "Community Management", "Analytics & Reporting", "Paid Campaigns"]
+    },
+    "branding": {
+      "title": "Branding",
+      "description": "Complete brand identity systems that make your business stand out. From logos to brand guidelines, we create cohesive visual identities that resonate with your audience.",
+      "features": ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy"]
+    },
+    "strategy": {
+      "title": "Digital Strategy",
+      "description": "Data-driven digital strategies that align technology with your business goals. We help you make informed decisions about your digital presence and investments.",
+      "features": ["Market Research", "Competitive Analysis", "Technology Consulting", "Growth Planning"]
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portfolio",
+      "subtitle": "Explore our recent work"
+    },
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "apps": "Apps",
+      "branding": "Branding"
+    },
+    "card": {
+      "viewSite": "View Site"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "subtitle": "Let's discuss your next project"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message",
+      "namePlaceholder": "John Doe",
+      "emailPlaceholder": "john@example.com",
+      "messagePlaceholder": "Tell us about your project...",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Please fill in all fields correctly."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "description": "Ready to start your project? Contact us today and let's discuss how we can help your business grow.",
+      "email": "hello@webuddy.com",
+      "phone": "+1 (555) 123-4567"
+    }
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  }
+}

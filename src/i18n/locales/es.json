@@ -1,0 +1,208 @@
+{
+  "common": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "portfolio": "Portafolio",
+      "contact": "Contacto"
+    },
+    "cta": {
+      "startProject": "Inicia tu proyecto",
+      "viewPortfolio": "Ver portafolio",
+      "viewAll": "Ver todos los proyectos",
+      "learnMore": "Saber más",
+      "contactUs": "Contáctanos"
+    },
+    "footer": {
+      "quickLinks": "Enlaces Rápidos",
+      "followUs": "Síguenos",
+      "rights": "© 2025 Webuddy. Todos los derechos reservados."
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Creamos experiencias digitales que hacen crecer tu negocio.",
+      "subtitle": "Webuddy desarrolla sitios web, apps móviles y marcas que convierten."
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "subtitle": "Soluciones digitales completas para negocios modernos",
+      "website": {
+        "title": "Sitios Web",
+        "description": "Sitios web hermosos, rápidos y optimizados que representan tu marca perfectamente."
+      },
+      "mobileApp": {
+        "title": "Apps Móviles",
+        "description": "Aplicaciones móviles nativas y multiplataforma que los usuarios adoran."
+      },
+      "social": {
+        "title": "Gestión de Redes Sociales",
+        "description": "Contenido estratégico y gestión de comunidad que hace crecer tu audiencia."
+      },
+      "branding": {
+        "title": "Branding",
+        "description": "Sistemas completos de identidad de marca que te hacen destacar."
+      },
+      "strategy": {
+        "title": "Estrategia Digital",
+        "description": "Estrategias basadas en datos que alinean la tecnología con tus objetivos."
+      }
+    },
+    "portfolio": {
+      "title": "Trabajos Destacados",
+      "subtitle": "Proyectos de los que estamos orgullosos"
+    },
+    "process": {
+      "title": "Nuestro Proceso",
+      "subtitle": "Cómo hacemos realidad tu visión",
+      "strategy": {
+        "title": "Estrategia",
+        "description": "Entendiendo tus objetivos y planificando el enfoque perfecto."
+      },
+      "design": {
+        "title": "Diseño",
+        "description": "Creando experiencias hermosas y centradas en el usuario."
+      },
+      "development": {
+        "title": "Desarrollo",
+        "description": "Construyendo con tecnología de vanguardia y mejores prácticas."
+      },
+      "launch": {
+        "title": "Lanzamiento",
+        "description": "Desplegando tu proyecto con pruebas exhaustivas."
+      },
+      "growth": {
+        "title": "Crecimiento",
+        "description": "Optimización continua y soporte para el éxito continuo."
+      }
+    },
+    "testimonials": {
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "subtitle": "Confianza de negocios alrededor del mundo",
+      "testimonial1": {
+        "quote": "Webuddy transformó nuestra presencia online. La atención al detalle y experiencia técnica es inigualable.",
+        "author": "Sarah Johnson",
+        "role": "CEO, Spring Tours"
+      },
+      "testimonial2": {
+        "quote": "Profesionales, confiables e innovadores. Entregaron más allá de nuestras expectativas.",
+        "author": "Carlos Méndez",
+        "role": "Director, Alsike Group"
+      },
+      "testimonial3": {
+        "quote": "Trabajar con Webuddy fue perfecto. Entendieron nuestra visión y la hicieron realidad.",
+        "author": "Emily Chen",
+        "role": "Fundadora, TechStart"
+      }
+    },
+    "cta": {
+      "title": "Construyamos algo increíble juntos.",
+      "subtitle": "¿Listo para llevar tu negocio al mundo digital? Contáctanos hoy."
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Sobre Webuddy",
+      "subtitle": "Tu socio en transformación digital"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Ayudamos a las empresas a tener éxito en el mundo digital creando soluciones de software excepcionales. Con enfoque en calidad, innovación y resultados, transformamos ideas en productos digitales poderosos que impulsan el crecimiento."
+    },
+    "differentiators": {
+      "title": "Lo Que Nos Distingue",
+      "quality": {
+        "title": "Calidad Premium",
+        "description": "Cada proyecto se construye con atención meticulosa al detalle y mejores prácticas."
+      },
+      "expertise": {
+        "title": "Experiencia Profunda",
+        "description": "Nuestro equipo aporta años de experiencia en diseño, desarrollo y estrategia digital."
+      },
+      "partnership": {
+        "title": "Verdadera Asociación",
+        "description": "Estamos comprometidos con tu éxito y trabajamos como extensión de tu equipo."
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "description": "Un grupo diverso de diseñadores, desarrolladores y estrategas apasionados por crear experiencias digitales excepcionales."
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Servicios",
+      "subtitle": "Soluciones digitales completas adaptadas a tus necesidades"
+    },
+    "websites": {
+      "title": "Sitios Web",
+      "description": "Construimos sitios web rápidos, hermosos y optimizados que funcionan perfectamente en todos los dispositivos. Desde landing pages hasta aplicaciones web complejas, creamos experiencias digitales que representan tu marca perfectamente.",
+      "features": ["Diseño Responsivo", "Optimización SEO", "Enfoque en Rendimiento", "Integración CMS"]
+    },
+    "mobileApps": {
+      "title": "Apps Móviles",
+      "description": "Apps nativas para iOS y Android, o soluciones multiplataforma que ofrecen experiencias excepcionales. Construimos apps que los usuarios aman y que generan resultados reales.",
+      "features": ["iOS y Android", "Multiplataforma", "Diseño Centrado en Usuario", "Optimización App Store"]
+    },
+    "social": {
+      "title": "Gestión de Redes Sociales",
+      "description": "Gestión estratégica de redes sociales que hace crecer tu audiencia y construye conexiones significativas. Creamos contenido, gestionamos comunidades y analizamos rendimiento para maximizar tu presencia social.",
+      "features": ["Estrategia de Contenido", "Gestión de Comunidad", "Análisis e Informes", "Campañas Pagadas"]
+    },
+    "branding": {
+      "title": "Branding",
+      "description": "Sistemas completos de identidad de marca que hacen destacar tu negocio. Desde logos hasta guías de marca, creamos identidades visuales cohesivas que resuenan con tu audiencia.",
+      "features": ["Diseño de Logo", "Guías de Marca", "Identidad Visual", "Estrategia de Marca"]
+    },
+    "strategy": {
+      "title": "Estrategia Digital",
+      "description": "Estrategias digitales basadas en datos que alinean la tecnología con tus objetivos de negocio. Te ayudamos a tomar decisiones informadas sobre tu presencia e inversiones digitales.",
+      "features": ["Investigación de Mercado", "Análisis Competitivo", "Consultoría Tecnológica", "Planificación de Crecimiento"]
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portafolio",
+      "subtitle": "Explora nuestro trabajo reciente"
+    },
+    "filters": {
+      "all": "Todos",
+      "web": "Web",
+      "apps": "Apps",
+      "branding": "Branding"
+    },
+    "card": {
+      "viewSite": "Ver Sitio"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contáctanos",
+      "subtitle": "Hablemos de tu próximo proyecto"
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "name": "Tu Nombre",
+      "email": "Tu Email",
+      "message": "Tu Mensaje",
+      "send": "Enviar Mensaje",
+      "namePlaceholder": "Juan Pérez",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "success": "¡Mensaje enviado con éxito! Te responderemos pronto.",
+      "error": "Por favor completa todos los campos correctamente."
+    },
+    "info": {
+      "title": "Ponte en Contacto",
+      "description": "¿Listo para comenzar tu proyecto? Contáctanos hoy y hablemos sobre cómo podemos ayudar a crecer tu negocio.",
+      "email": "hola@webuddy.com",
+      "phone": "+1 (555) 123-4567"
+    }
+  },
+  "notFound": {
+    "title": "404 - Página No Encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al Inicio"
+  }
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-white transition-colors duration-300;
+  }
+
+  * {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
