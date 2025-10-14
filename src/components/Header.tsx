@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { ThemeToggle } from './ThemeToggle';
+import Logo from '../images/webuddy.png';
 
 export function Header() {
   const { t } = useTranslation();
@@ -25,10 +26,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="p-2 bg-blue-600 rounded-lg group-hover:bg-blue-700 transition-colors">
-              <Zap size={20} className="text-white" />
-            </div>
-            <img src={"../images/webuddy.png"}/>
+            <img className='h-40' src={Logo} />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
@@ -36,11 +34,10 @@ export function Header() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400 ${
-                  isActive(link.path)
+                className={`text-sm font-medium transition-colors hover:text-blue-600 dark:hover:text-blue-400 ${isActive(link.path)
                     ? 'text-blue-600 dark:text-blue-400'
                     : 'text-slate-700 dark:text-slate-300'
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -76,11 +73,10 @@ export function Header() {
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsMenuOpen(false)}
-                className={`text-base font-medium transition-colors ${
-                  isActive(link.path)
+                className={`text-base font-medium transition-colors ${isActive(link.path)
                     ? 'text-blue-600 dark:text-blue-400'
                     : 'text-slate-700 dark:text-slate-300'
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
