@@ -28,7 +28,7 @@ export function PortfolioCard({ title, description, image, url, tags, delay = 0 
           src={image}
           alt={title}
           loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-contain p-6 group-hover:scale-110 transition-transform duration-500"
         />
       </div>
       <div className="p-6">

@@ -13,7 +13,8 @@ export function Portfolio() {
   const filters = [
     { key: 'all', label: t('portfolio.filters.all') },
     { key: 'Web', label: t('portfolio.filters.web') },
-    { key: 'Apps', label: t('portfolio.filters.apps') },
+    { key: 'App', label: t('portfolio.filters.apps') },
+    { key: 'Ecommerce', label: t('portfolio.filters.ecommerce') },
     { key: 'Branding', label: t('portfolio.filters.branding') }
   ];
 

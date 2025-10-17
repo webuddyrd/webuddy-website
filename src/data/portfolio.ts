@@ -15,66 +15,34 @@ export interface PortfolioItem {
 export const portfolio: PortfolioItem[] = [
   {
     title: "Spring Tours",
-    description_en: "Travel booking experience for a tour operator.",
-    description_es: "Experiencia de reservas para un operador turístico.",
+    description_en: "Vibrant tourism site with responsive tour listings and booking features.",
+    description_es: "Sitio web turístico dinámico con listados de tours interactivos y funciones de reserva.",
     image: Spring,
     url: "https://spring-tours.com/",
-    tags: ["Web", "UX/UI"]
+    tags: ["Web"]
   },
   {
     title: "Cruva Construcciones",
-    description_en: "Corporate site for an industrial group.",
-    description_es: "Sitio corporativo para un grupo industrial.",
+    description_en: "Professional corporate website showcasing construction services and portfolio.",
+    description_es: "Sitio web corporativo profesional que muestra servicios de construcción y portafolio.",
     image: Cruva,
-    url: "https://alsikegroup.com/",
-    tags: ["Web", "Corporate"]
+    url: "https://cruvaconstrucciones.com/",
+    tags: ["Web"]
   },
   {
     title: "Germsout Dominicana",
-    description_en: "iOS and Android app for a fintech startup.",
-    description_es: "App iOS y Android para una startup fintech.",
+    description_en: "Online store for hygiene and cleaning products with smooth shopping experience.",
+    description_es: "Tienda online de productos de higiene y limpieza con una experiencia de compra fluida.",
     image: Germsout,
-    url: "https://alsikegroup.com/",
-    tags: ["Apps", "Fintech"]
+    url: "https://germsout.store/",
+    tags: ["Web", "Ecommerce"]
   },
   {
     title: "Orki Beauty Solutions",
-    description_en: "Complete brand identity and packaging design.",
-    description_es: "Identidad de marca completa y diseño de packaging.",
+    description_en: "Elegant e-commerce site for beauty supplies with a clean, modern design.",
+    description_es: "Elegante sitio de comercio electrónico de productos de belleza con un diseño limpio y moderno.",
     image: OrkiBS,
-    url: "https://alsikegroup.com/",
-    tags: ["Branding", "Design"]
-  },
-  {
-    title: "FitLife Platform",
-    description_en: "Fitness tracking web application with social features.",
-    description_es: "Aplicación web de fitness con funciones sociales.",
-    image: "https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://alsikegroup.com/",
-    tags: ["Web", "Apps"]
-  },
-  {
-    title: "Urban Eats",
-    description_en: "Food delivery app with real-time tracking.",
-    description_es: "App de entrega de comida con seguimiento en tiempo real.",
-    image: "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://alsikegroup.com/",
-    tags: ["Apps", "Mobile"]
-  },
-  {
-    title: "Nexus Consulting",
-    description_en: "Professional services website with client portal.",
-    description_es: "Sitio web de servicios profesionales con portal de cliente.",
-    image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://alsikegroup.com/",
-    tags: ["Web", "Corporate"]
-  },
-  {
-    title: "Artisan Coffee Co.",
-    description_en: "E-commerce platform and brand refresh.",
-    description_es: "Plataforma e-commerce y renovación de marca.",
-    image: "https://images.pexels.com/photos/2788792/pexels-photo-2788792.jpeg?auto=compress&cs=tinysrgb&w=800",
-    url: "https://alsikegroup.com/",
-    tags: ["Web", "Branding"]
+    url: "http://orkibeautysolutions.com/",
+    tags: ["Web", "Ecommerce"]
   }
 ];
