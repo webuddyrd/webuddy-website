@@ -7,12 +7,14 @@ import { Services } from './pages/Services';
 import { Portfolio } from './pages/Portfolio';
 import { Contact } from './pages/Contact';
 import { NotFound } from './pages/NotFound';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
+        <ScrollToTop />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
