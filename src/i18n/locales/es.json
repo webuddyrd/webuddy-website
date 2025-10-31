@@ -104,25 +104,33 @@
   "about": {
     "hero": {
       "title": "Sobre Webuddy",
-      "subtitle": "Tu socio en transformación digital"
+      "subtitle": "En Webuddy, nacimos en 2020 con el propósito de impulsar la evolución digital de empresas y emprendedores. Creamos soluciones tecnológicas modernas, adaptadas a las necesidades reales del mercado, ayudando a que los negocios crezcan, se automatizen y operen con mayor eficiencia. Nuestra pasión es conectar ideas con tecnología para transformar la manera en que nuestros clientes trabajan, venden y se relacionan con su audiencia."
     },
     "mission": {
       "title": "Nuestra Misión",
-      "description": "Ayudamos a las empresas a tener éxito en el mundo digital creando soluciones de software excepcionales. Con enfoque en calidad, innovación y resultados, transformamos ideas en productos digitales poderosos que impulsan el crecimiento."
+      "description": "Nuestra misión es acompañar a negocios y marcas en su camino hacia la transformación digital, ofreciendo herramientas innovadoras y estrategias que integren tecnología de forma inteligente, funcional y humana. Buscamos simplificar procesos, optimizar resultados y crear experiencias digitales que generen valor, crecimiento y competitividad para quienes confían en nosotros."
     },
     "differentiators": {
       "title": "Lo Que Nos Distingue",
-      "quality": {
-        "title": "Calidad Premium",
-        "description": "Cada proyecto se construye con atención meticulosa al detalle y mejores prácticas."
+      "solutions": {
+        "title": "Soluciones a la medida",
+        "description": "Cada proyecto se diseña según la identidad, objetivo y necesidades específicas de cada cliente."
       },
-      "expertise": {
-        "title": "Experiencia Profunda",
-        "description": "Nuestro equipo aporta años de experiencia en diseño, desarrollo y estrategia digital."
+      "focus": {
+        "title": "Enfoque en resultados",
+        "description": "No solo desarrollamos plataformas digitales; creamos herramientas que impulsan crecimiento, eficiencia y rentabilidad."
       },
-      "partnership": {
-        "title": "Verdadera Asociación",
-        "description": "Estamos comprometidos con tu éxito y trabajamos como extensión de tu equipo."
+      "innovation": {
+        "title": "Innovación constante",
+        "description": "Nos mantenemos a la vanguardia tecnológica para ofrecer soluciones actuales, modernas y escalables."
+      },
+      "accompaniment": {
+        "title": "Acompañamiento real",
+        "description": "Más que proveedores, somos aliados digitales que te guían en todo el proceso."
+      },
+      "design": {
+        "title": "Diseño + Tecnología",
+        "description": "Combinamos creatividad, funcionalidad y experiencia de usuario para crear productos digitales memorables."
       }
     },
     "team": {

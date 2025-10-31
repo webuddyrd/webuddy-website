@@ -104,25 +104,33 @@
   "about": {
     "hero": {
       "title": "About Webuddy",
-      "subtitle": "Your partner in digital transformation"
+      "subtitle": "At Webuddy, we were founded in 2020 with a clear purpose: to drive the digital evolution of businesses and entrepreneurs. We create modern, tailored technological solutions designed to meet real market needs, helping businesses grow, automate, and operate more efficiently. Our passion is to connect ideas with technology, transforming the way our clients work, sell, and engage with their audience."
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We help businesses succeed in the digital world by creating exceptional software solutions. With a focus on quality, innovation, and results, we transform ideas into powerful digital products that drive growth."
+      "description": "Our mission is to guide businesses and brands through their digital transformation journey by offering innovative tools and strategies that integrate technology in an intelligent, functional, and human-centered way. We aim to simplify processes, optimize results, and create digital experiences that deliver value, growth, and competitiveness for those who trust in us."
     },
     "differentiators": {
       "title": "What Sets Us Apart",
-      "quality": {
-        "title": "Premium Quality",
-        "description": "Every project is built with meticulous attention to detail and industry best practices."
+       "solutions": {
+        "title": "Tailor-made solutions",
+        "description": "Every project is designed based on the identity, goals, and specific needs of each client."
       },
-      "expertise": {
-        "title": "Deep Expertise",
-        "description": "Our team brings years of experience across design, development, and digital strategy."
+      "focus": {
+        "title": "Results-driven approach",
+        "description": "We don’t just build digital platforms — we create tools that fuel growth, efficiency, and profitability."
       },
-      "partnership": {
-        "title": "True Partnership",
-        "description": "We're invested in your success and work as an extension of your team."
+      "innovation": {
+        "title": "Constant innovation",
+        "description": "We stay at the forefront of technology to deliver modern, scalable, and future-ready solutions."
+      },
+      "accompaniment": {
+        "title": "Real partnership",
+        "description": "More than service providers, we become digital allies who support and guide you through the entire process."
+      },
+      "design": {
+        "title": "Design + Technology",
+        "description": "We combine creativity, functionality, and user experience to build digital products that stand out and leave a lasting impact."
       }
     },
     "team": {
