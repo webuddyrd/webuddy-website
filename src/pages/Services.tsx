@@ -2,6 +2,11 @@ import { useTranslation } from 'react-i18next';
 import { Globe, Smartphone, Share2, Palette, TrendingUp, Check } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import Website from '../images/services/websites.png';
+import MobileApps from '../images/services/mobileApps.png';
+import Social from '../images/services/socialMediaManagement.png';
+import Branding from '../images/services/branding.png';
+import Strategy from '../images/services/digitalStrategy.png';
 
 export function Services() {
   const { t } = useTranslation();
@@ -11,27 +16,32 @@ export function Services() {
     {
       icon: <Globe size={40} />,
       key: 'websites',
-      features: t('services.websites.features', { returnObjects: true }) as string[]
+      features: t('services.websites.features', { returnObjects: true }) as string[],
+      image: Website
     },
     {
       icon: <Smartphone size={40} />,
       key: 'mobileApps',
-      features: t('services.mobileApps.features', { returnObjects: true }) as string[]
+      features: t('services.mobileApps.features', { returnObjects: true }) as string[],
+      image: MobileApps
     },
     {
       icon: <Share2 size={40} />,
       key: 'social',
-      features: t('services.social.features', { returnObjects: true }) as string[]
+      features: t('services.social.features', { returnObjects: true }) as string[],
+      image: Social
     },
     {
       icon: <Palette size={40} />,
       key: 'branding',
-      features: t('services.branding.features', { returnObjects: true }) as string[]
+      features: t('services.branding.features', { returnObjects: true }) as string[],
+      image: Branding
     },
     {
       icon: <TrendingUp size={40} />,
       key: 'strategy',
-      features: t('services.strategy.features', { returnObjects: true }) as string[]
+      features: t('services.strategy.features', { returnObjects: true }) as string[],
+      image: Strategy
     }
   ];
 
@@ -95,10 +105,11 @@ export function Services() {
                   </div>
 
                   <div className={isEven ? '' : 'lg:order-1'}>
-                    <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-slate-100 dark:from-blue-900/30 dark:to-slate-800 p-12 flex items-center justify-center">
-                      <div className="text-blue-600 dark:text-blue-400" style={{ transform: 'scale(3)' }}>
-                        {service.icon}
-                      </div>
+                    <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-slate-100 dark:from-blue-900/30 dark:to-slate-800 flex items-center justify-center">
+                      <img className='h-full' src={service.image}/>
+                      {/* <div className="text-blue-600 dark:text-blue-400" style={{ transform: 'scale(3)' }}> */}
+                        {/* {service.icon} */}
+                      {/* </div> */}
                     </div>
                   </div>
                 </div>
