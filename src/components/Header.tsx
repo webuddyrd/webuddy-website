@@ -49,7 +49,7 @@ export function Header() {
             <ThemeToggle />
             <Link
               to="/contact"
-              className="ml-4 px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              className="ml-4 px-6 py-2.5 bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               {t('common.cta.startProject')}
             </Link>
@@ -88,7 +88,7 @@ export function Header() {
             <Link
               to="/contact"
               onClick={() => setIsMenuOpen(false)}
-              className="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-center"
+              className="px-6 py-2.5 bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors text-center"
             >
               {t('common.cta.startProject')}
             </Link>

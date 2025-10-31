@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Zap, Twitter, Linkedin, Instagram, Facebook } from 'lucide-react';
+import W from '../images/W.png';
 
 export function Footer() {
   const { t } = useTranslation();
@@ -26,8 +27,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="p-2 bg-blue-600 rounded-lg">
-                <Zap size={20} className="text-white" />
+              <div className="p-2 rounded-lg">
+                <img className='w-24' src={W} />
               </div>
               <span className="text-xl font-bold text-slate-900 dark:text-white">Webuddy</span>
             </Link>
@@ -64,7 +65,7 @@ export function Footer() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-blue-600 dark:hover:bg-blue-600 hover:text-white transition-colors"
+                  className="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] hover:text-white transition-colors"
                   aria-label={label}
                 >
                   <Icon size={20} />

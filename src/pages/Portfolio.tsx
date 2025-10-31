@@ -55,7 +55,7 @@ export function Portfolio() {
                 onClick={() => setActiveFilter(filter.key)}
                 className={`px-6 py-3 rounded-lg font-medium transition-all ${
                   activeFilter === filter.key
-                    ? 'bg-blue-600 text-white shadow-lg'
+                    ? 'bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] text-white shadow-lg'
                     : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                 }`}
               >

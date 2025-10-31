@@ -106,7 +106,7 @@ export function Services() {
 
                   <div className={isEven ? '' : 'lg:order-1'}>
                     <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-slate-100 dark:from-blue-900/30 dark:to-slate-800 flex items-center justify-center">
-                      <img className='h-full' src={service.image}/>
+                      <img className='h-full rounded-2xl' src={service.image}/>
                       {/* <div className="text-blue-600 dark:text-blue-400" style={{ transform: 'scale(3)' }}> */}
                         {/* {service.icon} */}
                       {/* </div> */}

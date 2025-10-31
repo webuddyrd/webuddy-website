@@ -165,7 +165,7 @@ export function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transition-all flex items-center justify-center gap-2"
+                  className="w-full px-6 py-4 bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg transition-all flex items-center justify-center gap-2"
                 >
                   {t('contact.form.send')}
                   <Send size={20} />

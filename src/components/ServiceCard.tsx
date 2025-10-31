@@ -22,7 +22,7 @@ export function ServiceCard({ icon, title, description, delay = 0 }: ServiceCard
       }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
+      <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4 group-hover:bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] transition-colors">
         <div className="text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors">
           {icon}
         </div>
