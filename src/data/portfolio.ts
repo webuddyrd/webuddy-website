@@ -2,6 +2,7 @@ import OrkiBS from '../images/Orki-logo.png';
 import Germsout from '../images/Germsout-logo.png';
 import Cruva from '../images/Cruva-logo.png';
 import Spring from '../images/Spring-logo.png';
+import Blue from '../images/Blue-logo.png';
 
 export interface PortfolioItem {
   title: string;
@@ -44,5 +45,13 @@ export const portfolio: PortfolioItem[] = [
     image: OrkiBS,
     url: "http://orkibeautysolutions.com/",
     tags: ["Web", "Ecommerce"]
+  },
+  {
+    title: "Blue Digital Agency",
+    description_en: "Digital agency website showcasing services and client portfolio with a modern, animated design.",
+    description_es: "Sitio web de agencia digital que muestra servicios y portafolio de clientes con un diseño animado y moderno.",
+    image: Blue,
+    url: "https://www.blueadigital.com/",
+    tags: ["Web"]
   }
 ];
