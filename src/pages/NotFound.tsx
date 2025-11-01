@@ -25,7 +25,7 @@ export function NotFound() {
             </p>
             <Link
               to="/"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-tr from-[#F64F71] via-[#7A36F4] to-[#FFB02E] text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-lg hover:-translate-y-0.5 transition-all"
             >
               <Home size={20} />
               {t('notFound.backHome')}
