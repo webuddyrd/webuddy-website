@@ -11,7 +11,6 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <Router>
       <div className="min-h-screen flex flex-col">
         <Header />
         <ScrollToTop />
@@ -27,7 +26,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
   );
 }
 
