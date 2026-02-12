@@ -1,123 +1,115 @@
-import { useTranslation } from 'react-i18next';
-import { Globe, Smartphone, Share2, Palette, TrendingUp, Check } from 'lucide-react';
-import { SEO } from '../components/SEO';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import Website from '../images/services/websites.png';
-import MobileApps from '../images/services/mobileApps.png';
-import Social from '../images/services/socialMediaManagement.png';
-import Branding from '../images/services/branding.png';
-import Strategy from '../images/services/digitalStrategy.png';
+import { Section } from '../components/ui/Section';
+import { motion } from 'framer-motion';
+import { Code, Smartphone, Palette, Globe, Instagram, Cpu, ArrowRight } from 'lucide-react';
 
-export function Services() {
-  const { t } = useTranslation();
-  const heroAnimation = useScrollAnimation();
+const services = [
+  {
+    icon: Code,
+    title: "Web Applications",
+    description: "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
+    features: ["Responsive Design", "SEO Optimization", "Performance Focused", "CMS Integration"]
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile Development",
+    description: "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
+    features: ["iOS & Android", "Cross-Platform", "User-Centered Design", "App Store Optimization"]
+  },
+  {
+    icon: Instagram,
+    title: "Social Media Management",
+    description: "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
+    features: ["Content Strategy", "Community Management", "Analytics & Reporting", "Paid Campaigns"]
+  },
+  {
+    icon: Globe,
+    title: "Digital Strategy",
+    description: "Comprehensive audits and roadmaps to align technology with business goals.",
+    features: ["Tech Consulting", "SEO & Performance", "Market Analysis"]
+  },
+  {
+    icon: Palette,
+    title: "Branding",
+    description: "Complete brand identity systems that make your business stand out. From logos to brand guidelines, we create cohesive visual identities that resonate with your audience.",
+    features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy"]
+  },
+  {
+    icon: Cpu,
+    title: "Automation & AI",
+    description: "Leveraging AI to streamline operations and create intelligent interfaces and automations.",
+    features: ["Workflow Automation", "LLM Integration", "Data Processing"]
+  }
+];
 
-  const services = [
-    {
-      icon: <Globe size={40} />,
-      key: 'websites',
-      features: t('services.websites.features', { returnObjects: true }) as string[],
-      image: Website
-    },
-    {
-      icon: <Smartphone size={40} />,
-      key: 'mobileApps',
-      features: t('services.mobileApps.features', { returnObjects: true }) as string[],
-      image: MobileApps
-    },
-    {
-      icon: <Share2 size={40} />,
-      key: 'social',
-      features: t('services.social.features', { returnObjects: true }) as string[],
-      image: Social
-    },
-    {
-      icon: <Palette size={40} />,
-      key: 'branding',
-      features: t('services.branding.features', { returnObjects: true }) as string[],
-      image: Branding
-    },
-    {
-      icon: <TrendingUp size={40} />,
-      key: 'strategy',
-      features: t('services.strategy.features', { returnObjects: true }) as string[],
-      image: Strategy
-    }
-  ];
-
+export const Services = () => {
   return (
-    <>
-      <SEO
-        title={t('common.nav.services')}
-        description={t('services.hero.subtitle')}
-      />
-
-      <section ref={heroAnimation.ref} className="pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950">
-        <div className="container mx-auto px-4">
-          <div
-            className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
-              heroAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6">
-              {t('services.hero.title')}
-            </h1>
-            <p className="text-xl text-slate-600 dark:text-slate-400">
-              {t('services.hero.subtitle')}
-            </p>
+    <div className="bg-webuddy-dark min-h-screen pt-32 pb-20">
+      <Section>
+        <div className="container mx-auto px-4 md:px-6">
+          {/* Header */}
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <motion.h1
+              className="text-5xl md:text-7xl font-display font-bold text-white mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">Services</span>
+            </motion.h1>
+            <motion.p
+              className="text-xl text-gray-400 max-w-2xl mx-auto"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
+            >
+              We combine engineering precision with creative strategy to build digital products that define categories.
+            </motion.p>
           </div>
-        </div>
-      </section>
 
-      <section className="py-24 bg-white dark:bg-slate-900">
-        <div className="container mx-auto px-4">
-          <div className="space-y-24">
-            {services.map((service, index) => {
-              const animation = useScrollAnimation();
-              const isEven = index % 2 === 0;
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                className="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-webuddy-blue/50 hover:bg-white/10 transition-all duration-300 relative overflow-hidden"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                {/* Background Icon */}
+                <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
+                  <service.icon size={120} />
+                </div>
 
-              return (
-                <div
-                  key={service.key}
-                  ref={animation.ref}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center transition-all duration-1000 ${
-                    animation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                  } ${!isEven ? 'lg:flex-row-reverse' : ''}`}
-                >
-                  <div className={isEven ? '' : 'lg:order-2'}>
-                    <div className="w-16 h-16 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
-                      {service.icon}
-                    </div>
-                    <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
-                      {t(`services.${service.key}.title`)}
-                    </h2>
-                    <p className="text-lg text-slate-600 dark:text-slate-400 mb-8">
-                      {t(`services.${service.key}.description`)}
-                    </p>
-                    <ul className="space-y-3">
-                      {service.features.map((feature) => (
-                        <li key={feature} className="flex items-start gap-3">
-                          <Check className="text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" size={20} />
-                          <span className="text-slate-700 dark:text-slate-300">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                <div className="relative z-10">
+                  <div className="bg-webuddy-blue/20 w-fit p-4 rounded-2xl mb-6 text-webuddy-electric group-hover:scale-110 transition-transform duration-300">
+                    <service.icon size={32} />
                   </div>
 
-                  <div className={isEven ? '' : 'lg:order-1'}>
-                    <div className="aspect-square rounded-2xl bg-gradient-to-br from-blue-100 to-slate-100 dark:from-blue-900/30 dark:to-slate-800 flex items-center justify-center">
-                      <img className='h-full rounded-2xl' src={service.image}/>
-                      {/* <div className="text-blue-600 dark:text-blue-400" style={{ transform: 'scale(3)' }}> */}
-                        {/* {service.icon} */}
-                      {/* </div> */}
-                    </div>
+                  <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+                  <p className="text-gray-400 mb-8 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  <ul className="space-y-2 mb-8">
+                    {service.features.map((feature, i) => (
+                      <li key={i} className="flex items-center gap-2 text-sm text-gray-500">
+                        <div className="w-1.5 h-1.5 rounded-full bg-webuddy-blue" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="flex items-center gap-2 text-webuddy-blue font-medium group-hover:gap-4 transition-all">
+                    Learn more <ArrowRight size={16} />
                   </div>
                 </div>
-              );
-            })}
+              </motion.div>
+            ))}
           </div>
         </div>
-      </section>
-    </>
+      </Section>
+    </div>
   );
-}
+};

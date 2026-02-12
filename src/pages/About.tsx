@@ -1,110 +1,75 @@
-import { useTranslation } from 'react-i18next';
-import { Puzzle, TrendingUp, Lightbulb, Handshake, MonitorSmartphone } from 'lucide-react';
-import { SEO } from '../components/SEO';
-import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import WebuddyLogo from '../images/webuddy.png';
+import { Section } from '../components/ui/Section';
+import { motion } from 'framer-motion';
 
-export function About() {
-  const { t } = useTranslation();
-  const heroAnimation = useScrollAnimation();
-  const missionAnimation = useScrollAnimation();
-  const differentiatorAnimation = useScrollAnimation();
-  // const teamAnimation = useScrollAnimation();
-
-  const differentiators = [
-    { icon: <Puzzle size={32} />, titleKey: 'solutions', descKey: 'solutions' },
-    { icon: <TrendingUp size={32} />, titleKey: 'focus', descKey: 'focus' },
-    { icon: <Lightbulb size={32} />, titleKey: 'innovation', descKey: 'innovation' },
-    { icon: <Handshake size={32} />, titleKey: 'accompaniment', descKey: 'accompaniment' },
-    { icon: <MonitorSmartphone size={32} />, titleKey: 'design', descKey: 'design' }
-  ];
-
+export const About = () => {
   return (
-    <>
-      <SEO
-        title={t('common.nav.about')}
-        description={t('about.mission.description')}
-      />
-
-      <section ref={heroAnimation.ref} className="pb-16 bg-gradient-to-br from-blue-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-900 dark:to-blue-950">
-        <img className="mx-auto w-96 h-40 object-cover" src={WebuddyLogo} />
-        <div className="container mx-auto px-4">
-          <div
-            className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${heroAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`}
-          >
-            <p className="text-xl text-slate-600 dark:text-slate-400">
-              {t('about.hero.subtitle')}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section ref={missionAnimation.ref} className="py-24 bg-white dark:bg-slate-900">
-        <div className="container mx-auto px-4">
-          <div
-            className={`max-w-4xl mx-auto transition-all duration-1000 ${missionAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 text-center">
-              {t('about.mission.title')}
-            </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400 leading-relaxed text-center">
-              {t('about.mission.description')}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section ref={differentiatorAnimation.ref} className="py-24 bg-slate-50 dark:bg-slate-950">
-        <div className="container mx-auto px-4">
-          <div className={`text-center mb-16 transition-all duration-1000 ${differentiatorAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-              {t('about.differentiators.title')}
-            </h2>
+    <div className="bg-webuddy-dark min-h-screen pt-32 pb-20">
+      <Section>
+        <div className="container mx-auto px-4 md:px-6">
+          {/* Hero Text */}
+          <div className="max-w-5xl mx-auto mb-24">
+            <motion.h1
+              className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-8 tracking-tighter"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              We are <br />
+              <span className="text-webuddy-blue">Builders & Dreamers.</span>
+            </motion.h1>
+            <motion.p
+              className="text-xl md:text-2xl text-gray-400 font-light max-w-3xl leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+            >
+              Webuddy is a collective of engineers, designers, and strategists obsessed with the future of digital interaction. We don't just write code; we architect experiences that scale.
+            </motion.p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
-            {differentiators.map((item, index) => (
-              <div
-                key={item.titleKey}
-                className={`text-center transition-all duration-700 ${differentiatorAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                  }`}
-                style={{ transitionDelay: `${index * 150}ms` }}
+          {/* Stats/Values Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
+            {[
+              { title: "Innovation", desc: "Pushing boundaries with every commit." },
+              { title: "Precision", desc: "Pixel-perfect implementation." },
+              { title: "Speed", desc: "Performance is a feature, not a bonus." },
+              { title: "Impact", desc: "Building software that moves the needle." }
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className="p-8 bg-white/5 border border-white/10 rounded-2xl"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
               >
-                <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
-                  {item.icon}
-                </div>
-                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-4">
-                  {t(`about.differentiators.${item.titleKey}.title`)}
-                </h3>
-                <p className="text-slate-600 dark:text-slate-400 text-lg">
-                  {t(`about.differentiators.${item.descKey}.description`)}
-                </p>
-              </div>
+                <h3 className="text-2xl font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-gray-400 text-sm">{item.desc}</p>
+              </motion.div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* TEAM SECTION COMMENTED UNTIL HAVE TEAM TO DISPLAY */}
-      {/* <section ref={teamAnimation.ref} className="py-24 bg-white dark:bg-slate-900">
-        <div className="container mx-auto px-4">
-          <div
-            className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${
-              teamAnimation.isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">
-              {t('about.team.title')}
-            </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400">
-              {t('about.team.description')}
-            </p>
+          {/* Content Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-tr from-webuddy-blue/20 to-purple-500/20 border border-white/10 relative">
+                <div className="absolute inset-0 flex items-center justify-center text-white/20 font-display text-4xl font-bold">
+                  [Office Image]
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-4xl font-display font-bold text-white mb-6">Born in the Dominican Republic. <br /> Serving the World.</h2>
+              <p className="text-gray-400 leading-relaxed mb-6">
+                Founded with a vision to elevate the standard of software engineering in the Caribbean, Webuddy has grown into a premier digital agency serving clients across 12 countries.
+              </p>
+              <p className="text-gray-400 leading-relaxed">
+                Our team is our greatest asset. We hire the top 1% of talent and give them the freedom to innovate.
+              </p>
+            </div>
           </div>
         </div>
-      </section> */}
-    </>
+      </Section>
+    </div>
   );
-}
+};
