@@ -1,8 +1,9 @@
 import { ArrowRight, Instagram, Linkedin, Twitter, Github } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
-        <footer className="bg-webuddy-dark pt-12 pb-12 overflow-hidden relative">
+        <footer className="bg-webuddy-dark pb-12 overflow-hidden relative">
             {/* Background Glow */}
             <div className="absolute bottom-0 left-0 w-full h-[500px] bg-gradient-to-t from-webuddy-blue/10 to-transparent pointer-events-none" />
 
@@ -13,9 +14,9 @@ export const Footer = () => {
                             Ready to <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">Scale Up?</span>
                         </h2>
-                        <button className="group flex items-center gap-4 text-2xl text-white font-medium hover:text-webuddy-blue transition-colors">
+                        <Link to="/contact" className="group flex items-center gap-4 text-2xl text-white font-medium hover:text-webuddy-blue transition-colors">
                             Start a Project <span className="bg-white/10 p-3 rounded-full group-hover:bg-webuddy-blue group-hover:text-white transition-all"><ArrowRight /></span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div className="flex flex-col gap-6 text-right">

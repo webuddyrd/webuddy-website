@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Section } from '../ui/Section';
-import { Code, Smartphone, Palette, Globe, Instagram, Cpu, ArrowUpRight } from 'lucide-react';
+import { Code, Smartphone, Instagram, ArrowUpRight } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

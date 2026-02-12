@@ -13,7 +13,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="bg-webuddy-dark min-h-screen pt-32 pb-20">
+    <div className="bg-webuddy-dark min-h-screen pt-32">
       <Section>
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">

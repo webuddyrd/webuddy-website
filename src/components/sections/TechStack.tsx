@@ -50,7 +50,7 @@ export const TechStack = () => {
                                         {'  '}<span className="text-red-400">"scale"</span>: <span className="text-green-400">"global"</span>,{'\n'}
                                         {'  '}<span className="text-red-400">"security"</span>: <span className="text-green-400">"enterprise-grade"</span>,{'\n'}
                                         {'  '}<span className="text-red-400">"uptime"</span>: <span className="text-orange-400">99.99</span>,{'\n'}
-                                        {'  '}<span className="text-red-400">"stack"</span>: [<span className="text-webuddy-blue">"Next.js"</span>, <span className="text-webuddy-blue">"TypeScript"</span>, <span className="text-webuddy-blue">"Rust"</span>]{'\n'}
+                                        {'  '}<span className="text-red-400">"stack"</span>: [<span className="text-webuddy-blue">"Next.js"</span>, <span className="text-webuddy-blue">"TypeScript"</span>, <span className="text-webuddy-blue">"React"</span>]{'\n'}
                                         <span className="text-yellow-300">{`}`}</span>;<br />
                                         <br />
                                         <span className="text-gray-500">// Deploying high-performance architecture...</span>

@@ -1,5 +1,6 @@
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
+import SDQ from '../images/SDQ.jpg';
 
 export const About = () => {
   return (
@@ -54,7 +55,7 @@ export const About = () => {
             <div>
               <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-tr from-webuddy-blue/20 to-purple-500/20 border border-white/10 relative">
                 <div className="absolute inset-0 flex items-center justify-center text-white/20 font-display text-4xl font-bold">
-                  [Office Image]
+                  <img src={SDQ} alt="Santo Domingo, República Dominicana" />
                 </div>
               </div>
             </div>
