@@ -1,8 +1,11 @@
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
 import SDQ from '../images/SDQ.jpg';
+import { useTranslation } from 'react-i18next';
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-webuddy-dark min-h-screen pt-32 pb-20">
       <Section>
@@ -15,8 +18,8 @@ export const About = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              We are <br />
-              <span className="text-webuddy-blue">Builders & Dreamers.</span>
+              {t('about.hero.titlePrefix')} <br />
+              <span className="text-webuddy-blue">{t('about.hero.titleSuffix')}</span>
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl text-gray-400 font-light max-w-3xl leading-relaxed"
@@ -24,17 +27,17 @@ export const About = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              Webuddy is a collective of engineers, designers, and strategists obsessed with the future of digital interaction. We don't just write code; we architect experiences that scale.
+              {t('about.hero.subtitle')}
             </motion.p>
           </div>
 
           {/* Stats/Values Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
             {[
-              { title: "Innovation", desc: "Pushing boundaries with every commit." },
-              { title: "Precision", desc: "Pixel-perfect implementation." },
-              { title: "Speed", desc: "Performance is a feature, not a bonus." },
-              { title: "Impact", desc: "Building software that moves the needle." }
+              { title: t('about.values.innovation.title'), desc: t('about.values.innovation.desc') },
+              { title: t('about.values.precision.title'), desc: t('about.values.precision.desc') },
+              { title: t('about.values.speed.title'), desc: t('about.values.speed.desc') },
+              { title: t('about.values.impact.title'), desc: t('about.values.impact.desc') }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -60,12 +63,14 @@ export const About = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-display font-bold text-white mb-6">Born in the Dominican Republic. <br /> Serving the World.</h2>
+              <h2 className="text-4xl font-display font-bold text-white mb-6">
+                {t('about.story.title').split('. ')[0]}. <br /> {t('about.story.title').split('. ')[1]}
+              </h2>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Founded with a vision to elevate the standard of software engineering in the Caribbean, Webuddy has grown into a premier digital agency serving clients across 12 countries.
+                {t('about.story.p1')}
               </p>
               <p className="text-gray-400 leading-relaxed">
-                Our team is our greatest asset. We hire the top 1% of talent and give them the freedom to innovate.
+                {t('about.story.p2')}
               </p>
             </div>
           </div>

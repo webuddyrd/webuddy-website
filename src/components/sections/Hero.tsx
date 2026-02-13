@@ -2,8 +2,11 @@ import { motion } from 'framer-motion';
 import { HeroScene } from '../3d/HeroScene';
 import { ArrowDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
             {/* 3D Background */}
@@ -19,9 +22,9 @@ export const Hero = () => {
                         animate={{ opacity: [0, 1], y: [20, 0] }}
                         transition={{ delay: 0.2, duration: 0.8 }}
                     >
-                        Engineering <br />
+                        {t('home.hero.titlePrefix')} <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue via-webuddy-electric to-webuddy-purple">
-                            Digital Excellence
+                            {t('home.hero.titleSuffix')}
                         </span>
                     </motion.h1>
 
@@ -30,7 +33,7 @@ export const Hero = () => {
                         animate={{ opacity: [0, 1] }}
                         transition={{ delay: 0.5, duration: 0.8 }}
                     >
-                        We build high-performance digital systems for ambitious companies.
+                        {t('home.hero.subtitle')}
                     </motion.p>
 
                     <motion.div
@@ -39,11 +42,11 @@ export const Hero = () => {
                         transition={{ delay: 0.8, duration: 0.8 }}
                     >
                         <Link to="/contact" className="group relative px-8 py-4 bg-webuddy-blue text-white rounded-full overflow-hidden transition-all hover:shadow-glow">
-                            <span className="relative z-10 font-medium">Start a Project</span>
+                            <span className="relative z-10 font-medium">{t('home.hero.startProject')}</span>
                             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                         </Link>
                         <Link to="/work" className="px-8 py-4 text-white border border-white/10 rounded-full hover:bg-white/5 transition-colors backdrop-blur-sm">
-                            View Our Work
+                            {t('home.hero.viewWork')}
                         </Link>
                     </motion.div>
                 </motion.div>

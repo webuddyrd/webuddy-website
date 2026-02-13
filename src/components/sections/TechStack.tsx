@@ -1,4 +1,5 @@
 import { Section } from '../ui/Section';
+import { useTranslation } from 'react-i18next';
 
 
 const techStack = [
@@ -6,6 +7,8 @@ const techStack = [
 ];
 
 export const TechStack = () => {
+    const { t } = useTranslation();
+
     return (
         <Section className="py-32 bg-webuddy-card relative overflow-hidden" id="tech">
             <div className="absolute inset-0 bg-grid-white/[0.02] bg-[length:30px_30px]" />
@@ -16,20 +19,20 @@ export const TechStack = () => {
                     {/* Text Content */}
                     <div className="lg:w-1/2">
                         <h2 className="text-4xl md:text-5xl font-display font-bold mb-8">
-                            Engineering <span className="text-webuddy-electric">Authority</span>
+                            {t('home.techStack.titlePrefix')} <span className="text-webuddy-electric">{t('home.techStack.titleSuffix')}</span>
                         </h2>
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                            We don't rely on templates or page builders. We build scalable, maintainable, enterprise-ready systems using the industry's most robust technologies.
+                            {t('home.techStack.description')}
                         </p>
 
                         <div className="grid grid-cols-2 gap-4">
                             <div className="p-6 bg-white/5 rounded-xl border border-white/5">
                                 <div className="text-3xl font-bold text-white mb-2">99+</div>
-                                <div className="text-sm text-gray-400">Lighthouse Performance</div>
+                                <div className="text-sm text-gray-400">{t('home.techStack.performance')}</div>
                             </div>
                             <div className="p-6 bg-white/5 rounded-xl border border-white/5">
                                 <div className="text-3xl font-bold text-white mb-2">100%</div>
-                                <div className="text-sm text-gray-400">Type Safety</div>
+                                <div className="text-sm text-gray-400">{t('home.techStack.typeSafety')}</div>
                             </div>
                         </div>
                     </div>
@@ -53,7 +56,7 @@ export const TechStack = () => {
                                         {'  '}<span className="text-red-400">"stack"</span>: [<span className="text-webuddy-blue">"Next.js"</span>, <span className="text-webuddy-blue">"TypeScript"</span>, <span className="text-webuddy-blue">"React"</span>]{'\n'}
                                         <span className="text-yellow-300">{`}`}</span>;<br />
                                         <br />
-                                        <span className="text-gray-500">// Deploying high-performance architecture...</span>
+                                        <span className="text-gray-500">{t('home.techStack.deployingComment')}</span>
                                     </code>
                                 </pre>
                             </div>
@@ -63,7 +66,7 @@ export const TechStack = () => {
 
                 {/* Marquee */}
                 <div className="mt-24 pt-12 border-t border-white/5">
-                    <p className="text-center text-sm text-gray-500 mb-8 uppercase tracking-widest">Powered by modern best practices</p>
+                    <p className="text-center text-sm text-gray-500 mb-8 uppercase tracking-widest">{t('home.techStack.poweredBy')}</p>
                     <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
                         {techStack.map((tech) => (
                             <span key={tech} className="text-xl font-bold font-display">{tech}</span>

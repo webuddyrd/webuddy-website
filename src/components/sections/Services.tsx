@@ -2,29 +2,31 @@ import { Section } from '../ui/Section';
 import { Code, Smartphone, Instagram, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ServiceCard } from '../ServiceCard';
-
-const services = [
-    {
-        icon: Code,
-        title: "Web Applications",
-        description: "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
-        details: ["Responsive Design", "SEO Optimization", "Performance Focused", "CMS Integration"]
-    },
-    {
-        icon: Smartphone,
-        title: "Mobile Development",
-        description: "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
-        details: ["iOS & Android", "Cross-Platform", "User-Centered Design", "App Store Optimization"]
-    },
-    {
-        icon: Instagram,
-        title: "Social Media Management",
-        description: "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
-        details: ["Content Strategy", "Community Management", "Analytics & Reporting", "Paid Campaigns"]
-    }
-];
+import { useTranslation } from 'react-i18next';
 
 export const Services = () => {
+    const { t } = useTranslation();
+
+    const services = [
+        {
+            icon: Code,
+            title: t('home.services.website.title'),
+            description: t('home.services.website.description'),
+            details: t('home.services.website.features', { returnObjects: true }) as string[]
+        },
+        {
+            icon: Smartphone,
+            title: t('home.services.mobileApp.title'),
+            description: t('home.services.mobileApp.description'),
+            details: t('home.services.mobileApp.features', { returnObjects: true }) as string[]
+        },
+        {
+            icon: Instagram,
+            title: t('home.services.social.title'),
+            description: t('home.services.social.description'),
+            details: t('home.services.social.features', { returnObjects: true }) as string[]
+        }
+    ];
 
     return (
         <Section className="py-32 container mx-auto px-4" id="services">
@@ -32,14 +34,14 @@ export const Services = () => {
                 <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
                     <div>
                         <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                            Our <span className="text-webuddy-blue">Services</span>
+                            {t('home.services.title').split(' ')[0]} <span className="text-webuddy-blue">{t('home.services.title').split(' ').slice(1).join(' ')}</span>
                         </h2>
                         <p className="text-xl text-gray-400 max-w-2xl">
-                            We don't just build websites. We engineer digital products that scale, perform, and drive business growth.
+                            {t('home.services.subtitle')}
                         </p>
                     </div>
                     <Link to="/services" className="flex items-center gap-2 text-white border-b border-white/30 pb-1 hover:border-white transition-colors">
-                        View All Services <ArrowUpRight size={16} />
+                        {t('home.services.viewAll')} <ArrowUpRight size={16} />
                     </Link>
                 </div>
             </div>

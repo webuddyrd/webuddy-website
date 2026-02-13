@@ -2,6 +2,7 @@ import { motion, HTMLMotionProps } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { PortfolioItem } from '../../data/portfolio';
+import { useTranslation } from 'react-i18next';
 
 interface WorkCardProps extends HTMLMotionProps<'div'> {
     project: PortfolioItem;
@@ -10,7 +11,9 @@ interface WorkCardProps extends HTMLMotionProps<'div'> {
 }
 
 export const WorkCard = ({ project, index, className = '', ...props }: WorkCardProps) => {
-    const description = project.description_en || "";
+    const { t, i18n } = useTranslation();
+    const description = i18n.language.startsWith('es') ? project.description_es : project.description_en;
+    const categoryKey = project.category.toLowerCase().replace('-', '');
 
     return (
         <motion.div
@@ -29,7 +32,7 @@ export const WorkCard = ({ project, index, className = '', ...props }: WorkCardP
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
                 <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <span className="text-xs font-bold text-white/80 uppercase tracking-wider mb-2 block p-1 px-3 bg-white/10 w-fit rounded-full backdrop-blur-md">
-                        {project.category}
+                        {t(`portfolio.filters.${categoryKey}`, { defaultValue: project.category })}
                     </span>
                     <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">{project.title}</h4>
                     <p className="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0 text-sm max-w-md">

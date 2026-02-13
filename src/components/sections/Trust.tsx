@@ -1,18 +1,21 @@
 import { motion } from 'framer-motion';
 import AnimatedCounter from '../ui/AnimatedCounter';
-
-const metrics = [
-    { label: "Years Experience", value: 6, suffix: "+" },
-    { label: "Projects Delivered", value: 15, suffix: "+" },
-    { label: "Client Satisfaction", value: 100, suffix: "%" },
-    { label: "Countries Served", value: 3, suffix: "+" },
-];
-
-const clients = [
-    "TechCorp", "InnovateX", "FutureFlow", "DataSystems", "CloudNine", "AlphaWave", "NextGen", "SmartSoft"
-];
+import { useTranslation } from 'react-i18next';
 
 export const Trust = () => {
+    const { t } = useTranslation();
+
+    const metrics = [
+        { label: t('home.trust.yearsExperience'), value: 6, suffix: "+" },
+        { label: t('home.trust.projectsDelivered'), value: 15, suffix: "+" },
+        { label: t('home.trust.clientSatisfaction'), value: 100, suffix: "%" },
+        { label: t('home.trust.countriesServed'), value: 3, suffix: "+" },
+    ];
+
+    const clients = [
+        "TechCorp", "InnovateX", "FutureFlow", "DataSystems", "CloudNine", "AlphaWave", "NextGen", "SmartSoft"
+    ];
+
     return (
         <section className="py-24 bg-black border-y border-white/5">
             <div className="container mx-auto px-4 md:px-6 mb-20 text-center">

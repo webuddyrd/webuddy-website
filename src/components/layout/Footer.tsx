@@ -1,7 +1,10 @@
 import { ArrowRight, Instagram, Github, Facebook, AtSign } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className="bg-webuddy-dark pb-12 overflow-hidden relative">
             {/* Background Glow */}
@@ -11,11 +14,11 @@ export const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
                     <div className="max-w-2xl">
                         <h2 className="text-6xl md:text-8xl font-bold font-display tracking-tighter text-white mb-8">
-                            Ready to <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">Scale Up?</span>
+                            {t('common.footer.readyTo')} <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">{t('common.footer.scaleUp')}</span>
                         </h2>
                         <Link to="/contact" className="group flex items-center gap-4 text-2xl text-white font-medium hover:text-webuddy-blue transition-colors">
-                            Start a Project <span className="bg-white/10 p-3 rounded-full group-hover:bg-webuddy-blue group-hover:text-white transition-all"><ArrowRight /></span>
+                            {t('common.footer.startProject')} <span className="bg-white/10 p-3 rounded-full group-hover:bg-webuddy-blue group-hover:text-white transition-all"><ArrowRight /></span>
                         </Link>
                     </div>
 
@@ -24,15 +27,15 @@ export const Footer = () => {
                             hello@webuddy.com
                         </a>
                         <p className="text-gray-500">
-                            Santo Domingo, <br />
-                            Dominican Republic
+                            {t('common.footer.city')} <br />
+                            {t('common.footer.country')}
                         </p>
                     </div>
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-gray-500 text-sm">
-                        © {new Date().getFullYear()} Webuddy. All rights reserved.
+                        {t('common.footer.rights').replace('2025', new Date().getFullYear().toString())}
                     </p>
 
                     <div className="flex gap-6">

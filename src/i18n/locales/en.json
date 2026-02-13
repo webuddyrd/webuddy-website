@@ -5,6 +5,7 @@
       "about": "About",
       "services": "Services",
       "portfolio": "Portfolio",
+      "work": "Work",
       "contact": "Contact"
     },
     "cta": {
@@ -17,37 +18,77 @@
     "footer": {
       "quickLinks": "Quick Links",
       "followUs": "Follow Us",
-      "rights": "© 2025 Webuddy. All rights reserved."
+      "rights": "© 2025 Webuddy. All rights reserved.",
+      "readyTo": "Ready to",
+      "scaleUp": "Scale Up?",
+      "startProject": "Start a Project",
+      "city": "Santo Domingo,",
+      "country": "Dominican Republic"
     }
   },
   "home": {
     "hero": {
-      "title": "We build digital experiences that make businesses grow.",
-      "subtitle": "We create modern technological solutions, adapted to the real needs of the market, helping businesses to grow, automate and operate more efficiently."
+      "titlePrefix": "Engineering",
+      "titleSuffix": "Digital Excellence",
+      "subtitle": "We build high-performance digital systems for ambitious companies.",
+      "startProject": "Start a Project",
+      "viewWork": "View Our Work"
+    },
+    "trust": {
+      "yearsExperience": "Years Experience",
+      "projectsDelivered": "Projects Delivered",
+      "clientSatisfaction": "Client Satisfaction",
+      "countriesServed": "Countries Served"
     },
     "services": {
       "title": "Our Services",
-      "subtitle": "Comprehensive digital solutions for modern businesses",
+      "subtitle": "We don't just build websites. We engineer digital products that scale, perform, and drive business growth.",
+      "viewAll": "View All Services",
       "website": {
-        "title": "Websites",
-        "description": "Beautiful, fast, and conversion-optimized websites that represent your brand perfectly."
+        "title": "Web Applications",
+        "description": "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
+        "features": [
+          "Responsive Design",
+          "SEO Optimization",
+          "Performance Focused",
+          "CMS Integration"
+        ]
       },
       "mobileApp": {
-        "title": "Mobile Apps",
-        "description": "Native and cross-platform mobile applications that users love."
+        "title": "Mobile Development",
+        "description": "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
+        "features": [
+          "iOS & Android",
+          "Cross-Platform",
+          "User-Centered Design",
+          "App Store Optimization"
+        ]
       },
       "social": {
         "title": "Social Media Management",
-        "description": "Strategic content and community management that grows your audience."
-      },
-      "branding": {
-        "title": "Branding",
-        "description": "Complete brand identity systems that make you stand out."
-      },
-      "strategy": {
-        "title": "Digital Strategy",
-        "description": "Data-driven strategies that align technology with your business goals."
+        "description": "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
+        "features": [
+          "Content Strategy",
+          "Community Management",
+          "Analytics & Reporting",
+          "Paid Campaigns"
+        ]
       }
+    },
+    "work": {
+      "subtitle": "Selected Work",
+      "titlePrefix": "Digital Products that",
+      "titleSuffix": "Define Categories.",
+      "viewAll": "View All Work"
+    },
+    "techStack": {
+      "titlePrefix": "Engineering",
+      "titleSuffix": "Authority",
+      "description": "We don't rely on templates or page builders. We build scalable, maintainable, enterprise-ready systems using the industry's most robust technologies.",
+      "performance": "Lighthouse Performance",
+      "typeSafety": "Type Safety",
+      "poweredBy": "Powered by modern best practices",
+      "deployingComment": "// Deploying high-performance architecture..."
     },
     "portfolio": {
       "title": "Featured Work",
@@ -103,16 +144,36 @@
   },
   "about": {
     "hero": {
-      "title": "About Webuddy",
-      "subtitle": "At Webuddy, we were founded in 2020 with a clear purpose: to drive the digital evolution of businesses and entrepreneurs. We create modern, tailored technological solutions designed to meet real market needs, helping businesses grow, automate, and operate more efficiently. Our passion is to connect ideas with technology, transforming the way our clients work, sell, and engage with their audience."
+      "titlePrefix": "We are",
+      "titleSuffix": "Builders & Dreamers.",
+      "subtitle": "Webuddy is a collective of engineers, designers, and strategists obsessed with the future of digital interaction. We don't just write code; we architect experiences that scale."
     },
-    "mission": {
-      "title": "Our Mission",
-      "description": "Our mission is to guide businesses and brands through their digital transformation journey by offering innovative tools and strategies that integrate technology in an intelligent, functional, and human-centered way. We aim to simplify processes, optimize results, and create digital experiences that deliver value, growth, and competitiveness for those who trust in us."
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "desc": "Pushing boundaries with every commit."
+      },
+      "precision": {
+        "title": "Precision",
+        "desc": "Pixel-perfect implementation."
+      },
+      "speed": {
+        "title": "Speed",
+        "desc": "Performance is a feature, not a bonus."
+      },
+      "impact": {
+        "title": "Impact",
+        "desc": "Building software that moves the needle."
+      }
+    },
+    "story": {
+      "title": "Born in the Dominican Republic. Serving the World.",
+      "p1": "Founded with a vision to elevate the standard of software engineering in the Caribbean, Webuddy has grown into a premier digital agency serving clients across 12 countries.",
+      "p2": "Our team is our greatest asset. We hire the top 1% of talent and give them the freedom to innovate."
     },
     "differentiators": {
       "title": "What Sets Us Apart",
-       "solutions": {
+      "solutions": {
         "title": "Tailor-made solutions",
         "description": "Every project is designed based on the identity, goals, and specific needs of each client."
       },
@@ -140,46 +201,78 @@
   },
   "services": {
     "hero": {
-      "title": "Services",
-      "subtitle": "Comprehensive digital solutions tailored to your needs"
+      "title": "Our Services",
+      "subtitle": "We combine engineering precision with creative strategy to build digital products that define categories."
     },
     "websites": {
-      "title": "Websites",
+      "title": "Web Applications",
       "description": "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
-      "features": ["Responsive Design", "SEO Optimization", "Performance Focused", "CMS Integration"]
+      "features": [
+        "Responsive Design",
+        "SEO Optimization",
+        "Performance Focused",
+        "CMS Integration"
+      ]
     },
     "mobileApps": {
-      "title": "Mobile Apps",
+      "title": "Mobile Development",
       "description": "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
-      "features": ["iOS & Android", "Cross-Platform", "User-Centered Design", "App Store Optimization"]
+      "features": [
+        "iOS & Android",
+        "Cross-Platform",
+        "User-Centered Design",
+        "App Store Optimization"
+      ]
     },
     "social": {
       "title": "Social Media Management",
       "description": "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
-      "features": ["Content Strategy", "Community Management", "Analytics & Reporting", "Paid Campaigns"]
+      "features": [
+        "Content Strategy",
+        "Community Management",
+        "Analytics & Reporting",
+        "Paid Campaigns"
+      ]
+    },
+    "strategy": {
+      "title": "Digital Strategy",
+      "description": "Comprehensive audits and roadmaps to align technology with business goals.",
+      "features": [
+        "Tech Consulting",
+        "SEO & Performance",
+        "Market Analysis"
+      ]
     },
     "branding": {
       "title": "Branding",
       "description": "Complete brand identity systems that make your business stand out. From logos to brand guidelines, we create cohesive visual identities that resonate with your audience.",
-      "features": ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy"]
+      "features": [
+        "Logo Design",
+        "Brand Guidelines",
+        "Visual Identity",
+        "Brand Strategy"
+      ]
     },
-    "strategy": {
-      "title": "Digital Strategy",
-      "description": "Data-driven digital strategies that align technology with your business goals. We help you make informed decisions about your digital presence and investments.",
-      "features": ["Market Research", "Competitive Analysis", "Technology Consulting", "Growth Planning"]
+    "automation": {
+      "title": "Automation & AI",
+      "description": "Leveraging AI to streamline operations and create intelligent interfaces and automations.",
+      "features": [
+        "Workflow Automation",
+        "LLM Integration",
+        "Data Processing"
+      ]
     }
   },
   "portfolio": {
     "hero": {
-      "title": "Portfolio",
-      "subtitle": "Explore our work"
+      "titlePrefix": "Selected",
+      "titleSuffix": "Work"
     },
     "filters": {
       "all": "All",
       "web": "Web",
-      "apps": "Apps",
-      "ecommerce": "Ecommerce",
-      "branding": "Branding"
+      "mobile": "Mobile",
+      "ecommerce": "E-Commerce"
     },
     "card": {
       "viewSite": "View Site"
@@ -187,26 +280,34 @@
   },
   "contact": {
     "hero": {
-      "title": "Contact Us",
-      "subtitle": "Let's discuss your next project"
-    },
-    "form": {
-      "title": "Send us a message",
-      "name": "Your Name",
-      "email": "Your Email",
-      "message": "Your Message",
-      "send": "Send Message",
-      "namePlaceholder": "John Doe",
-      "emailPlaceholder": "john@example.com",
-      "messagePlaceholder": "Tell us about your project...",
-      "success": "Message sent successfully! We'll get back to you soon.",
-      "error": "Please fill in all fields correctly."
+      "titlePrefix": "Let's build",
+      "titleSuffix": "Something Great."
     },
     "info": {
-      "title": "Get in Touch",
-      "description": "Ready to start your project? Contact us today and let's discuss how we can help your business grow.",
-      "email": "hello@webuddy.com",
-      "phone": "+1 (555) 123-4567"
+      "email": {
+        "label": "Email",
+        "value": "hello@webuddy.com"
+      },
+      "office": {
+        "label": "Office",
+        "value": "Santo Domingo, Dominican Republic"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+1 (829) 555-0123"
+      }
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email",
+      "emailPlaceholder": "john@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message Sent!",
+      "error": "Please fill in all fields correctly."
     }
   },
   "notFound": {

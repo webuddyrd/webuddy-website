@@ -3,11 +3,18 @@ import { Section } from '../components/ui/Section';
 import { motion, AnimatePresence } from 'framer-motion';
 import { portfolio } from '../data/portfolio';
 import { WorkCard } from '../components/ui/WorkCard';
-
-const categories = ["All", "Web", "Mobile", "E-Commerce"];
+import { useTranslation } from 'react-i18next';
 
 export const Portfolio = () => {
+  const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState("All");
+
+  const categories = [
+    { key: "All", label: t('portfolio.filters.all') },
+    { key: "Web", label: t('portfolio.filters.web') },
+    { key: "Mobile", label: t('portfolio.filters.mobile') },
+    { key: "E-Commerce", label: t('portfolio.filters.ecommerce') }
+  ];
 
   const filteredProjects = activeCategory === "All"
     ? portfolio
@@ -24,7 +31,7 @@ export const Portfolio = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">Work</span>
+              {t('portfolio.hero.titlePrefix')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">{t('portfolio.hero.titleSuffix')}</span>
             </motion.h1>
             <motion.div
               className="flex flex-wrap justify-center gap-4 mt-12"
@@ -34,14 +41,14 @@ export const Portfolio = () => {
             >
               {categories.map((cat) => (
                 <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${activeCategory === cat
+                  key={cat.key}
+                  onClick={() => setActiveCategory(cat.key)}
+                  className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border ${activeCategory === cat.key
                     ? "bg-white text-black border-white"
                     : "bg-transparent text-gray-400 border-white/10 hover:border-white/30 hover:text-white"
                     }`}
                 >
-                  {cat}
+                  {cat.label}
                 </button>
               ))}
             </motion.div>

@@ -5,6 +5,7 @@
       "about": "Nosotros",
       "services": "Servicios",
       "portfolio": "Portafolio",
+      "work": "Trabajo",
       "contact": "Contacto"
     },
     "cta": {
@@ -17,37 +18,77 @@
     "footer": {
       "quickLinks": "Enlaces Rápidos",
       "followUs": "Síguenos",
-      "rights": "© 2025 Webuddy. Todos los derechos reservados."
+      "rights": "© 2025 Webuddy. Todos los derechos reservados.",
+      "readyTo": "¿Listo para",
+      "scaleUp": "Escalar?",
+      "startProject": "Iniciar un Proyecto",
+      "city": "Santo Domingo,",
+      "country": "República Dominicana"
     }
   },
   "home": {
     "hero": {
-      "title": "Creamos experiencias digitales que hacen crecer tu negocio.",
-      "subtitle": "Creamos soluciones tecnológicas modernas, adaptadas a las necesidades reales del mercado, ayudando a que los negocios crezcan, se automatizen y operen con mayor eficiencia."
+      "titlePrefix": "Ingeniería de",
+      "titleSuffix": "Excelencia Digital",
+      "subtitle": "Construimos sistemas digitales de alto rendimiento para empresas ambiciosas.",
+      "startProject": "Iniciar un Proyecto",
+      "viewWork": "Ver Nuestros Trabajos"
+    },
+    "trust": {
+      "yearsExperience": "Años de Experiencia",
+      "projectsDelivered": "Proyectos Entregados",
+      "clientSatisfaction": "Satisfacción del Cliente",
+      "countriesServed": "Países Servidos"
     },
     "services": {
       "title": "Nuestros Servicios",
-      "subtitle": "Soluciones digitales completas para negocios modernos",
+      "subtitle": "No solo construimos sitios web. Diseñamos productos digitales que escalan, rinden e impulsan el crecimiento del negocio.",
+      "viewAll": "Ver Todos los Servicios",
       "website": {
-        "title": "Sitios Web",
-        "description": "Sitios web hermosos, rápidos y optimizados que representan tu marca perfectamente."
+        "title": "Aplicaciones Web",
+        "description": "Construimos sitios web rápidos, hermosos y optimizados para la conversión que funcionan perfectamente en todos los dispositivos. Desde landing pages hasta aplicaciones web complejas, creamos experiencias digitales que representan tu marca perfectamente.",
+        "features": [
+          "Diseño Responsivo",
+          "Optimización SEO",
+          "Enfoque en Rendimiento",
+          "Integración CMS"
+        ]
       },
       "mobileApp": {
-        "title": "Apps Móviles",
-        "description": "Aplicaciones móviles nativas y multiplataforma que los usuarios adoran."
+        "title": "Desarrollo Móvil",
+        "description": "Apps nativas para iOS y Android, o soluciones multiplataforma que ofrecen experiencias excepcionales. Construimos apps que los usuarios aman y que generan resultados reales.",
+        "features": [
+          "iOS y Android",
+          "Multiplataforma",
+          "Diseño Centrado en Usuario",
+          "Optimización App Store"
+        ]
       },
       "social": {
         "title": "Gestión de Redes Sociales",
-        "description": "Contenido estratégico y gestión de comunidad que hace crecer tu audiencia."
-      },
-      "branding": {
-        "title": "Branding",
-        "description": "Sistemas completos de identidad de marca que te hacen destacar."
-      },
-      "strategy": {
-        "title": "Estrategia Digital",
-        "description": "Estrategias basadas en datos que alinean la tecnología con tus objetivos."
+        "description": "Gestión estratégica de redes sociales que hace crecer tu audiencia y construye conexiones significativas. Creamos contenido, gestionamos comunidades y analizamos rendimiento para maximizar tu presencia social.",
+        "features": [
+          "Estrategia de Contenido",
+          "Gestión de Comunidad",
+          "Análisis e Informes",
+          "Campañas Pagadas"
+        ]
       }
+    },
+    "work": {
+      "subtitle": "Trabajos Seleccionados",
+      "titlePrefix": "Productos Digitales que",
+      "titleSuffix": "Definen Categorías.",
+      "viewAll": "Ver Todos los Trabajos"
+    },
+    "techStack": {
+      "titlePrefix": "Autoridad en",
+      "titleSuffix": "Ingeniería",
+      "description": "No dependemos de plantillas ni constructores de páginas. Construimos sistemas escalables, mantenibles y listos para la empresa utilizando las tecnologías más robustas de la industria.",
+      "performance": "Rendimiento Lighthouse",
+      "typeSafety": "Seguridad de Tipado",
+      "poweredBy": "Impulsado por mejores prácticas modernas",
+      "deployingComment": "// Desplegando arquitectura de alto rendimiento..."
     },
     "portfolio": {
       "title": "Trabajos Destacados",
@@ -103,12 +144,32 @@
   },
   "about": {
     "hero": {
-      "title": "Sobre Webuddy",
-      "subtitle": "En Webuddy, nacimos en 2020 con el propósito de impulsar la evolución digital de empresas y emprendedores. Creamos soluciones tecnológicas modernas, adaptadas a las necesidades reales del mercado, ayudando a que los negocios crezcan, se automatizen y operen con mayor eficiencia. Nuestra pasión es conectar ideas con tecnología para transformar la manera en que nuestros clientes trabajan, venden y se relacionan con su audiencia."
+      "titlePrefix": "Somos",
+      "titleSuffix": "Constructores y Soñadores.",
+      "subtitle": "Webuddy es un colectivo de ingenieros, diseñadores y estrategas obsesionados con el futuro de la interacción digital. No solo escribimos código; arquitectamos experiencias que escalan."
     },
-    "mission": {
-      "title": "Nuestra Misión",
-      "description": "Nuestra misión es acompañar a negocios y marcas en su camino hacia la transformación digital, ofreciendo herramientas innovadoras y estrategias que integren tecnología de forma inteligente, funcional y humana. Buscamos simplificar procesos, optimizar resultados y crear experiencias digitales que generen valor, crecimiento y competitividad para quienes confían en nosotros."
+    "values": {
+      "innovation": {
+        "title": "Innovación",
+        "desc": "Superando límites con cada commit."
+      },
+      "precision": {
+        "title": "Precisión",
+        "desc": "Implementación perfecta al píxel."
+      },
+      "speed": {
+        "title": "Velocidad",
+        "desc": "El rendimiento es una característica, no un extra."
+      },
+      "impact": {
+        "title": "Impacto",
+        "desc": "Creando software que mueve la aguja."
+      }
+    },
+    "story": {
+      "title": "Nacidos en la República Dominicana. Sirviendo al Mundo.",
+      "p1": "Fundada con la visión de elevar el estándar de la ingeniería de software en el Caribe, Webuddy ha crecido hasta convertirse en una agencia digital de primer nivel que sirve a clientes en 12 países.",
+      "p2": "Nuestro equipo es nuestro mayor activo. Contratamos al 1% superior del talento y les damos la libertad de innovar."
     },
     "differentiators": {
       "title": "Lo Que Nos Distingue",
@@ -140,46 +201,78 @@
   },
   "services": {
     "hero": {
-      "title": "Servicios",
-      "subtitle": "Soluciones digitales completas adaptadas a tus necesidades"
+      "title": "Nuestros Servicios",
+      "subtitle": "Combinamos precisión de ingeniería con estrategia creativa para construir productos digitales que definen categorías."
     },
     "websites": {
-      "title": "Sitios Web",
-      "description": "Construimos sitios web rápidos, hermosos y optimizados que funcionan perfectamente en todos los dispositivos. Desde landing pages hasta aplicaciones web complejas, creamos experiencias digitales que representan tu marca perfectamente.",
-      "features": ["Diseño Responsivo", "Optimización SEO", "Enfoque en Rendimiento", "Integración CMS"]
+      "title": "Aplicaciones Web",
+      "description": "Construimos sitios web rápidos, hermosos y optimizados para la conversión que funcionan perfectamente en todos los dispositivos. Desde landing pages hasta aplicaciones web complejas, creamos experiencias digitales que representan tu marca perfectamente.",
+      "features": [
+        "Diseño Responsivo",
+        "Optimización SEO",
+        "Enfoque en Rendimiento",
+        "Integración CMS"
+      ]
     },
     "mobileApps": {
-      "title": "Apps Móviles",
+      "title": "Desarrollo Móvil",
       "description": "Apps nativas para iOS y Android, o soluciones multiplataforma que ofrecen experiencias excepcionales. Construimos apps que los usuarios aman y que generan resultados reales.",
-      "features": ["iOS y Android", "Multiplataforma", "Diseño Centrado en Usuario", "Optimización App Store"]
+      "features": [
+        "iOS y Android",
+        "Multiplataforma",
+        "Diseño Centrado en Usuario",
+        "Optimización App Store"
+      ]
     },
     "social": {
       "title": "Gestión de Redes Sociales",
       "description": "Gestión estratégica de redes sociales que hace crecer tu audiencia y construye conexiones significativas. Creamos contenido, gestionamos comunidades y analizamos rendimiento para maximizar tu presencia social.",
-      "features": ["Estrategia de Contenido", "Gestión de Comunidad", "Análisis e Informes", "Campañas Pagadas"]
+      "features": [
+        "Estrategia de Contenido",
+        "Gestión de Comunidad",
+        "Análisis e Informes",
+        "Campañas Pagadas"
+      ]
+    },
+    "strategy": {
+      "title": "Estrategia Digital",
+      "description": "Auditorías integrales y hojas de ruta para alinear la tecnología con los objetivos comerciales.",
+      "features": [
+        "Consultoría Tecnológica",
+        "SEO y Rendimiento",
+        "Análisis de Mercado"
+      ]
     },
     "branding": {
       "title": "Branding",
       "description": "Sistemas completos de identidad de marca que hacen destacar tu negocio. Desde logos hasta guías de marca, creamos identidades visuales cohesivas que resuenan con tu audiencia.",
-      "features": ["Diseño de Logo", "Guías de Marca", "Identidad Visual", "Estrategia de Marca"]
+      "features": [
+        "Diseño de Logo",
+        "Guías de Marca",
+        "Identidad Visual",
+        "Estrategia de Marca"
+      ]
     },
-    "strategy": {
-      "title": "Estrategia Digital",
-      "description": "Estrategias digitales basadas en datos que alinean la tecnología con tus objetivos de negocio. Te ayudamos a tomar decisiones informadas sobre tu presencia e inversiones digitales.",
-      "features": ["Investigación de Mercado", "Análisis Competitivo", "Consultoría Tecnológica", "Planificación de Crecimiento"]
+    "automation": {
+      "title": "Automatización e IA",
+      "description": "Aprovechando la IA para optimizar operaciones y crear interfaces inteligentes y automatizaciones.",
+      "features": [
+        "Automatización de Flujos",
+        "Integración LLM",
+        "Procesamiento de Datos"
+      ]
     }
   },
   "portfolio": {
     "hero": {
-      "title": "Portafolio",
-      "subtitle": "Explora nuestros trabajos"
+      "titlePrefix": "Trabajos",
+      "titleSuffix": "Seleccionados"
     },
     "filters": {
       "all": "Todos",
       "web": "Web",
-      "apps": "Apps",
-      "ecommerce": "Ecommerce",
-      "branding": "Branding"
+      "mobile": "Móvil",
+      "ecommerce": "E-Commerce"
     },
     "card": {
       "viewSite": "Ver Sitio"
@@ -187,26 +280,34 @@
   },
   "contact": {
     "hero": {
-      "title": "Contáctanos",
-      "subtitle": "Hablemos de tu próximo proyecto"
-    },
-    "form": {
-      "title": "Envíanos un mensaje",
-      "name": "Tu Nombre",
-      "email": "Tu Email",
-      "message": "Tu Mensaje",
-      "send": "Enviar Mensaje",
-      "namePlaceholder": "Juan Pérez",
-      "emailPlaceholder": "juan@ejemplo.com",
-      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
-      "success": "¡Mensaje enviado con éxito! Te responderemos pronto.",
-      "error": "Por favor completa todos los campos correctamente."
+      "titlePrefix": "Construyamos",
+      "titleSuffix": "Algo Grandioso."
     },
     "info": {
-      "title": "Ponte en Contacto",
-      "description": "¿Listo para comenzar tu proyecto? Contáctanos hoy y hablemos sobre cómo podemos ayudar a crecer tu negocio.",
-      "email": "hola@webuddy.com",
-      "phone": "+1 (555) 123-4567"
+      "email": {
+        "label": "Email",
+        "value": "hola@webuddy.com"
+      },
+      "office": {
+        "label": "Oficina",
+        "value": "Santo Domingo, República Dominicana"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "value": "+1 (829) 555-0123"
+      }
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Juan Pérez",
+      "email": "Email",
+      "emailPlaceholder": "juan@ejemplo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje Enviado!",
+      "error": "Por favor completa todos los campos correctamente."
     }
   },
   "notFound": {

@@ -2,47 +2,50 @@ import { Section } from '../components/ui/Section';
 import { ServiceCard } from '../components/ServiceCard';
 import { motion } from 'framer-motion';
 import { Code, Smartphone, Palette, Globe, Instagram, Cpu } from 'lucide-react';
-
-const services = [
-  {
-    icon: Code,
-    title: "Web Applications",
-    description: "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
-    features: ["Responsive Design", "SEO Optimization", "Performance Focused", "CMS Integration"]
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile Development",
-    description: "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
-    features: ["iOS & Android", "Cross-Platform", "User-Centered Design", "App Store Optimization"]
-  },
-  {
-    icon: Instagram,
-    title: "Social Media Management",
-    description: "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
-    features: ["Content Strategy", "Community Management", "Analytics & Reporting", "Paid Campaigns"]
-  },
-  {
-    icon: Globe,
-    title: "Digital Strategy",
-    description: "Comprehensive audits and roadmaps to align technology with business goals.",
-    features: ["Tech Consulting", "SEO & Performance", "Market Analysis"]
-  },
-  {
-    icon: Palette,
-    title: "Branding",
-    description: "Complete brand identity systems that make your business stand out. From logos to brand guidelines, we create cohesive visual identities that resonate with your audience.",
-    features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy"]
-  },
-  {
-    icon: Cpu,
-    title: "Automation & AI",
-    description: "Leveraging AI to streamline operations and create intelligent interfaces and automations.",
-    features: ["Workflow Automation", "LLM Integration", "Data Processing"]
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export const Services = () => {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      icon: Code,
+      title: t('services.websites.title'),
+      description: t('services.websites.description'),
+      features: t('services.websites.features', { returnObjects: true }) as string[]
+    },
+    {
+      icon: Smartphone,
+      title: t('services.mobileApps.title'),
+      description: t('services.mobileApps.description'),
+      features: t('services.mobileApps.features', { returnObjects: true }) as string[]
+    },
+    {
+      icon: Instagram,
+      title: t('services.social.title'),
+      description: t('services.social.description'),
+      features: t('services.social.features', { returnObjects: true }) as string[]
+    },
+    {
+      icon: Globe,
+      title: t('services.strategy.title'),
+      description: t('services.strategy.description'),
+      features: t('services.strategy.features', { returnObjects: true }) as string[]
+    },
+    {
+      icon: Palette,
+      title: t('services.branding.title'),
+      description: t('services.branding.description'),
+      features: t('services.branding.features', { returnObjects: true }) as string[]
+    },
+    {
+      icon: Cpu,
+      title: t('services.automation.title'),
+      description: t('services.automation.description'),
+      features: t('services.automation.features', { returnObjects: true }) as string[]
+    }
+  ];
+
   return (
     <div className="bg-webuddy-dark min-h-screen pt-32 pb-20">
       <Section>
@@ -54,7 +57,7 @@ export const Services = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">Services</span>
+              {t('services.hero.title').split(' ')[0]} <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">{t('services.hero.title').split(' ').slice(1).join(' ')}</span>
             </motion.h1>
             <motion.p
               className="text-xl text-gray-400 max-w-2xl mx-auto"
@@ -62,7 +65,7 @@ export const Services = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              We combine engineering precision with creative strategy to build digital products that define categories.
+              {t('services.hero.subtitle')}
             </motion.p>
           </div>
 

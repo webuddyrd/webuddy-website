@@ -11,6 +11,8 @@ interface ServiceCardProps {
 }
 
 export const ServiceCard = ({ icon: Icon, title, description, features = [], variant = 'static', index = 0 }: ServiceCardProps) => {
+  const safeFeatures = Array.isArray(features) ? features : [];
+
   const [isHovered, setIsHovered] = useState(false);
 
   const isInteractive = variant === 'interactive';
@@ -52,7 +54,7 @@ export const ServiceCard = ({ icon: Icon, title, description, features = [], var
             className="overflow-hidden"
           >
             <ul className="space-y-2 pt-4 border-t border-white/10">
-              {features.map((feature, idx) => (
+              {safeFeatures.map((feature, idx) => (
                 <li key={idx} className="flex items-center text-sm text-gray-300">
                   <span className="w-1.5 h-1.5 bg-webuddy-electric rounded-full mr-2" />
                   {feature}
@@ -62,9 +64,9 @@ export const ServiceCard = ({ icon: Icon, title, description, features = [], var
           </motion.div>
         )}
 
-        {!isInteractive && features.length > 0 && (
+        {!isInteractive && safeFeatures.length > 0 && (
           <ul className="space-y-2 mb-8">
-            {features.map((feature, i) => (
+            {safeFeatures.map((feature, i) => (
               <li key={i} className="flex items-center gap-2 text-sm text-gray-500">
                 <div className="w-1.5 h-1.5 rounded-full bg-webuddy-blue" />
                 {feature}

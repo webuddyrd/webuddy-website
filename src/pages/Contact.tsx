@@ -2,8 +2,10 @@ import { useState, FormEvent } from 'react';
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Send, Phone } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
 
   const handleSubmit = (e: FormEvent) => {
@@ -25,8 +27,8 @@ export const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                Let's build <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">Something Great.</span>
+                {t('contact.hero.titlePrefix')} <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">{t('contact.hero.titleSuffix')}</span>
               </motion.h1>
 
               <motion.div
@@ -40,8 +42,8 @@ export const Contact = () => {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold mb-1">Email</h3>
-                    <p className="text-gray-400">hello@webuddy.com</p>
+                    <h3 className="text-white font-bold mb-1">{t('contact.info.email.label')}</h3>
+                    <p className="text-gray-400">{t('contact.info.email.value')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -49,8 +51,8 @@ export const Contact = () => {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold mb-1">Office</h3>
-                    <p className="text-gray-400">Santo Domingo, Dominican Republic</p>
+                    <h3 className="text-white font-bold mb-1">{t('contact.info.office.label')}</h3>
+                    <p className="text-gray-400">{t('contact.info.office.value')}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -58,8 +60,8 @@ export const Contact = () => {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold mb-1">Phone</h3>
-                    <p className="text-gray-400">+1 (829) 555-0123</p>
+                    <h3 className="text-white font-bold mb-1">{t('contact.info.phone.label')}</h3>
+                    <p className="text-gray-400">{t('contact.info.phone.value')}</p>
                   </div>
                 </div>
               </motion.div>
@@ -74,30 +76,30 @@ export const Contact = () => {
             >
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                  <label className="block text-sm font-medium text-gray-400 mb-2">{t('contact.form.name')}</label>
                   <input
                     type="text"
                     required
                     className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-webuddy-blue focus:ring-1 focus:ring-webuddy-blue transition-all outline-none"
-                    placeholder="John Doe"
+                    placeholder={t('contact.form.namePlaceholder')}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                  <label className="block text-sm font-medium text-gray-400 mb-2">{t('contact.form.email')}</label>
                   <input
                     type="email"
                     required
                     className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-webuddy-blue focus:ring-1 focus:ring-webuddy-blue transition-all outline-none"
-                    placeholder="john@example.com"
+                    placeholder={t('contact.form.emailPlaceholder')}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-gray-400 mb-2">{t('contact.form.message')}</label>
                   <textarea
                     rows={4}
                     required
                     className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-webuddy-blue focus:ring-1 focus:ring-webuddy-blue transition-all outline-none"
-                    placeholder="Tell us about your project..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
                 <button
@@ -106,10 +108,10 @@ export const Contact = () => {
                   className="w-full bg-webuddy-blue hover:bg-blue-600 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {formState === 'idle' && (
-                    <>Send Message <Send size={20} className="group-hover:translate-x-1 transition-transform" /></>
+                    <>{t('contact.form.send')} <Send size={20} className="group-hover:translate-x-1 transition-transform" /></>
                   )}
-                  {formState === 'submitting' && 'Sending...'}
-                  {formState === 'success' && 'Message Sent!'}
+                  {formState === 'submitting' && t('contact.form.sending')}
+                  {formState === 'success' && t('contact.form.success')}
                 </button>
               </form>
             </motion.div>

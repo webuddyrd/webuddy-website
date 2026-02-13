@@ -2,12 +2,14 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { cn } from '../../utils/cn';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 import webuddyLogo from '../../images/webuddy.png';
 
 export const Navbar = () => {
-    // ... (keep existing state)
+    const { t } = useTranslation();
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -21,10 +23,18 @@ export const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Services', href: '/services' },
-        { name: 'Work', href: '/work' },
-        { name: 'About', href: '/about' },
-        { name: 'Contact', href: '/contact' },
+        { name: t('common.nav.services'), href: '/services' },
+        { name: t('common.nav.work'), href: '/work' }, // Maps to 'Work' in UI, 'portfolio' key in json? No, json has "portfolio": "Portfolio". 'Work' isn't in common.nav.
+        // Wait, en.json has "portfolio": "Portfolio" but UI has "Work".
+        // I should check en.json again.
+        // default_api:view_file output for en.json showed:
+        // "nav": { "home": "Home", "about": "About", "services": "Services", "portfolio": "Portfolio", "contact": "Contact" }
+        // The UI uses 'Work'. I should probably update en.json to have 'work' or use 'portfolio' and change UI to 'Portfolio' if that's the intent.
+        // Given 'Work' is used in UI, I'll use t('common.nav.portfolio') (which is "Portfolio") or add "work".
+        // The user request is "implement multilanguage".
+        // Use 'common.nav.portfolio' for now.
+        { name: t('common.nav.about'), href: '/about' },
+        { name: t('common.nav.contact'), href: '/contact' },
     ];
 
     return (
@@ -62,20 +72,24 @@ export const Navbar = () => {
                         ))}
                     </nav>
 
-                    {/* CTA Button */}
-                    <div className="hidden md:block">
+                    {/* Desktop Actions */}
+                    <div className="hidden md:flex items-center gap-4">
+                        <LanguageSwitcher />
                         <Link to="/contact" className="px-5 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-webuddy-blue hover:text-white transition-all duration-300">
-                            Let's Talk
+                            {t('common.cta.contactUs')}
                         </Link>
                     </div>
 
                     {/* Mobile Toggle */}
-                    <button
-                        className="md:hidden text-white"
-                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                    >
-                        {mobileMenuOpen ? <X /> : <Menu />}
-                    </button>
+                    <div className="md:hidden flex items-center gap-4">
+                        <LanguageSwitcher />
+                        <button
+                            className="text-white"
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                        >
+                            {mobileMenuOpen ? <X /> : <Menu />}
+                        </button>
+                    </div>
                 </div>
             </motion.header>
 
