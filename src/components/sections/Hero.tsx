@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { HeroScene } from '../3d/HeroScene';
 import { ArrowDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
     return (
@@ -37,13 +38,13 @@ export const Hero = () => {
                         animate={{ opacity: [0, 1], y: [20, 0] }}
                         transition={{ delay: 0.8, duration: 0.8 }}
                     >
-                        <button className="group relative px-8 py-4 bg-webuddy-blue text-white rounded-full overflow-hidden transition-all hover:shadow-glow">
+                        <Link to="/contact" className="group relative px-8 py-4 bg-webuddy-blue text-white rounded-full overflow-hidden transition-all hover:shadow-glow">
                             <span className="relative z-10 font-medium">Start a Project</span>
                             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                        </button>
-                        <button className="px-8 py-4 text-white border border-white/10 rounded-full hover:bg-white/5 transition-colors backdrop-blur-sm">
+                        </Link>
+                        <Link to="/work" className="px-8 py-4 text-white border border-white/10 rounded-full hover:bg-white/5 transition-colors backdrop-blur-sm">
                             View Our Work
-                        </button>
+                        </Link>
                     </motion.div>
                 </motion.div>
             </div>

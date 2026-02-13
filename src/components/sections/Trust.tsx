@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
+import AnimatedCounter from '../ui/AnimatedCounter';
 
 const metrics = [
-    { label: "Years Experience", value: "6+" },
-    { label: "Projects Delivered", value: "15+" },
-    { label: "Client Satisfaction", value: "100%" },
-    { label: "Countries Served", value: "3+" },
+    { label: "Years Experience", value: 6, suffix: "+" },
+    { label: "Projects Delivered", value: 15, suffix: "+" },
+    { label: "Client Satisfaction", value: 100, suffix: "%" },
+    { label: "Countries Served", value: 3, suffix: "+" },
 ];
 
 const clients = [
@@ -26,7 +27,7 @@ export const Trust = () => {
                             className="bg-white/5 rounded-2xl p-6 hover:bg-white/10 transition-colors border border-white/5"
                         >
                             <h3 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-webuddy-blue to-webuddy-electric mb-2">
-                                {metric.value}
+                                <AnimatedCounter to={metric.value} suffix={metric.suffix} />
                             </h3>
                             <p className="text-gray-400 text-sm font-medium uppercase tracking-wider">{metric.label}</p>
                         </motion.div>

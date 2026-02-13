@@ -8,8 +8,9 @@ const services = [
     {
         icon: <Code className="w-8 h-8" />,
         title: "Web Applications",
-        description: "Scalable, high-performance web applications built with Next.js and React. Engineered for speed and SEO.",
-        details: ["SPA/PWA Architecture", "Next.js SSR/ISR", "Headless CMS Integration", "WebGL Experiences"]
+        description: "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
+        details: ["Responsive Design", "SEO Optimization", "Performance Focused", "CMS Integration"]
+
     },
     {
         icon: <Smartphone className="w-8 h-8" />,
@@ -97,11 +98,6 @@ export const Services = () => {
                                     ))}
                                 </ul>
                             </motion.div>
-
-                            {/* Arrow Icon */}
-                            <div className={`mt-auto pt-4 flex items-center text-sm font-medium text-webuddy-electric transition-transform duration-300 ${hoveredIndex === index ? 'translate-x-2' : ''}`}>
-                                Explore Capability →
-                            </div>
                         </div>
                     </motion.div>
                 ))}

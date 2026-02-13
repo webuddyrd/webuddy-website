@@ -1,6 +1,6 @@
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
-import { Code, Smartphone, Palette, Globe, Instagram, Cpu, ArrowRight } from 'lucide-react';
+import { Code, Smartphone, Palette, Globe, Instagram, Cpu } from 'lucide-react';
 
 const services = [
   {
@@ -100,10 +100,6 @@ export const Services = () => {
                       </li>
                     ))}
                   </ul>
-
-                  <div className="flex items-center gap-2 text-webuddy-blue font-medium group-hover:gap-4 transition-all">
-                    Learn more <ArrowRight size={16} />
-                  </div>
                 </div>
               </motion.div>
             ))}
