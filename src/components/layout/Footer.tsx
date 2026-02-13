@@ -1,4 +1,4 @@
-import { ArrowRight, Instagram, Linkedin, Twitter, Github } from 'lucide-react';
+import { ArrowRight, Instagram, Github, Facebook, AtSign } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
@@ -36,11 +36,18 @@ export const Footer = () => {
                     </p>
 
                     <div className="flex gap-6">
-                        {[Linkedin, Twitter, Instagram, Github].map((Icon, i) => (
-                            <a key={i} href="#" className="text-gray-400 hover:text-white transition-colors">
-                                <Icon size={20} />
-                            </a>
-                        ))}
+                        <a href="https://www.instagram.com/webuddyrd/" target='_blank' className="text-gray-400 hover:text-white transition-colors">
+                            <Instagram size={20} />
+                        </a>
+                        <a href="https://www.facebook.com/Webuddyrd" target='_blank' className="text-gray-400 hover:text-white transition-colors">
+                            <Facebook size={20} />
+                        </a>
+                        <a href="https://www.threads.com/@webuddyrd" target='_blank' className="text-gray-400 hover:text-white transition-colors">
+                            <AtSign size={20} />
+                        </a>
+                        <a href="https://github.com/webuddyrd" target='_blank' className="text-gray-400 hover:text-white transition-colors">
+                            <Github size={20} />
+                        </a>
                     </div>
                 </div>
             </div>
