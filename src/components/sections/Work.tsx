@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { portfolio } from '../../data/portfolio';
 import { Link } from 'react-router-dom';
+import { WorkCard } from '../ui/WorkCard';
 
 export const Work = () => {
     return (
@@ -22,33 +22,12 @@ export const Work = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     {portfolio.slice(0, 3).map((project, index) => (
-                        <motion.div
+                        <WorkCard
                             key={index}
-                            className={`group relative rounded-2xl overflow-hidden aspect-[4/3] cursor-pointer ${index === 2 ? 'md:col-span-2 md:aspect-[21/9]' : ''}`}
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                        >
-                            <img src={project.image} alt={project.title} />
-
-                            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
-
-                            <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                                <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                    <span className="text-xs font-bold text-white/80 uppercase tracking-wider mb-2 block p-1 px-3 bg-white/10 w-fit rounded-full backdrop-blur-md">
-                                        {project.category}
-                                    </span>
-                                    <h4 className="text-3xl font-bold text-white mb-2">{project.title}</h4>
-                                    <p className="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0 text-sm max-w-md">
-                                        {project.description_en}
-                                    </p>
-                                </div>
-                                <Link to={project.url} target='blank' className="absolute top-8 right-8 bg-white/10 p-3 rounded-full backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                    <ArrowUpRight className="text-white" size={20} />
-                                </Link>
-                            </div>
-                        </motion.div>
+                            project={project}
+                            index={index}
+                            className={index === 2 ? 'md:col-span-2 md:aspect-[21/9]' : ''}
+                        />
                     ))}
                 </div>
             </div>

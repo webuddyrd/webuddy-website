@@ -1,4 +1,5 @@
 import { Section } from '../components/ui/Section';
+import { ServiceCard } from '../components/ServiceCard';
 import { motion } from 'framer-motion';
 import { Code, Smartphone, Palette, Globe, Instagram, Cpu } from 'lucide-react';
 
@@ -46,7 +47,6 @@ export const Services = () => {
     <div className="bg-webuddy-dark min-h-screen pt-32 pb-20">
       <Section>
         <div className="container mx-auto px-4 md:px-6">
-          {/* Header */}
           <div className="max-w-4xl mx-auto text-center mb-20">
             <motion.h1
               className="text-5xl md:text-7xl font-display font-bold text-white mb-6"
@@ -66,42 +66,17 @@ export const Services = () => {
             </motion.p>
           </div>
 
-          {/* Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div
+              <ServiceCard
                 key={index}
-                className="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-webuddy-blue/50 hover:bg-white/10 transition-all duration-300 relative overflow-hidden"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1, duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                {/* Background Icon */}
-                <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-5 transition-opacity duration-500">
-                  <service.icon size={120} />
-                </div>
-
-                <div className="relative z-10">
-                  <div className="bg-webuddy-blue/20 w-fit p-4 rounded-2xl mb-6 text-webuddy-electric group-hover:scale-110 transition-transform duration-300">
-                    <service.icon size={32} />
-                  </div>
-
-                  <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
-                  <p className="text-gray-400 mb-8 leading-relaxed">
-                    {service.description}
-                  </p>
-
-                  <ul className="space-y-2 mb-8">
-                    {service.features.map((feature, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-500">
-                        <div className="w-1.5 h-1.5 rounded-full bg-webuddy-blue" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                features={service.features}
+                variant="static"
+                index={index}
+              />
             ))}
           </div>
         </div>

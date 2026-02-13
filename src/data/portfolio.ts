@@ -53,7 +53,7 @@ export const portfolio: PortfolioItem[] = [
     description_es: "Tienda online de productos de higiene y limpieza con una experiencia de compra fluida.",
     image: Germsout,
     url: "https://germsout.store/",
-    category: "Ecommerce"
+    category: "E-Commerce"
   },
   {
     title: "Orki Beauty Solutions",
@@ -61,6 +61,6 @@ export const portfolio: PortfolioItem[] = [
     description_es: "Elegante sitio de comercio electrónico de productos de belleza con un diseño limpio y moderno.",
     image: OrkiBS,
     url: "http://orkibeautysolutions.com/",
-    category: "Ecommerce"
+    category: "E-Commerce"
   }
 ];
