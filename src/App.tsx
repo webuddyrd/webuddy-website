@@ -11,9 +11,12 @@ import { Footer } from './components/layout/Footer';
 import './index.css';
 
 
+import ScrollToTop from './components/ScrollToTop';
+
 function App() {
   return (
     <SmoothScroll>
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>
