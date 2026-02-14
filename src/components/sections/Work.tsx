@@ -10,7 +10,7 @@ export const Work = () => {
     return (
         <section id="work" className="py-32 bg-webuddy-dark relative overflow-hidden">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                     <div>
                         <h2 className="text-sm font-bold text-webuddy-blue tracking-widest uppercase mb-4">{t('home.work.subtitle')}</h2>
                         <h3 className="text-4xl md:text-5xl font-display font-bold text-white">
@@ -18,7 +18,7 @@ export const Work = () => {
                             <span className="text-gray-500">{t('home.work.titleSuffix')}</span>
                         </h3>
                     </div>
-                    <Link to="/work" className="flex items-center gap-2 text-white border-b border-white/30 pb-1 hover:border-white transition-colors">
+                    <Link to="/work" className="self-end md:self-auto flex items-center gap-2 text-white border-b border-white/30 pb-1 hover:border-white transition-colors">
                         {t('home.work.viewAll')} <ArrowUpRight size={16} />
                     </Link>
                 </div>

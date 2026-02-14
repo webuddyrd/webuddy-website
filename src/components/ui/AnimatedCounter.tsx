@@ -20,7 +20,7 @@ export default function AnimatedCounter({
 }: AnimatedCounterProps) {
     const ref = useRef<HTMLSpanElement>(null);
     const motionValue = useMotionValue(from);
-    const isInView = useInView(ref, { once: true, margin: "-50px" });
+    const isInView = useInView(ref, { once: true, margin: "-10px" });
 
     const springValue = useSpring(motionValue, {
         damping: 60,

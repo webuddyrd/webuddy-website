@@ -22,7 +22,7 @@ export const Footer = () => {
                         </Link>
                     </div>
 
-                    <div className="flex flex-col gap-6 text-right">
+                    <div className="flex flex-col gap-6 text-right w-full md:w-auto">
                         <a href="mailto:hello@webuddy.com" className="text-2xl text-gray-300 hover:text-white transition-colors">
                             hello@webuddy.com
                         </a>
