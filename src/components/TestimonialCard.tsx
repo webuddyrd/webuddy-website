@@ -19,35 +19,29 @@ export function TestimonialCard({ quote, author, role, delay = 0 }: TestimonialC
   return (
     <div
       ref={ref}
-      className={`p-8 bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      className={`p-8 bg-white/5 rounded-2xl border border-white/10 hover:border-webuddy-blue/30 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <Quote className="text-blue-600 dark:text-blue-400 mb-4" size={32} />
+      <Quote className="text-webuddy-blue mb-6" size={32} />
       <p
-        className="text-slate-700 dark:text-slate-300 mb-6 text-lg"
+        className="text-gray-300 mb-6 text-lg leading-relaxed italic"
         aria-expanded={expanded}
       >
-        {isLong && !expanded ? (
+        "{isLong && !expanded ? (
           <>
             {truncated}
             <span aria-hidden>...</span>
           </>
         ) : (
           quote
-        )}
+        )}"
       </p>
       {isLong && (
         <div className="mt-2 flex items-center gap-3">
-          {!expanded && (
-            <div
-              aria-hidden
-              className="absolute left-0 right-20 bottom-6 h-8 pointer-events-none"
-            />
-          )}
           <button
             onClick={() => setExpanded((s) => !s)}
-            className="ml-auto text-sm font-medium underline focus:outline-none"
+            className="text-sm font-bold text-webuddy-blue hover:text-white transition-colors focus:outline-none uppercase tracking-wider"
             aria-controls=""
             aria-expanded={expanded}
           >
@@ -55,9 +49,9 @@ export function TestimonialCard({ quote, author, role, delay = 0 }: TestimonialC
           </button>
         </div>
       )}
-      <div>
-        <p className="font-semibold text-slate-900 dark:text-white">{author}</p>
-        <p className="text-sm text-slate-600 dark:text-slate-400">{role}</p>
+      <div className="mt-6 pt-6 border-t border-white/10">
+        <p className="font-bold text-white text-lg">{author}</p>
+        <p className="text-sm text-webuddy-electric">{role}</p>
       </div>
     </div>
   );

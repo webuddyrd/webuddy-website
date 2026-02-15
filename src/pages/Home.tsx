@@ -3,6 +3,7 @@ import { Services } from '../components/sections/Services';
 import { TechStack } from '../components/sections/TechStack';
 import { Work } from '../components/sections/Work';
 import { Trust } from '../components/sections/Trust';
+import { Testimonials } from '../components/sections/Testimonials';
 import { Section } from '../components/ui/Section';
 
 export const Home = () => {
@@ -20,6 +21,10 @@ export const Home = () => {
 
       <Section>
         <Work />
+      </Section>
+
+      <Section>
+        <Testimonials />
       </Section>
 
       <Section>
