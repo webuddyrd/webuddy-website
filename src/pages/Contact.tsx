@@ -1,17 +1,40 @@
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent, ChangeEvent } from 'react';
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Send, Phone } from 'lucide-react';
+import { Mail, MapPin, Send, Phone, AlertCircle, CheckCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { sendEmail } from '../services/email';
 
 export const Contact = () => {
   const { t } = useTranslation();
-  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formState, setFormState] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setFormState('submitting');
-    setTimeout(() => setFormState('success'), 1500);
+
+    const result = await sendEmail(formData);
+
+    if (result.success) {
+      setFormState('success');
+      setFormData({ name: '', email: '', message: '' }); // Reset form
+      setTimeout(() => setFormState('idle'), 5000);
+    } else {
+      setFormState('error');
+      setTimeout(() => setFormState('idle'), 5000);
+    }
   };
 
   return (
@@ -43,7 +66,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-bold mb-1">{t('contact.info.email.label')}</h3>
-                    <p className="text-gray-400">{t('contact.info.email.value')}</p>
+                    <a href="mailto:hello@webuddy.dev" className="text-gray-400 hover:text-white transition-colors">hello@webuddy.dev</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -61,7 +84,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-bold mb-1">{t('contact.info.phone.label')}</h3>
-                    <p className="text-gray-400">{t('contact.info.phone.value')}</p>
+                    <a href="tel:+18499182057" className="text-gray-400">{t('contact.info.phone.value')}</a>
                   </div>
                 </div>
               </motion.div>
@@ -79,6 +102,9 @@ export const Contact = () => {
                   <label className="block text-sm font-medium text-gray-400 mb-2">{t('contact.form.name')}</label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                     className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-webuddy-blue focus:ring-1 focus:ring-webuddy-blue transition-all outline-none"
                     placeholder={t('contact.form.namePlaceholder')}
@@ -88,6 +114,9 @@ export const Contact = () => {
                   <label className="block text-sm font-medium text-gray-400 mb-2">{t('contact.form.email')}</label>
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                     className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-webuddy-blue focus:ring-1 focus:ring-webuddy-blue transition-all outline-none"
                     placeholder={t('contact.form.emailPlaceholder')}
@@ -97,21 +126,39 @@ export const Contact = () => {
                   <label className="block text-sm font-medium text-gray-400 mb-2">{t('contact.form.message')}</label>
                   <textarea
                     rows={4}
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                     className="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-white focus:border-webuddy-blue focus:ring-1 focus:ring-webuddy-blue transition-all outline-none"
                     placeholder={t('contact.form.messagePlaceholder')}
                   />
                 </div>
+
+                {formState === 'error' && (
+                  <div className="flex items-center gap-2 text-red-400 bg-red-400/10 p-3 rounded-lg text-sm">
+                    <AlertCircle size={16} />
+                    <span>Something went wrong. Please try again or email us directly.</span>
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   disabled={formState === 'submitting' || formState === 'success'}
-                  className="w-full bg-webuddy-blue hover:bg-blue-600 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed"
+                  className={`w-full font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed
+                    ${formState === 'success' ? 'bg-green-500 text-white' : 'bg-webuddy-blue hover:bg-blue-600 text-white'}
+                  `}
                 >
                   {formState === 'idle' && (
                     <>{t('contact.form.send')} <Send size={20} className="group-hover:translate-x-1 transition-transform" /></>
                   )}
+                  {formState === 'error' && (
+                    <>{t('contact.form.send')} <Send size={20} /></>
+                  )}
                   {formState === 'submitting' && t('contact.form.sending')}
-                  {formState === 'success' && t('contact.form.success')}
+                  {formState === 'success' && (
+                    <>{t('contact.form.success')} <CheckCircle size={20} /></>
+                  )}
                 </button>
               </form>
             </motion.div>

@@ -23,8 +23,8 @@ export const Footer = () => {
                     </div>
 
                     <div className="flex flex-col gap-6 text-right w-full md:w-auto">
-                        <a href="mailto:hello@webuddy.com" className="text-2xl text-gray-300 hover:text-white transition-colors">
-                            hello@webuddy.com
+                        <a href="mailto:hello@webuddy.dev" className="text-2xl text-gray-300 hover:text-white transition-colors">
+                            hello@webuddy.dev
                         </a>
                         <p className="text-gray-500">
                             {t('common.footer.city')} <br />
