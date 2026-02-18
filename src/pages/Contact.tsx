@@ -43,7 +43,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-bold mb-1">{t('contact.info.email.label')}</h3>
-                    <p className="text-gray-400">{t('contact.info.email.value')}</p>
+                    <a href="mailto:hello@webuddy.dev" className="text-gray-400">{t('contact.info.email.value')}</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -61,7 +61,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-white font-bold mb-1">{t('contact.info.phone.label')}</h3>
-                    <p className="text-gray-400">{t('contact.info.phone.value')}</p>
+                    <a href="tel:+18499182057" className="text-gray-400">{t('contact.info.phone.value')}</a>
                   </div>
                 </div>
               </motion.div>
