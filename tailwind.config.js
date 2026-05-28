@@ -34,6 +34,7 @@ export default {
         'fade-in': 'fadeIn 0.6s ease-out',
         'spin-slow': 'spin 12s linear infinite',
         'pulse-glow': 'pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'gradient-x': 'gradient-x 15s ease infinite',
       },
       keyframes: {
         float: {
@@ -51,7 +52,17 @@ export default {
         'pulse-glow': {
           '0%, 100%': { opacity: '1', filter: 'brightness(1)' },
           '50%': { opacity: '0.8', filter: 'brightness(1.5)' },
-        }
+        },
+        'gradient-x': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
       },
     },
   },
