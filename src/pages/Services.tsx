@@ -1,7 +1,7 @@
 import { Section } from '../components/ui/Section';
 import { ServiceCard } from '../components/ServiceCard';
 import { motion } from 'framer-motion';
-import { Code, Smartphone, Palette, Globe, Instagram, Cpu } from 'lucide-react';
+import { Code, Smartphone, Globe, BrainCircuit, Cpu } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export const Services = () => {
@@ -21,28 +21,22 @@ export const Services = () => {
       features: t('services.mobileApps.features', { returnObjects: true }) as string[]
     },
     {
-      icon: Instagram,
-      title: t('services.social.title'),
-      description: t('services.social.description'),
-      features: t('services.social.features', { returnObjects: true }) as string[]
-    },
-    {
       icon: Globe,
-      title: t('services.strategy.title'),
-      description: t('services.strategy.description'),
-      features: t('services.strategy.features', { returnObjects: true }) as string[]
-    },
-    {
-      icon: Palette,
-      title: t('services.branding.title'),
-      description: t('services.branding.description'),
-      features: t('services.branding.features', { returnObjects: true }) as string[]
+      title: t('services.customSoftware.title'),
+      description: t('services.customSoftware.description'),
+      features: t('services.customSoftware.features', { returnObjects: true }) as string[]
     },
     {
       icon: Cpu,
       title: t('services.automation.title'),
       description: t('services.automation.description'),
       features: t('services.automation.features', { returnObjects: true }) as string[]
+    },
+    {
+      icon: BrainCircuit,
+      title: t('services.consulting.title'),
+      description: t('services.consulting.description'),
+      features: t('services.consulting.features', { returnObjects: true }) as string[]
     }
   ];
 

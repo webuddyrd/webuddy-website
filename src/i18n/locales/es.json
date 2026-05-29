@@ -201,65 +201,57 @@
   },
   "services": {
     "hero": {
-      "title": "Nuestros Servicios",
-      "subtitle": "Combinamos precisión de ingeniería con estrategia creativa para construir productos digitales que definen categorías."
+      "title": "Ingeniería del crecimiento digital",
+      "subtitle": "Construimos sistemas digitales de alto rendimiento para empresas que quieren crecer, automatizar y operar mejor."
     },
     "websites": {
-      "title": "Aplicaciones Web",
-      "description": "Construimos sitios web rápidos, hermosos y optimizados para la conversión que funcionan perfectamente en todos los dispositivos. Desde landing pages hasta aplicaciones web complejas, creamos experiencias digitales que representan tu marca perfectamente.",
+      "title": "Plataformas Web",
+      "description": "Creamos plataformas web modernas, rápidas y optimizadas para convertir visitantes en clientes.\n\nDiseñadas para empresas que necesitan algo más que “una página bonita”.",
       "features": [
-        "Diseño Responsivo",
-        "Optimización SEO",
-        "Enfoque en Rendimiento",
-        "Integración CMS"
+        "Arquitectura de alto rendimiento",
+        "Estructura optimizada para SEO",
+        "Experiencia Responsive",
+        "Sistemas escalables"
       ]
     },
     "mobileApps": {
-      "title": "Desarrollo Móvil",
-      "description": "Apps nativas para iOS y Android, o soluciones multiplataforma que ofrecen experiencias excepcionales. Construimos apps que los usuarios aman y que generan resultados reales.",
+      "title": "Aplicaciones Móviles",
+      "description": "Construimos aplicaciones móviles intuitivas y de alto rendimiento para iOS y Android.\n\nExperiencias diseñadas para usuarios modernos y negocios en crecimiento.",
       "features": [
-        "iOS y Android",
-        "Multiplataforma",
+        "iOS & Android",
+        "Desarrollo multiplataforma",
         "Diseño Centrado en Usuario",
-        "Optimización App Store"
+        "Arquitectura escalable"
       ]
     },
-    "social": {
-      "title": "Gestión de Redes Sociales",
-      "description": "Gestión estratégica de redes sociales que hace crecer tu audiencia y construye conexiones significativas. Creamos contenido, gestionamos comunidades y analizamos rendimiento para maximizar tu presencia social.",
+    "customSoftware": {
+      "title": "Software a medida",
+      "description": "Desarrollamos software a medida adaptado a los procesos y necesidades reales de tu empresa.\n\nTransformamos operaciones manuales en sistemas eficientes y escalables.",
       "features": [
-        "Estrategia de Contenido",
-        "Gestión de Comunidad",
-        "Análisis e Informes",
-        "Campañas Pagadas"
+        "Optimización de procesos de negocio",
+        "Sistemas de gestión interna",
+        "Integraciones de CRM/ERP",
+        "Automatización de flujos de trabajo"
       ]
     },
-    "strategy": {
-      "title": "Estrategia Digital",
-      "description": "Auditorías integrales y hojas de ruta para alinear la tecnología con los objetivos comerciales.",
+    "consulting": {
+      "title": "Consultoría en transformación digital",
+      "description": "Te ayudamos a entender qué tecnología necesita realmente tu negocio y cómo implementarla estratégicamente.\n\nTraducimos tecnología en resultados empresariales.",
       "features": [
-        "Consultoría Tecnológica",
-        "SEO y Rendimiento",
-        "Análisis de Mercado"
-      ]
-    },
-    "branding": {
-      "title": "Branding",
-      "description": "Sistemas completos de identidad de marca que hacen destacar tu negocio. Desde logos hasta guías de marca, creamos identidades visuales cohesivas que resuenan con tu audiencia.",
-      "features": [
-        "Diseño de Logo",
-        "Guías de Marca",
-        "Identidad Visual",
-        "Estrategia de Marca"
+        "Consultoría orientada al negocio",
+        "Planes tecnológicos",
+        "Optimización digital",
+        "Análisis operativo"
       ]
     },
     "automation": {
-      "title": "Automatización e IA",
-      "description": "Aprovechando la IA para optimizar operaciones y crear interfaces inteligentes y automatizaciones.",
+      "title": "IA & Automatización",
+      "description": "Automatizamos tareas repetitivas e implementamos soluciones inteligentes que ahorran tiempo y aumentan productividad.\n\nLa IA aplicada correctamente puede transformar completamente una operación.",
       "features": [
-        "Automatización de Flujos",
-        "Integración LLM",
-        "Procesamiento de Datos"
+        "Flujos de trabajo impulsados ​​por IA",
+        "Automatización de procesos",
+        "Integraciones inteligentes",
+        "Sistemas de procesamiento de datos"
       ]
     }
   },

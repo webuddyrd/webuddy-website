@@ -39,7 +39,7 @@ export const ServiceCard = ({ icon: Icon, title, description, features = [], var
             {title}
           </h3>
 
-          <p className="text-gray-400 leading-relaxed mb-6">
+          <p className="text-gray-400 leading-relaxed mb-6 whitespace-pre-line">
             {description}
           </p>
         </div>

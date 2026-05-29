@@ -1,5 +1,5 @@
 import { Section } from '../ui/Section';
-import { Code, Smartphone, Instagram, ArrowUpRight } from 'lucide-react';
+import { Code, Smartphone, Globe, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ServiceCard } from '../ServiceCard';
 import { useTranslation } from 'react-i18next';
@@ -10,21 +10,21 @@ export const Services = () => {
     const services = [
         {
             icon: Code,
-            title: t('home.services.website.title'),
-            description: t('home.services.website.description'),
-            details: t('home.services.website.features', { returnObjects: true }) as string[]
+            title: t('services.websites.title'),
+            description: t('services.websites.description'),
+            features: t('services.websites.features', { returnObjects: true }) as string[]
         },
         {
             icon: Smartphone,
-            title: t('home.services.mobileApp.title'),
-            description: t('home.services.mobileApp.description'),
-            details: t('home.services.mobileApp.features', { returnObjects: true }) as string[]
+            title: t('services.mobileApps.title'),
+            description: t('services.mobileApps.description'),
+            features: t('services.mobileApps.features', { returnObjects: true }) as string[]
         },
         {
-            icon: Instagram,
-            title: t('home.services.social.title'),
-            description: t('home.services.social.description'),
-            details: t('home.services.social.features', { returnObjects: true }) as string[]
+            icon: Globe,
+            title: t('services.customSoftware.title'),
+            description: t('services.customSoftware.description'),
+            features: t('services.customSoftware.features', { returnObjects: true }) as string[]
         }
     ];
 
@@ -53,7 +53,7 @@ export const Services = () => {
                         icon={service.icon}
                         title={service.title}
                         description={service.description}
-                        features={service.details}
+                        features={service.features}
                         variant="interactive"
                         index={index}
                     />

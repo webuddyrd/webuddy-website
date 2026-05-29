@@ -201,65 +201,57 @@
   },
   "services": {
     "hero": {
-      "title": "Our Services",
-      "subtitle": "We combine engineering precision with creative strategy to build digital products that define categories."
+      "title": "Digital Growth Engineering",
+      "subtitle": "We build high-performance digital systems for companies that want to grow, automate, and operate better."
     },
     "websites": {
-      "title": "Web Applications",
-      "description": "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
+      "title": "Web Platforms",
+      "description": "We build modern, fast, and conversion-optimized web platforms designed for businesses that need more than just a “pretty website.”",
       "features": [
-        "Responsive Design",
-        "SEO Optimization",
-        "Performance Focused",
-        "CMS Integration"
+        "High-performance architecture",
+        "SEO-optimized structure",
+        "Responsive experience",
+        "Scalable systems"
       ]
     },
     "mobileApps": {
-      "title": "Mobile Development",
-      "description": "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
+      "title": "Mobile Applications",
+      "description": "We build intuitive, high-performance mobile applications for iOS and Android, designed for modern users and growing businesses.",
       "features": [
         "iOS & Android",
-        "Cross-Platform",
-        "User-Centered Design",
-        "App Store Optimization"
+        "Cross-platform development",
+        "User-centered design",
+        "Scalable architecture"
       ]
     },
-    "social": {
-      "title": "Social Media Management",
-      "description": "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
+    "customSoftware": {
+      "title": "Custom Software",
+      "description": "We develop custom software tailored to your company's real processes and needs.\n\nWe transform manual operations into efficient and scalable systems.",
       "features": [
-        "Content Strategy",
-        "Community Management",
-        "Analytics & Reporting",
-        "Paid Campaigns"
+        "Business process optimization",
+        "Internal management systems",
+        "CRM/ERP integrations",
+        "Workflow automation"
       ]
     },
-    "strategy": {
-      "title": "Digital Strategy",
-      "description": "Comprehensive audits and roadmaps to align technology with business goals.",
+    "consulting": {
+      "title": "Digital Transformation Consulting",
+      "description": "We help you understand what technology your business really needs and how to implement it strategically.\n\nWe translate technology into business results.",
       "features": [
-        "Tech Consulting",
-        "SEO & Performance",
-        "Market Analysis"
-      ]
-    },
-    "branding": {
-      "title": "Branding",
-      "description": "Complete brand identity systems that make your business stand out. From logos to brand guidelines, we create cohesive visual identities that resonate with your audience.",
-      "features": [
-        "Logo Design",
-        "Brand Guidelines",
-        "Visual Identity",
-        "Brand Strategy"
+        "Business-oriented consulting",
+        "Technological plans",
+        "Digital optimization",
+        "Operational analysis"
       ]
     },
     "automation": {
-      "title": "Automation & AI",
-      "description": "Leveraging AI to streamline operations and create intelligent interfaces and automations.",
+      "title": "AI & Automation",
+      "description": "We automate repetitive tasks and implement intelligent solutions that save time and increase productivity.\n\nApplied AI can completely transform an operation.",
       "features": [
-        "Workflow Automation",
-        "LLM Integration",
-        "Data Processing"
+        "AI-driven workflows",
+        "Process automation",
+        "Intelligent integrations",
+        "Data processing systems"
       ]
     }
   },
