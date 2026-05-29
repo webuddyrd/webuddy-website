@@ -1,6 +1,6 @@
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
-import AboutWebuddy from '../images/aboutWebuddy.png';
+import AboutWebuddy from '../images/AboutWebuddy.png';
 import { useTranslation } from 'react-i18next';
 
 export const About = () => {
