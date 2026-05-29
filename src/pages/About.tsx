@@ -1,6 +1,6 @@
 import { Section } from '../components/ui/Section';
 import { motion } from 'framer-motion';
-import SDQ from '../images/SDQ.jpg';
+import AboutWebuddy from '../images/aboutWebuddy.png';
 import { useTranslation } from 'react-i18next';
 
 export const About = () => {
@@ -22,7 +22,7 @@ export const About = () => {
               <span className="text-webuddy-blue">{t('about.hero.titleSuffix')}</span>
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-gray-400 font-light max-w-3xl leading-relaxed"
+              className="text-xl md:text-2xl text-gray-400 font-light max-w-3xl leading-relaxed whitespace-pre-line"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -34,10 +34,10 @@ export const About = () => {
           {/* Stats/Values Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
             {[
-              { title: t('about.values.innovation.title'), desc: t('about.values.innovation.desc') },
-              { title: t('about.values.precision.title'), desc: t('about.values.precision.desc') },
-              { title: t('about.values.speed.title'), desc: t('about.values.speed.desc') },
-              { title: t('about.values.impact.title'), desc: t('about.values.impact.desc') }
+              { title: t('about.values.businessFirst.title'), desc: t('about.values.businessFirst.desc') },
+              { title: t('about.values.smartSystems.title'), desc: t('about.values.smartSystems.desc') },
+              { title: t('about.values.humanTechnology.title'), desc: t('about.values.humanTechnology.desc') },
+              { title: t('about.values.realImpact.title'), desc: t('about.values.realImpact.desc') }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -58,7 +58,7 @@ export const About = () => {
             <div>
               <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-tr from-webuddy-blue/20 to-purple-500/20 border border-white/10 relative">
                 <div className="absolute inset-0 flex items-center justify-center text-white/20 font-display text-4xl font-bold">
-                  <img src={SDQ} alt="Santo Domingo, República Dominicana" />
+                  <img src={AboutWebuddy} alt="Santo Domingo, República Dominicana" />
                 </div>
               </div>
             </div>
@@ -66,11 +66,8 @@ export const About = () => {
               <h2 className="text-4xl font-display font-bold text-white mb-6">
                 {t('about.story.title').split('. ')[0]}. <br /> {t('about.story.title').split('. ')[1]}
               </h2>
-              <p className="text-gray-400 leading-relaxed mb-6">
+              <p className="text-gray-400 leading-relaxed mb-6 whitespace-pre-line">
                 {t('about.story.p1')}
-              </p>
-              <p className="text-gray-400 leading-relaxed">
-                {t('about.story.p2')}
               </p>
             </div>
           </div>

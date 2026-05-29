@@ -144,32 +144,31 @@
   },
   "about": {
     "hero": {
-      "titlePrefix": "Somos",
-      "titleSuffix": "Constructores y Soñadores.",
-      "subtitle": "Webuddy es un colectivo de ingenieros, diseñadores y estrategas obsesionados con el futuro de la interacción digital. No solo escribimos código; arquitectamos experiencias que escalan."
+      "titlePrefix": "Transformamos negocios con",
+      "titleSuffix": "tecnología inteligente.",
+      "subtitle": "Webuddy ayuda empresas a modernizar sus operaciones mediante software, automatización e inteligencia artificial.\n\nCombinamos visión de negocio con experiencia tecnológica para crear soluciones digitales que generan impacto real."
     },
     "values": {
-      "innovation": {
-        "title": "Innovación",
-        "desc": "Superando límites con cada commit."
+      "businessFirst": {
+        "title": "Primero los negocios",
+        "desc": "Entendemos primero el negocio.\nLuego construimos la tecnología."
       },
-      "precision": {
-        "title": "Precisión",
-        "desc": "Implementación perfecta al píxel."
+      "smartSystems": {
+        "title": "Sistemas inteligentes",
+        "desc": "Creamos soluciones pensadas para crecer, automatizar y escalar."
       },
-      "speed": {
-        "title": "Velocidad",
-        "desc": "El rendimiento es una característica, no un extra."
+      "humanTechnology": {
+        "title": "Tecnología humana",
+        "desc": "Traducimos tecnología compleja en soluciones simples y útiles."
       },
-      "impact": {
-        "title": "Impacto",
-        "desc": "Creando software que mueve la aguja."
+      "realImpact": {
+        "title": "Impacto real",
+        "desc": "Cada sistema debe generar eficiencia, ahorro o crecimiento."
       }
     },
     "story": {
-      "title": "Nacidos en la República Dominicana. Sirviendo al Mundo.",
-      "p1": "Fundada con la visión de elevar el estándar de la ingeniería de software en el Caribe, Webuddy ha crecido hasta convertirse en una agencia digital de primer nivel que sirve a clientes en 12 países.",
-      "p2": "Nuestro equipo es nuestro mayor activo. Contratamos al 1% superior del talento y les damos la libertad de innovar."
+      "title": "Nacidos en la República Dominicana. Construyendo para el Mundo.",
+      "p1": "Webuddy nace con una visión clara:\nhacer que la tecnología sea accesible, estratégica y útil para empresas reales.\n\nNo creemos en desarrollar sistemas innecesarios ni en complicar procesos con términos técnicos.\n\nCreemos en entender cómo funciona un negocio y diseñar soluciones digitales que realmente impulsen su crecimiento.\n\nDesde páginas web hasta software a medida y automatización con IA, nuestro objetivo es ayudar empresas a operar mejor en la era digital."
     },
     "differentiators": {
       "title": "Lo Que Nos Distingue",
@@ -281,7 +280,7 @@
         "value": "hello@webuddy.dev"
       },
       "office": {
-        "label": "Oficina",
+        "label": "Ubicación",
         "value": "Santo Domingo, República Dominicana"
       },
       "phone": {

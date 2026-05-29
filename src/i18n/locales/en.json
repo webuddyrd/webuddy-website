@@ -144,32 +144,31 @@
   },
   "about": {
     "hero": {
-      "titlePrefix": "We are",
-      "titleSuffix": "Builders & Dreamers.",
-      "subtitle": "Webuddy is a collective of engineers, designers, and strategists obsessed with the future of digital interaction. We don't just write code; we architect experiences that scale."
+      "titlePrefix": "We transform businesses with",
+      "titleSuffix": "intelligent technology.",
+      "subtitle": "Webuddy helps companies modernize their operations through software, automation, and artificial intelligence.\n\nWe combine business vision with technological expertise to create digital solutions that generate real impact."
     },
     "values": {
-      "innovation": {
-        "title": "Innovation",
-        "desc": "Pushing boundaries with every commit."
+      "businessFirst": {
+        "title": "Business first",
+        "desc": "We understand the business first.\nThen we build the technology."
       },
-      "precision": {
-        "title": "Precision",
-        "desc": "Pixel-perfect implementation."
+      "smartSystems": {
+        "title": "Smart systems",
+        "desc": "We create solutions designed to grow, automate, and scale."
       },
-      "speed": {
-        "title": "Speed",
-        "desc": "Performance is a feature, not a bonus."
+      "humanTechnology": {
+        "title": "Human technology",
+        "desc": "We translate complex technology into simple, useful solutions."
       },
-      "impact": {
-        "title": "Impact",
-        "desc": "Building software that moves the needle."
+      "realImpact": {
+        "title": "Real impact",
+        "desc": "Every system must generate efficiency, savings, or growth."
       }
     },
     "story": {
-      "title": "Born in the Dominican Republic. Serving the World.",
-      "p1": "Founded with a vision to elevate the standard of software engineering in the Caribbean, Webuddy has grown into a premier digital agency serving clients across 12 countries.",
-      "p2": "Our team is our greatest asset. We hire the top 1% of talent and give them the freedom to innovate."
+      "title": "Born in the Dominican Republic. Building for the World.",
+      "p1": "Webuddy was born with a clear vision:\nto make technology accessible, strategic, and useful for real businesses.\n\nWe don't believe in developing unnecessary systems or complicating processes with technical terms.\n\nWe believe in understanding how a business works and designing digital solutions that truly drive its growth.\n\nFrom websites to custom software and AI automation, our goal is to help companies operate better in the digital age."
     },
     "differentiators": {
       "title": "What Sets Us Apart",
@@ -281,7 +280,7 @@
         "value": "hello@webuddy.dev"
       },
       "office": {
-        "label": "Office",
+        "label": "Location",
         "value": "Santo Domingo, Dominican Republic"
       },
       "phone": {
