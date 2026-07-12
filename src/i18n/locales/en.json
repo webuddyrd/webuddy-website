@@ -267,6 +267,10 @@
     },
     "card": {
       "viewSite": "View Site"
+    },
+    "empty": {
+      "title": "There are no projects in this category... yet!",
+      "subtitle": "No one has claimed this space yet. Would you like your project to be the first?"
     }
   },
   "contact": {

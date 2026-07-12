@@ -33,6 +33,30 @@ export const portfolio: PortfolioItem[] = [
     category: "Web"
   },
   {
+    title: "455 Auto Servicio",
+    description_en: "An informative website showcasing the company, its history, and the services it offers, with a focus on providing a clear and accessible experience for its customers.",
+    description_es: "Sitio web informativo que presenta la empresa, su trayectoria y los servicios que ofrece, con un enfoque en brindar una experiencia clara y accesible para sus clientes.",
+    image: "projects/455AS.webp",
+    url: "https://proyecto455.com/auto-services",
+    category: "Web"
+  },
+  {
+    title: "Shaft Dominicana",
+    description_en: "An informative website for the SHAFT brand, integrating a catalog of helmets and apparel, facilitating an organized and intuitive browsing experience.",
+    description_es: "Sitio web informativo para la marca SHAFT, que integra un catálogo de cascos y textiles, facilitando la exploración de sus productos de forma organizada e intuitiva.",
+    image: "projects/shaft.webp",
+    url: "https://proyecto455.com/shaft",
+    category: "Web"
+  },
+  {
+    title: "Nexx Dominicana",
+    description_en: "An informative website for the premium helmet brand NEXX, featuring a product catalog designed to highlight its quality, innovation, and design.",
+    description_es: "Sitio web informativo para la marca de cascos premium NEXX, con un catálogo de productos diseñado para destacar su calidad, innovación y diseño.",
+    image: "projects/nexx.webp",
+    url: "https://proyecto455.com/nexx",
+    category: "Web"
+  },
+  {
     title: "Cruva Construcciones",
     description_en: "Professional corporate website showcasing construction services and portfolio.",
     description_es: "Sitio web corporativo profesional que muestra servicios de construcción y portafolio.",

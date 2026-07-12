@@ -35,9 +35,11 @@ export const WorkCard = ({ project, index, className = '', ...props }: WorkCardP
                         {t(`portfolio.filters.${categoryKey}`, { defaultValue: project.category })}
                     </span>
                     <h4 className="text-2xl md:text-3xl font-bold text-white mb-2">{project.title}</h4>
-                    <p className="text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0 text-sm max-w-md">
-                        {description}
-                    </p>
+                    <div className="overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-out group-hover:max-h-32 group-hover:opacity-100 group-hover:translate-y-0">
+                        <p className="mt-2 text-sm text-gray-200">
+                            {description}
+                        </p>
+                    </div>
                 </div>
                 <Link to={project.url} target='_blank' rel="noopener noreferrer" className="absolute top-8 right-8 bg-white/10 p-3 rounded-full backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <ArrowUpRight className="text-white" size={20} />
