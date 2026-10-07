@@ -1,40 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 6rem;
   }
 
   body {
-    @apply bg-webuddy-dark text-white font-sans antialiased overflow-x-hidden;
+    @apply bg-ink-950 font-sans text-zinc-100 antialiased;
   }
 
   h1,
   h2,
   h3,
-  h4,
-  h5,
-  h6 {
+  h4 {
     @apply font-display tracking-tight;
+    text-wrap: balance;
   }
 
-  * {
-    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2;
+  ::selection {
+    background: rgba(251, 146, 60, 0.3);
+  }
+
+  :focus-visible {
+    outline: 2px solid #fb923c;
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
-@layer utilities {
-  .container {
-    @apply max-w-7xl mx-auto;
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
   }
 
-  .text-balance {
-    text-wrap: balance;
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.18em] text-zinc-500;
+  }
+
+  .card {
+    @apply rounded-2xl border border-white/[0.08] bg-ink-900;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-md border border-white/10 bg-white/[0.03] px-2.5 py-1 font-mono text-xs text-zinc-300;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+}
+
+/* Scroll reveal. Content is only hidden once the inline script in index.html has added the
+   "js" class, so prerendered pages stay readable without JavaScript. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .flow-dot {
+    display: none;
+  }
+}
+
+@media print {
+  @page {
+    margin: 18mm;
+  }
+
+  body,
+  body * {
+    color: #111 !important;
+    background: transparent !important;
+    border-color: #d4d4d8 !important;
+    box-shadow: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* "Print the brief" prints only the template: everything that neither contains it nor is
+     part of it is removed, and its ancestors lose their spacing. */
+  html.print-brief body *:not(:has(.brief)):not(.brief):not(.brief *) {
+    display: none !important;
+  }
+
+  html.print-brief body *:has(.brief),
+  html.print-brief .brief {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    border: 0 !important;
   }
 }

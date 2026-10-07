@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://webuddy.com/sitemap.xml
+Sitemap: https://www.webuddy.dev/sitemap.xml

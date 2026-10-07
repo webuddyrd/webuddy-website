@@ -1,313 +1,437 @@
 {
   "common": {
     "nav": {
-      "home": "Home",
-      "about": "About",
-      "services": "Services",
-      "portfolio": "Portfolio",
+      "solutions": "Solutions",
       "work": "Work",
+      "howWeWork": "How we work",
+      "about": "About",
+      "insights": "Insights",
       "contact": "Contact"
     },
     "cta": {
-      "startProject": "Start your project",
-      "viewPortfolio": "View portfolio",
-      "viewAll": "View all projects",
-      "learnMore": "Learn more",
-      "contactUs": "Contact us"
+      "talk": "Let's talk",
+      "bookCall": "Book a call",
+      "whatsapp": "Message us on WhatsApp",
+      "allSolutions": "See all solutions",
+      "learnMore": "Learn more"
+    },
+    "whatsappMessage": "Hi Webuddy, I'd like to talk about a project.",
+    "a11y": {
+      "skip": "Skip to content",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "home": "Webuddy, home"
+    },
+    "lang": {
+      "label": "Language",
+      "en": "English",
+      "es": "Español"
+    },
+    "labels": {
+      "role": "Role",
+      "visit": "Visit site",
+      "readFull": "Read full testimonial",
+      "showLess": "Show less"
     },
     "footer": {
-      "quickLinks": "Quick Links",
-      "followUs": "Follow Us",
-      "rights": "© 2025 Webuddy. All rights reserved.",
-      "readyTo": "Ready to",
-      "scaleUp": "Scale Up?",
-      "startProject": "Start a Project",
-      "city": "Santo Domingo,",
-      "country": "Dominican Republic"
+      "tagline": "We design and build the software your company needs to operate better and grow.",
+      "company": "Company",
+      "contact": "Contact",
+      "location": "Santo Domingo, Dominican Republic",
+      "timezone": "Atlantic Time (UTC−4)",
+      "rights": "All rights reserved.",
+      "ctaTitle": "Have something software can solve?",
+      "ctaText": "Tell us what you need. We'll get back to you with concrete next steps."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Webuddy | Nearshore Custom Software Development",
+      "description": "Custom software development partner based in the Dominican Republic. We design and build business systems, web and mobile apps, integrations, automation and applied AI."
+    },
+    "solutions": {
+      "title": "Custom Software Solutions | Webuddy",
+      "description": "Discovery, business software, digital products, integrations, automation and AI, digital commerce and system modernization."
+    },
+    "work": {
+      "title": "Work & Experience | Webuddy",
+      "description": "Webuddy projects and our team's previous experience in banking, telecom, insurance, hospitality, consumer goods and other industries."
+    },
+    "howWeWork": {
+      "title": "How We Work | Webuddy",
+      "description": "A clear process from discovery to design, build, launch and evolution, with flexible engagement models."
+    },
+    "about": {
+      "title": "About | Webuddy",
+      "description": "A custom software development company based in the Dominican Republic. Meet the team and the experience behind Webuddy."
+    },
+    "insights": {
+      "title": "Insights | Webuddy",
+      "description": "Practical guides for making better decisions about custom software, automation and AI."
+    },
+    "contact": {
+      "title": "Contact | Webuddy",
+      "description": "Tell us what you need to solve with software. We'll get back to you with concrete next steps."
+    },
+    "notFound": {
+      "title": "Page not found | Webuddy",
+      "description": "The page you're looking for doesn't exist or has moved."
     }
   },
   "home": {
     "hero": {
-      "titlePrefix": "Engineering",
-      "titleSuffix": "Digital Excellence",
-      "subtitle": "We build high-performance digital systems for ambitious companies.",
-      "startProject": "Start a Project",
-      "viewWork": "View Our Work"
+      "eyebrow": "Nearshore custom software development",
+      "title": "If software can solve it, we'll build it.",
+      "subtitle": "We understand the need, design the solution and build it end to end: business systems, web and mobile apps, integrations, automation and applied AI.",
+      "primary": "Let's talk about your project",
+      "secondary": "See how we work",
+      "trust": "A founding team with 20+ years of combined experience building and leading software for banking, telecom, insurance and other industries."
     },
-    "trust": {
-      "yearsExperience": "Years Experience",
-      "projectsDelivered": "Projects Delivered",
-      "clientSatisfaction": "Client Satisfaction",
-      "countriesServed": "Countries Served"
+    "diagram": {
+      "label": "Diagram: Webuddy connects the systems in your operation and builds apps, dashboards and assistants on top of them.",
+      "sourcesTitle": "your operation",
+      "sources": [
+        "ERP",
+        "CRM",
+        "Spreadsheets",
+        "Payments"
+      ],
+      "core": "webuddy",
+      "coreSub": "apis · automation · ai",
+      "outputsTitle": "what we build",
+      "outputs": [
+        "Web app",
+        "Mobile app",
+        "Dashboards",
+        "AI assistant"
+      ]
     },
-    "services": {
-      "title": "Our Services",
-      "subtitle": "We don't just build websites. We engineer digital products that scale, perform, and drive business growth.",
-      "viewAll": "View All Services",
-      "website": {
-        "title": "Web Applications",
-        "description": "We build fast, beautiful, and conversion-optimized websites that work flawlessly across all devices. From landing pages to complex web applications, we create digital experiences that represent your brand perfectly.",
-        "features": [
-          "Responsive Design",
-          "SEO Optimization",
-          "Performance Focused",
-          "CMS Integration"
-        ]
-      },
-      "mobileApp": {
-        "title": "Mobile Development",
-        "description": "Native iOS and Android apps, or cross-platform solutions that deliver exceptional user experiences. We build apps that users love and that drive real business results.",
-        "features": [
-          "iOS & Android",
-          "Cross-Platform",
-          "User-Centered Design",
-          "App Store Optimization"
-        ]
-      },
-      "social": {
-        "title": "Social Media Management",
-        "description": "Strategic social media management that grows your audience and builds meaningful connections. We create content, manage communities, and analyze performance to maximize your social presence.",
-        "features": [
-          "Content Strategy",
-          "Community Management",
-          "Analytics & Reporting",
-          "Paid Campaigns"
-        ]
-      }
+    "sectors": {
+      "label": "Our team's experience spans",
+      "items": [
+        "Banking",
+        "Telecom",
+        "Insurance",
+        "Hospitality",
+        "Consumer goods",
+        "Real estate",
+        "Tourism",
+        "Retail"
+      ]
+    },
+    "problems": {
+      "eyebrow": "Sound familiar?",
+      "title": "Needs show up as business problems, not technical requirements.",
+      "lead": "That's why we start by understanding what's happening in your operation. Here are some of the situations we can help with."
+    },
+    "solutions": {
+      "eyebrow": "What we build",
+      "title": "One team for the whole cycle: from understanding the problem to evolving the solution.",
+      "lead": "We pick the technology for the problem, not the other way around.",
+      "entry": "Start here",
+      "continuous": "After launch"
+    },
+    "experience": {
+      "eyebrow": "Track record",
+      "title": "The experience behind what we build.",
+      "lead": "Before founding Webuddy, our partners designed, built and led systems for leading companies across industries.",
+      "note": "Projects delivered by Webuddy's partners in previous roles. Clients are not named for confidentiality.",
+      "cta": "See all experience"
     },
     "work": {
-      "subtitle": "Selected Work",
-      "titlePrefix": "Digital Products that",
-      "titleSuffix": "Define Categories.",
-      "viewAll": "View All Work"
-    },
-    "techStack": {
-      "titlePrefix": "Engineering",
-      "titleSuffix": "Authority",
-      "description": "We don't rely on templates or page builders. We build scalable, maintainable, enterprise-ready systems using the industry's most robust technologies.",
-      "performance": "Lighthouse Performance",
-      "typeSafety": "Type Safety",
-      "poweredBy": "Powered by modern best practices",
-      "deployingComment": "// Deploying high-performance architecture..."
-    },
-    "portfolio": {
-      "title": "Featured Work",
-      "subtitle": "Projects we're proud of"
+      "eyebrow": "Webuddy work",
+      "title": "Recent projects",
+      "lead": "Some of the projects we've delivered as Webuddy.",
+      "cta": "See all work",
+      "testimonials": "What our clients say"
     },
     "process": {
-      "title": "Our Process",
-      "subtitle": "How we bring your vision to life",
-      "strategy": {
-        "title": "Strategy",
-        "description": "Understanding your goals and planning the perfect approach."
-      },
-      "design": {
-        "title": "Design",
-        "description": "Creating beautiful, user-centered experiences."
-      },
-      "development": {
-        "title": "Development",
-        "description": "Building with cutting-edge technology and best practices."
-      },
-      "launch": {
-        "title": "Launch",
-        "description": "Deploying your project with comprehensive testing."
-      },
-      "growth": {
-        "title": "Growth",
-        "description": "Continuous optimization and support for ongoing success."
-      }
+      "eyebrow": "How we work",
+      "title": "A clear process, with deliverables at every stage.",
+      "lead": "You always know what's being built, why and when.",
+      "output": "You get",
+      "cta": "See the full process"
     },
-    "testimonials": {
-      "title": "What Clients Say",
-      "subtitle": "Trusted by businesses around the world",
-      "testimonial1": {
-        "quote": "I want to express my satisfaction with the service I received from your company for my website creation from scratch. From the very first moment, the experience was smooth and efficient. The website is easy to navigate, the information is clear, and every step of the process feels intuitive. Furthermore, I want to highlight the speed of your response and the immediacy with which you provide solutions. You not only respond quickly but also offer concrete and effective alternatives, demonstrating a high level of commitment to the client. Quality and professionalism are evident in every interaction. Thank you for offering such an organized, reliable, and user-focused service. It's a pleasure to work with teams that truly value the customer experience.",
-        "author": "Vielka Tavarez",
-        "role": "Business Manager, Spring Tours"
-      },
-      "testimonial2": {
-        "quote": "Working with WeBuddy was excellent. A perfect fit for what my company needed. From the level of detail to the attention they gave us, everything was outstanding. As an agency owner, customer service is always paramount, and WeBuddy has everything my team needs. I'm thrilled with the result.",
-        "author": "Cintia Gonzalez",
-        "role": "CEO, Blue Agencia Digital"
-      },
-      "testimonial3": {
-        "quote": "Working with Webuddy was seamless. They understood our vision and made it a reality.",
-        "author": "Emily Chen",
-        "role": "Founder, TechStart"
-      }
+    "why": {
+      "eyebrow": "Why Webuddy",
+      "title": "What you can expect from us.",
+      "items": [
+        {
+          "title": "Problem first",
+          "text": "Before proposing technology, we learn how your operation works. What we build has to create efficiency, savings or growth."
+        },
+        {
+          "title": "One team, end to end",
+          "text": "Analysis, design, development, QA, deployment and evolution with the same team, no middlemen."
+        },
+        {
+          "title": "Engineering with real project management",
+          "text": "We pair software engineering with formal project management, backed by PMP and Scrum training: clear scope, visible priorities and constant communication."
+        },
+        {
+          "title": "Nearshore, in your language and time zone",
+          "text": "We work from the Dominican Republic, in English and Spanish, on Atlantic Time (UTC−4): the same as U.S. Eastern in summer and one hour ahead in winter."
+        }
+      ]
+    },
+    "capabilities": {
+      "eyebrow": "Technical capabilities",
+      "title": "Technology in service of the problem.",
+      "lead": "These are the technologies and practices our team works with. We choose each one based on what the project needs.",
+      "note": "Already have a tech stack? Tell us what it is and we will assess how to work with it."
     },
     "cta": {
-      "title": "Let's build something amazing together.",
-      "subtitle": "Ready to take your business digital? Get in touch today."
+      "title": "Tell us what you need to solve.",
+      "text": "A first conversation, with no commitment, to understand your need and propose the next step."
+    }
+  },
+  "solutionsPage": {
+    "eyebrow": "Solutions",
+    "title": "We start from the problem, not the format.",
+    "lead": "We don't arrive with a predefined solution. These are the ways we usually help companies, and many projects combine several.",
+    "entryTitle": "Not sure where to start?",
+    "entryText": "Start with Discovery: together we define the problem, the solution and the plan before building.",
+    "coreTitle": "What we build",
+    "continuousTitle": "After launch",
+    "comboTitle": "Does your case combine several?",
+    "comboText": "That is the most common scenario: an internal system with integrations, or a product with automation. Tell us what you need and we will propose an approach."
+  },
+  "solution": {
+    "breadcrumb": "Solutions",
+    "problems": "When companies call us",
+    "deliverables": "What's included",
+    "approach": "How we approach it",
+    "experience": "Related team experience",
+    "cases": "Related Webuddy work",
+    "stack": "Technologies & practices",
+    "faq": "Frequently asked questions",
+    "insight": "Recommended reading",
+    "others": "Other solutions",
+    "ctaTitle": "Is this what you need?",
+    "ctaText": "Tell us about your situation and we'll propose the next step."
+  },
+  "work": {
+    "eyebrow": "Work",
+    "title": "What we've built, and the experience behind it.",
+    "lead": "Here you'll find projects delivered by Webuddy and, listed separately, projects our partners delivered before founding the company.",
+    "webuddyEyebrow": "Webuddy projects",
+    "webuddyTitle": "Projects delivered by Webuddy",
+    "context": "Context",
+    "built": "What we built",
+    "others": "More projects",
+    "experienceEyebrow": "Team experience",
+    "experienceTitle": "Our partners' projects before Webuddy"
+  },
+  "howWeWork": {
+    "eyebrow": "How we work",
+    "title": "A clear process, so you know what's being built, why and when.",
+    "lead": "We combine software engineering with project management. Every stage has concrete deliverables and clear decision points for you.",
+    "steps": {
+      "title": "The stages",
+      "client": "Your part"
+    },
+    "models": {
+      "eyebrow": "Engagement models",
+      "title": "We adapt to how you need to work.",
+      "items": [
+        {
+          "title": "Fixed-scope project",
+          "text": "For initiatives with clear goals. Scope, plan, deliverables and budget agreed up front.",
+          "best": "Best for new systems, MVPs and specific integrations."
+        },
+        {
+          "title": "Dedicated team",
+          "text": "A Webuddy team embedded in your operation, with the capacity your roadmap needs and priorities you set.",
+          "best": "Best for products in constant evolution and companies without an in-house tech team."
+        },
+        {
+          "title": "Ongoing evolution & support",
+          "text": "Maintenance, improvements and support for production systems, with agreed priorities and response times.",
+          "best": "Best for critical systems and platforms that need to keep growing."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "How we run projects",
+      "title": "The rules we follow on every project.",
+      "items": [
+        {
+          "title": "Full visibility",
+          "text": "A shared project board, demoable progress and regular check-ins."
+        },
+        {
+          "title": "Quality from day one",
+          "text": "QA and testing are part of every release, not the end of the project."
+        },
+        {
+          "title": "Formal management",
+          "text": "Scope, risks and changes managed with PMP and Scrum practices."
+        },
+        {
+          "title": "One point of contact",
+          "text": "A single project lead, in English or Spanish."
+        },
+        {
+          "title": "Documentation and handover",
+          "text": "We document what we build so your team can run it and evolve it."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "How much does a custom software project cost?",
+          "a": "It depends on scope, complexity and integrations. That's why we start by understanding the need: after a first conversation we can give you a range, and after Discovery, a detailed estimate."
+        },
+        {
+          "q": "Do you work with companies outside the Dominican Republic?",
+          "a": "Yes. We work remotely, in English and Spanish, during hours that overlap with U.S. time zones."
+        },
+        {
+          "q": "Do you sign NDAs?",
+          "a": "Yes. We can sign a non-disclosure agreement before you share the details of your project."
+        },
+        {
+          "q": "How do you handle scope changes?",
+          "a": "Changes are normal in any project. We assess them with you, estimate their impact on time and cost, and you decide how to prioritize them."
+        },
+        {
+          "q": "What happens after launch?",
+          "a": "We can continue with an evolution and support plan, or hand everything over to your team with the documentation it needs."
+        }
+      ]
     }
   },
   "about": {
-    "hero": {
-      "titlePrefix": "We transform businesses with",
-      "titleSuffix": "intelligent technology.",
-      "subtitle": "Webuddy helps companies modernize their operations through software, automation, and artificial intelligence.\n\nWe combine business vision with technological expertise to create digital solutions that generate real impact."
-    },
-    "values": {
-      "businessFirst": {
-        "title": "Business first",
-        "desc": "We understand the business first.\nThen we build the technology."
-      },
-      "smartSystems": {
-        "title": "Smart systems",
-        "desc": "We create solutions designed to grow, automate, and scale."
-      },
-      "humanTechnology": {
-        "title": "Human technology",
-        "desc": "We translate complex technology into simple, useful solutions."
-      },
-      "realImpact": {
-        "title": "Real impact",
-        "desc": "Every system must generate efficiency, savings, or growth."
-      }
-    },
+    "eyebrow": "About",
+    "title": "Software engineering with a business mindset.",
+    "lead": "Webuddy was founded with a clear vision: to make technology accessible, strategic and useful for real businesses. We bring together software engineering and project leadership to understand each business and build the software it actually needs.",
     "story": {
-      "title": "Born in the Dominican Republic. Building for the World.",
-      "p1": "Webuddy was born with a clear vision:\nto make technology accessible, strategic, and useful for real businesses.\n\nWe don't believe in developing unnecessary systems or complicating processes with technical terms.\n\nWe believe in understanding how a business works and designing digital solutions that truly drive its growth.\n\nFrom websites to custom software and AI automation, our goal is to help companies operate better in the digital age."
+      "title": "Born in the Dominican Republic. Building for the world.",
+      "p1": "We don't believe in building unnecessary systems or overcomplicating processes with jargon. We believe in understanding how a business works and designing solutions that drive its growth.",
+      "p2": "Our partners have spent more than a decade building and leading software for companies in banking, telecom, insurance, hospitality, consumer goods and real estate. Webuddy brings that experience together in one team, serving companies of every size, in the Dominican Republic and beyond."
     },
-    "differentiators": {
-      "title": "What Sets Us Apart",
-      "solutions": {
-        "title": "Tailor-made solutions",
-        "description": "Every project is designed based on the identity, goals, and specific needs of each client."
-      },
-      "focus": {
-        "title": "Results-driven approach",
-        "description": "We don’t just build digital platforms — we create tools that fuel growth, efficiency, and profitability."
-      },
-      "innovation": {
-        "title": "Constant innovation",
-        "description": "We stay at the forefront of technology to deliver modern, scalable, and future-ready solutions."
-      },
-      "accompaniment": {
-        "title": "Real partnership",
-        "description": "More than service providers, we become digital allies who support and guide you through the entire process."
-      },
-      "design": {
-        "title": "Design + Technology",
-        "description": "We combine creativity, functionality, and user experience to build digital products that stand out and leave a lasting impact."
-      }
+    "founders": {
+      "eyebrow": "Partners",
+      "title": "The people behind Webuddy.",
+      "linkedin": "{{name}}'s LinkedIn profile"
     },
     "team": {
-      "title": "Our Team",
-      "description": "A diverse group of designers, developers, and strategists passionate about creating exceptional digital experiences."
+      "title": "A cross-functional team",
+      "lead": "Behind every project is a team of experienced professionals in:"
+    },
+    "principles": {
+      "eyebrow": "Principles",
+      "title": "How we think.",
+      "items": [
+        {
+          "title": "Business first",
+          "text": "We understand the business first. Then we build the technology."
+        },
+        {
+          "title": "Systems that scale",
+          "text": "We build solutions designed to grow, automate and scale."
+        },
+        {
+          "title": "Technology that's easy to use",
+          "text": "We turn complex technology into simple, useful solutions."
+        },
+        {
+          "title": "Real impact",
+          "text": "Every system must create efficiency, savings or growth."
+        }
+      ]
+    },
+    "location": {
+      "title": "From Santo Domingo, for the world",
+      "text": "We work with clients remotely, in English and Spanish.",
+      "timezone": "Atlantic Time (UTC−4), overlapping with U.S. business hours."
     }
   },
-  "services": {
-    "hero": {
-      "title": "Digital Growth Engineering",
-      "subtitle": "We build high-performance digital systems for companies that want to grow, automate, and operate better."
-    },
-    "websites": {
-      "title": "Web Platforms",
-      "description": "We build modern, fast, and conversion-optimized web platforms designed for businesses that need more than just a “pretty website.”",
-      "features": [
-        "High-performance architecture",
-        "SEO-optimized structure",
-        "Responsive experience",
-        "Scalable systems"
-      ]
-    },
-    "mobileApps": {
-      "title": "Mobile Applications",
-      "description": "We build intuitive, high-performance mobile applications for iOS and Android, designed for modern users and growing businesses.",
-      "features": [
-        "iOS & Android",
-        "Cross-platform development",
-        "User-centered design",
-        "Scalable architecture"
-      ]
-    },
-    "customSoftware": {
-      "title": "Custom Software",
-      "description": "We develop custom software tailored to your company's real processes and needs.\n\nWe transform manual operations into efficient and scalable systems.",
-      "features": [
-        "Business process optimization",
-        "Internal management systems",
-        "CRM/ERP integrations",
-        "Workflow automation"
-      ]
-    },
-    "consulting": {
-      "title": "Digital Transformation Consulting",
-      "description": "We help you understand what technology your business really needs and how to implement it strategically.\n\nWe translate technology into business results.",
-      "features": [
-        "Business-oriented consulting",
-        "Technological plans",
-        "Digital optimization",
-        "Operational analysis"
-      ]
-    },
-    "automation": {
-      "title": "AI & Automation",
-      "description": "We automate repetitive tasks and implement intelligent solutions that save time and increase productivity.\n\nApplied AI can completely transform an operation.",
-      "features": [
-        "AI-driven workflows",
-        "Process automation",
-        "Intelligent integrations",
-        "Data processing systems"
-      ]
-    }
-  },
-  "portfolio": {
-    "hero": {
-      "titlePrefix": "Selected",
-      "titleSuffix": "Work"
-    },
-    "filters": {
-      "all": "All",
-      "web": "Web",
-      "mobile": "Mobile",
-      "ecommerce": "E-Commerce"
-    },
-    "card": {
-      "viewSite": "View Site"
-    },
-    "empty": {
-      "title": "There are no projects in this category... yet!",
-      "subtitle": "No one has claimed this space yet. Would you like your project to be the first?"
-    }
+  "insights": {
+    "eyebrow": "Insights",
+    "title": "Guides for making better software decisions.",
+    "lead": "Practical articles on custom software, automation and AI, written for business decision-makers.",
+    "readingTime": "{{count}} min read",
+    "back": "All insights",
+    "by": "Webuddy team",
+    "read": "Read article",
+    "print": "Print or save as PDF",
+    "relatedSolution": "Related solution",
+    "ctaTitle": "Want to apply this in your company?",
+    "ctaText": "Let's talk about your specific situation."
   },
   "contact": {
-    "hero": {
-      "titlePrefix": "Let's build",
-      "titleSuffix": "Something Great."
+    "eyebrow": "Contact",
+    "title": "Let's talk about what you need to solve.",
+    "lead": "Tell us what you need, even if you don't have everything figured out yet. We'll reply with specific questions or a proposal for next steps.",
+    "next": {
+      "title": "What happens next",
+      "steps": [
+        "We review your message and, if needed, ask for more context.",
+        "We schedule a conversation to understand your need.",
+        "We propose the next step: a Discovery, a proposal, or an honest recommendation if we're not the right team."
+      ]
     },
-    "info": {
-      "email": {
-        "label": "Email",
-        "value": "hello@webuddy.dev"
-      },
-      "office": {
-        "label": "Location",
-        "value": "Santo Domingo, Dominican Republic"
-      },
-      "phone": {
-        "label": "Phone",
-        "value": "+1 (849) 918-2057"
-      }
+    "channels": {
+      "title": "Other ways to reach us",
+      "calendar": "Book a call",
+      "calendarText": "Pick a time that works for you.",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Message our team directly.",
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
     },
     "form": {
       "name": "Name",
-      "namePlaceholder": "John Doe",
-      "email": "Email",
-      "emailPlaceholder": "john@example.com",
-      "message": "Message",
-      "messagePlaceholder": "Tell us about your project...",
-      "send": "Send Message",
-      "sending": "Sending...",
-      "success": "Message Sent!",
-      "error": "Please fill in all fields correctly."
+      "email": "Work email",
+      "company": "Company",
+      "phone": "Phone or WhatsApp",
+      "optional": "optional",
+      "select": "Select an option",
+      "need": "What do you need?",
+      "needOptions": {
+        "discovery": "Discovery or technology advisory",
+        "business-software": "Internal system or business software",
+        "digital-products": "Web or mobile app, SaaS or MVP",
+        "integrations": "Integrations or APIs",
+        "automation-ai": "Automation or AI",
+        "digital-commerce": "Digital commerce",
+        "modernization": "Modernize or support an existing system",
+        "other": "Something else / not sure yet"
+      },
+      "stage": "Where are you today?",
+      "stageOptions": {
+        "idea": "It's an early idea",
+        "defined": "The scope is defined",
+        "existing": "There's a system to improve",
+        "urgent": "It's urgent"
+      },
+      "budget": "Estimated budget",
+      "budgetOptions": {
+        "under10": "Under $10,000",
+        "10-25": "$10,000 – $25,000",
+        "25-50": "$25,000 – $50,000",
+        "50-100": "$50,000 – $100,000",
+        "over100": "Over $100,000",
+        "unknown": "Not sure yet"
+      },
+      "message": "Tell us about your need",
+      "messagePlaceholder": "What's happening today? What would you like to achieve?",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Thank you! We got your message.",
+      "successText": "We'll get back to you soon with next steps. If it's urgent, message us on WhatsApp.",
+      "another": "Send another message",
+      "error": "We couldn't send your message. Please try again or email us at",
+      "privacy": "We'll only use your details to respond to your request."
     }
   },
   "notFound": {
-    "title": "404 - Page Not Found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home"
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has moved.",
+    "backHome": "Back to home"
   }
 }
