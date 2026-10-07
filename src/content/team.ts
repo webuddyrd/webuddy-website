@@ -25,18 +25,18 @@ export const founders: Founder[] = [
     skills: ['React', 'Next.js', 'TypeScript', 'Node.js', 'React Native', 'Business Analysis'],
     linkedin: 'https://www.linkedin.com/in/jerickson-abreu/',
   },
-  {
-    id: 'mirla',
-    name: 'Mirla Del Rio',
-    initials: 'MD',
-    role: { es: 'Socia · Proyectos y producto', en: 'Partner · Project & Product Leadership' },
-    bio: {
-      es: 'Ingeniera de Sistemas con Maestría Ejecutiva en Dirección de Proyectos y más de 10 años liderando proyectos tecnológicos y equipos multidisciplinarios con metodologías ágiles y predictivas. Ha dirigido desarrollos de software para banca, consumo masivo, bienes raíces y otros sectores.',
-      en: "Systems engineer with an Executive Master's in Project Management and 10+ years leading technology projects and cross-functional teams with agile and predictive methods. Mirla has led software development for banking, consumer goods, real estate and other industries.",
-    },
-    skills: ['Project Management', 'Product Strategy', 'Scrum', 'Solution Architecture', 'Business Analysis'],
-    linkedin: 'https://www.linkedin.com/in/mirla-del-rio',
-  },
+  // {
+  //   id: 'mirla',
+  //   name: 'Mirla Del Rio',
+  //   initials: 'MD',
+  //   role: { es: 'Socia · Proyectos y producto', en: 'Partner · Project & Product Leadership' },
+  //   bio: {
+  //     es: 'Ingeniera de Sistemas con Maestría Ejecutiva en Dirección de Proyectos y más de 10 años liderando proyectos tecnológicos y equipos multidisciplinarios con metodologías ágiles y predictivas. Ha dirigido desarrollos de software para banca, consumo masivo, bienes raíces y otros sectores.',
+  //     en: "Systems engineer with an Executive Master's in Project Management and 10+ years leading technology projects and cross-functional teams with agile and predictive methods. Mirla has led software development for banking, consumer goods, real estate and other industries.",
+  //   },
+  //   skills: ['Project Management', 'Product Strategy', 'Scrum', 'Solution Architecture', 'Business Analysis'],
+  //   linkedin: 'https://www.linkedin.com/in/mirla-del-rio',
+  // },
 ];
 
 export const teamDisciplines: Localized<string[]> = {

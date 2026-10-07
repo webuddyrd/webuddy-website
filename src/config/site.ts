@@ -10,7 +10,7 @@ export const SITE = {
   // Scheduling link (Calendly, Cal.com, Google Calendar...). Booking buttons stay hidden while it is empty.
   calendarUrl: '',
   // Company LinkedIn page. The footer link stays hidden while it is empty.
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/company/webuddydev',
   github: 'https://github.com/webuddyrd',
   instagram: 'https://www.instagram.com/webuddyrd/',
   facebook: 'https://www.facebook.com/Webuddyrd',
