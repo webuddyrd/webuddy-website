@@ -1,26 +1,22 @@
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useT } from '../i18n/lang';
+import { SEO } from '../components/SEO';
+import { ButtonLink } from '../components/ui/Button';
 
 export const NotFound = () => {
-  const { t } = useTranslation();
+  const { t } = useT();
 
   return (
-    <div className="bg-webuddy-dark min-h-screen flex items-center justify-center text-center px-4">
-      <div className="max-w-md">
-        <h1 className="text-9xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric mb-4">
-          404
-        </h1>
-        <h2 className="text-3xl font-bold text-white mb-6">{t('notFound.title')}</h2>
-        <p className="text-gray-400 mb-8">
-          {t('notFound.description')}
-        </p>
-        <Link
-          to="/"
-          className="inline-block px-8 py-3 bg-white text-black rounded-full font-bold hover:bg-webuddy-blue hover:text-white transition-all duration-300"
-        >
-          {t('notFound.backHome')}
-        </Link>
+    <section className="wrap flex min-h-[80vh] flex-col items-start justify-center pb-24 pt-32">
+      <SEO title={t('seo.notFound.title')} description={t('seo.notFound.description')} noindex />
+      <p className="eyebrow text-brand-accent">404</p>
+      <h1 className="mt-5 text-4xl font-semibold text-white md:text-6xl">{t('notFound.title')}</h1>
+      <p className="mt-5 max-w-lg text-lg text-zinc-400">{t('notFound.description')}</p>
+      <div className="mt-9 flex flex-wrap gap-3">
+        <ButtonLink to="/">{t('notFound.backHome')}</ButtonLink>
+        <ButtonLink to="/solutions" variant="secondary">
+          {t('common.cta.allSolutions')}
+        </ButtonLink>
       </div>
-    </div>
+    </section>
   );
 };

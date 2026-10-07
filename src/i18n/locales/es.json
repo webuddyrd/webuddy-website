@@ -1,313 +1,437 @@
 {
   "common": {
     "nav": {
-      "home": "Inicio",
+      "solutions": "Soluciones",
+      "work": "Casos",
+      "howWeWork": "Cómo trabajamos",
       "about": "Nosotros",
-      "services": "Servicios",
-      "portfolio": "Portafolio",
-      "work": "Trabajo",
+      "insights": "Recursos",
       "contact": "Contacto"
     },
     "cta": {
-      "startProject": "Inicia tu proyecto",
-      "viewPortfolio": "Ver portafolio",
-      "viewAll": "Ver todos los proyectos",
-      "learnMore": "Saber más",
-      "contactUs": "Contáctanos"
+      "talk": "Hablemos",
+      "bookCall": "Agenda una llamada",
+      "whatsapp": "Escríbenos por WhatsApp",
+      "allSolutions": "Ver todas las soluciones",
+      "learnMore": "Ver más"
+    },
+    "whatsappMessage": "Hola Webuddy, me gustaría conversar sobre un proyecto.",
+    "a11y": {
+      "skip": "Saltar al contenido",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú",
+      "home": "Webuddy, inicio"
+    },
+    "lang": {
+      "label": "Idioma",
+      "en": "English",
+      "es": "Español"
+    },
+    "labels": {
+      "role": "Rol",
+      "visit": "Ver sitio",
+      "readFull": "Leer testimonio completo",
+      "showLess": "Ver menos"
     },
     "footer": {
-      "quickLinks": "Enlaces Rápidos",
-      "followUs": "Síguenos",
-      "rights": "© 2025 Webuddy. Todos los derechos reservados.",
-      "readyTo": "¿Listo para",
-      "scaleUp": "Escalar?",
-      "startProject": "Iniciar un Proyecto",
-      "city": "Santo Domingo,",
-      "country": "República Dominicana"
+      "tagline": "Diseñamos y construimos el software que tu empresa necesita para operar mejor y crecer.",
+      "company": "Empresa",
+      "contact": "Contacto",
+      "location": "Santo Domingo, República Dominicana",
+      "timezone": "Hora del Atlántico (UTC−4)",
+      "rights": "Todos los derechos reservados.",
+      "ctaTitle": "¿Tienes algo que resolver con software?",
+      "ctaText": "Cuéntanos qué necesitas. Te respondemos con próximos pasos concretos."
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Webuddy | Desarrollo de software a medida en República Dominicana",
+      "description": "Software factory en República Dominicana. Diseñamos y construimos software a medida: sistemas empresariales, apps web y móviles, integraciones, automatización e IA aplicada."
+    },
+    "solutions": {
+      "title": "Soluciones de software a medida | Webuddy",
+      "description": "Discovery, software empresarial, productos digitales, integraciones, automatización e IA, comercio digital y modernización de sistemas."
+    },
+    "work": {
+      "title": "Casos y experiencia | Webuddy",
+      "description": "Proyectos de Webuddy y experiencia previa de nuestro equipo en banca, telecomunicaciones, seguros, hospitalidad, consumo masivo y otros sectores."
+    },
+    "howWeWork": {
+      "title": "Cómo trabajamos | Webuddy",
+      "description": "Un proceso claro de Discovery, diseño, construcción, lanzamiento y evolución, con modelos de colaboración flexibles."
+    },
+    "about": {
+      "title": "Nosotros | Webuddy",
+      "description": "Software factory con base en República Dominicana. Conoce al equipo y la experiencia detrás de Webuddy."
+    },
+    "insights": {
+      "title": "Recursos | Webuddy",
+      "description": "Guías prácticas para tomar mejores decisiones sobre software a medida, automatización e IA."
+    },
+    "contact": {
+      "title": "Hablemos | Webuddy",
+      "description": "Cuéntanos qué necesitas resolver con software. Te respondemos con próximos pasos concretos."
+    },
+    "notFound": {
+      "title": "Página no encontrada | Webuddy",
+      "description": "La página que buscas no existe o fue movida."
     }
   },
   "home": {
     "hero": {
-      "titlePrefix": "Ingeniería de",
-      "titleSuffix": "Excelencia Digital",
-      "subtitle": "Construimos sistemas digitales de alto rendimiento para empresas ambiciosas.",
-      "startProject": "Iniciar un Proyecto",
-      "viewWork": "Ver Nuestros Trabajos"
+      "eyebrow": "Desarrollo de software a medida",
+      "title": "Si se puede resolver con software, lo construimos.",
+      "subtitle": "Entendemos tu necesidad, diseñamos la solución y la construimos de principio a fin: sistemas empresariales, aplicaciones web y móviles, integraciones, automatización e IA aplicada.",
+      "primary": "Hablemos de tu proyecto",
+      "secondary": "Cómo trabajamos",
+      "trust": "Equipo fundador con más de 20 años de experiencia combinada construyendo y dirigiendo software para banca, telecomunicaciones, seguros y otros sectores."
     },
-    "trust": {
-      "yearsExperience": "Años de Experiencia",
-      "projectsDelivered": "Proyectos Entregados",
-      "clientSatisfaction": "Satisfacción del Cliente",
-      "countriesServed": "Países Servidos"
+    "diagram": {
+      "label": "Diagrama: Webuddy conecta los sistemas de tu operación y construye aplicaciones, paneles y asistentes sobre ellos.",
+      "sourcesTitle": "tu operación",
+      "sources": [
+        "ERP",
+        "CRM",
+        "Excel",
+        "Pagos"
+      ],
+      "core": "WEBUDDY",
+      "coreSub": "APIs · Automatización · IA",
+      "outputsTitle": "lo que construimos",
+      "outputs": [
+        "App web",
+        "App móvil",
+        "Paneles",
+        "Asistente IA"
+      ]
     },
-    "services": {
-      "title": "Nuestros Servicios",
-      "subtitle": "No solo construimos sitios web. Diseñamos productos digitales que escalan, rinden e impulsan el crecimiento del negocio.",
-      "viewAll": "Ver Todos los Servicios",
-      "website": {
-        "title": "Aplicaciones Web",
-        "description": "Construimos sitios web rápidos, hermosos y optimizados para la conversión que funcionan perfectamente en todos los dispositivos. Desde landing pages hasta aplicaciones web complejas, creamos experiencias digitales que representan tu marca perfectamente.",
-        "features": [
-          "Diseño Responsivo",
-          "Optimización SEO",
-          "Enfoque en Rendimiento",
-          "Integración CMS"
-        ]
-      },
-      "mobileApp": {
-        "title": "Desarrollo Móvil",
-        "description": "Apps nativas para iOS y Android, o soluciones multiplataforma que ofrecen experiencias excepcionales. Construimos apps que los usuarios aman y que generan resultados reales.",
-        "features": [
-          "iOS y Android",
-          "Multiplataforma",
-          "Diseño Centrado en Usuario",
-          "Optimización App Store"
-        ]
-      },
-      "social": {
-        "title": "Gestión de Redes Sociales",
-        "description": "Gestión estratégica de redes sociales que hace crecer tu audiencia y construye conexiones significativas. Creamos contenido, gestionamos comunidades y analizamos rendimiento para maximizar tu presencia social.",
-        "features": [
-          "Estrategia de Contenido",
-          "Gestión de Comunidad",
-          "Análisis e Informes",
-          "Campañas Pagadas"
-        ]
-      }
+    "sectors": {
+      "label": "Experiencia del equipo en",
+      "items": [
+        "Banca",
+        "Telecomunicaciones",
+        "Seguros",
+        "Hospitalidad",
+        "Consumo masivo",
+        "Bienes raíces",
+        "Turismo",
+        "Retail"
+      ]
+    },
+    "problems": {
+      "eyebrow": "¿Te suena familiar?",
+      "title": "Las necesidades llegan como problemas de negocio, no como requerimientos técnicos.",
+      "lead": "Por eso empezamos por entender qué está pasando en tu operación. Estas son algunas de las situaciones en las que podemos ayudarte."
+    },
+    "solutions": {
+      "eyebrow": "Lo que construimos",
+      "title": "Un solo equipo para todo el ciclo: de entender el problema a evolucionar la solución.",
+      "lead": "Elegimos la tecnología según el problema, no al revés.",
+      "entry": "Empieza aquí",
+      "continuous": "Después del lanzamiento"
+    },
+    "experience": {
+      "eyebrow": "Experiencia",
+      "title": "La experiencia detrás de lo que construimos.",
+      "lead": "Antes de fundar Webuddy, nuestros socios diseñaron, construyeron y dirigieron sistemas para empresas líderes de distintos sectores.",
+      "note": "Proyectos realizados por los socios de Webuddy en sus roles anteriores. Por confidencialidad, no mencionamos a los clientes.",
+      "cta": "Ver toda la experiencia"
     },
     "work": {
-      "subtitle": "Trabajos Seleccionados",
-      "titlePrefix": "Productos Digitales que",
-      "titleSuffix": "Definen Categorías.",
-      "viewAll": "Ver Todos los Trabajos"
-    },
-    "techStack": {
-      "titlePrefix": "Autoridad en",
-      "titleSuffix": "Ingeniería",
-      "description": "No dependemos de plantillas ni constructores de páginas. Construimos sistemas escalables, mantenibles y listos para la empresa utilizando las tecnologías más robustas de la industria.",
-      "performance": "Rendimiento Lighthouse",
-      "typeSafety": "Seguridad de Tipado",
-      "poweredBy": "Impulsado por mejores prácticas modernas",
-      "deployingComment": "// Desplegando arquitectura de alto rendimiento..."
-    },
-    "portfolio": {
-      "title": "Trabajos Destacados",
-      "subtitle": "Proyectos de los que estamos orgullosos"
+      "eyebrow": "Proyectos Webuddy",
+      "title": "Proyectos recientes",
+      "lead": "Algunos de los proyectos que hemos entregado como Webuddy.",
+      "cta": "Ver todos los casos",
+      "testimonials": "Lo que dicen nuestros clientes"
     },
     "process": {
-      "title": "Nuestro Proceso",
-      "subtitle": "Cómo hacemos realidad tu visión",
-      "strategy": {
-        "title": "Estrategia",
-        "description": "Entendiendo tus objetivos y planificando el enfoque perfecto."
-      },
-      "design": {
-        "title": "Diseño",
-        "description": "Creando experiencias hermosas y centradas en el usuario."
-      },
-      "development": {
-        "title": "Desarrollo",
-        "description": "Construyendo con tecnología de vanguardia y mejores prácticas."
-      },
-      "launch": {
-        "title": "Lanzamiento",
-        "description": "Desplegando tu proyecto con pruebas exhaustivas."
-      },
-      "growth": {
-        "title": "Crecimiento",
-        "description": "Optimización continua y soporte para el éxito continuo."
-      }
+      "eyebrow": "Cómo trabajamos",
+      "title": "Un proceso claro, con entregables en cada etapa.",
+      "lead": "Sabes en todo momento qué se está construyendo, por qué y cuándo.",
+      "output": "Recibes",
+      "cta": "Conoce el proceso completo"
     },
-    "testimonials": {
-      "title": "Lo Que Dicen Nuestros Clientes",
-      "subtitle": "Confianza de negocios alrededor del mundo",
-      "testimonial1": {
-        "quote": "Quiero expresar mi satisfacción con el servicio recibido a través de su empresa en mi servicio de creación de web desde cero. Desde el primer momento, la experiencia fue ágil y eficiente. La página es fácil de navegar, la información está clara y cada paso del proceso se siente intuitivo.Además, quiero resaltar la rapidez en la respuesta y la inmediatez con la que brindan soluciones. No solo responden rápido, sino que ofrecen alternativas concretas y efectivas, lo que demuestra un alto nivel de compromiso con el cliente. Se siente la calidad y el profesionalismo en cada interacción.Gracias por ofrecer un servicio tan organizado, confiable y orientado a la satisfacción del usuario. Da gusto trabajar con equipos que realmente valoran la experiencia del cliente",
-        "author": "Vielka Tavarez",
-        "role": "Gerente Comercial, Spring Tours"
-      },
-      "testimonial2": {
-        "quote": "Trabajar con Webuddy fue excelente; un complemento perfecto para lo que necesitaba mi empresa. Desde el nivel de detalle hasta la atención brindada hacia nosotros, todo fue impecable. Como dueña de agencia, el servicio al cliente siempre es fundamental, y Webuddy cuenta con todo lo que mi equipo necesita. Estoy feliz con el resultado.",
-        "author": "Cintia Gonzalez",
-        "role": "CEO, Blue Agencia Digital"
-      },
-      "testimonial3": {
-        "quote": "Trabajar con Webuddy fue perfecto. Entendieron nuestra visión y la hicieron realidad.",
-        "author": "Emily Chen",
-        "role": "Fundadora, TechStart"
-      }
+    "why": {
+      "eyebrow": "Por qué Webuddy",
+      "title": "Lo que puedes esperar de nosotros.",
+      "items": [
+        {
+          "title": "El problema primero",
+          "text": "Antes de proponer tecnología, entendemos cómo funciona tu operación. Lo que construimos tiene que generar eficiencia, ahorro o crecimiento."
+        },
+        {
+          "title": "Un solo equipo, de principio a fin",
+          "text": "Análisis, diseño, desarrollo, QA, despliegue y evolución con el mismo equipo, sin intermediarios."
+        },
+        {
+          "title": "Ingeniería con dirección de proyectos",
+          "text": "Combinamos ingeniería de software con gestión formal de proyectos, con formación PMP y Scrum: alcance claro, prioridades visibles y comunicación constante."
+        },
+        {
+          "title": "Cerca, en tu idioma y en tu horario",
+          "text": "Trabajamos desde República Dominicana, en español e inglés, en hora del Atlántico (UTC−4): la misma del este de EE. UU. en verano y una hora más en invierno."
+        }
+      ]
+    },
+    "capabilities": {
+      "eyebrow": "Capacidades técnicas",
+      "title": "Tecnología al servicio del problema.",
+      "lead": "Estas son las tecnologías y prácticas con las que trabaja nuestro equipo. Elegimos cada una según lo que el proyecto necesita.",
+      "note": "¿Tu empresa ya tiene un stack definido? Cuéntanos cuál es y evaluamos cómo trabajar con él."
     },
     "cta": {
-      "title": "Construyamos algo increíble juntos.",
-      "subtitle": "¿Listo para llevar tu negocio al mundo digital? Contáctanos hoy."
+      "title": "Cuéntanos qué necesitas resolver.",
+      "text": "Una primera conversación, sin compromiso, para entender tu necesidad y proponerte el siguiente paso."
+    }
+  },
+  "solutionsPage": {
+    "eyebrow": "Soluciones",
+    "title": "Partimos del problema, no del formato.",
+    "lead": "No llegamos con una solución predefinida. Estas son las formas en que solemos ayudar a las empresas, y muchas veces un proyecto combina varias.",
+    "entryTitle": "¿No sabes por dónde empezar?",
+    "entryText": "Empieza con un Discovery: definimos juntos el problema, la solución y el plan antes de construir.",
+    "coreTitle": "Lo que construimos",
+    "continuousTitle": "Después del lanzamiento",
+    "comboTitle": "¿Tu caso combina varias?",
+    "comboText": "Es lo más común: un sistema interno con integraciones o un producto con automatización. Cuéntanos qué necesitas y te proponemos el enfoque."
+  },
+  "solution": {
+    "breadcrumb": "Soluciones",
+    "problems": "Cuándo nos llaman",
+    "deliverables": "Qué incluye",
+    "approach": "Cómo lo abordamos",
+    "experience": "Experiencia relacionada del equipo",
+    "cases": "Proyectos Webuddy relacionados",
+    "stack": "Tecnologías y prácticas",
+    "faq": "Preguntas frecuentes",
+    "insight": "Lectura recomendada",
+    "others": "Otras soluciones",
+    "ctaTitle": "¿Es lo que necesitas?",
+    "ctaText": "Cuéntanos tu caso y te proponemos el siguiente paso."
+  },
+  "work": {
+    "eyebrow": "Casos",
+    "title": "Lo que hemos construido y la experiencia que lo respalda.",
+    "lead": "Aquí encontrarás proyectos entregados por Webuddy y, por separado, proyectos que nuestros socios realizaron antes de fundar la empresa.",
+    "webuddyEyebrow": "Proyectos Webuddy",
+    "webuddyTitle": "Proyectos entregados por Webuddy",
+    "context": "Contexto",
+    "built": "Lo que construimos",
+    "others": "Otros proyectos",
+    "experienceEyebrow": "Experiencia del equipo",
+    "experienceTitle": "Proyectos de nuestros socios antes de Webuddy"
+  },
+  "howWeWork": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "Un proceso claro para que sepas qué se construye, por qué y cuándo.",
+    "lead": "Combinamos ingeniería de software y dirección de proyectos. Cada etapa tiene entregables concretos y momentos claros para que tomes decisiones.",
+    "steps": {
+      "title": "Las etapas",
+      "client": "Tu participación"
+    },
+    "models": {
+      "eyebrow": "Modelos de colaboración",
+      "title": "Nos adaptamos a cómo necesitas trabajar.",
+      "items": [
+        {
+          "title": "Proyecto con alcance definido",
+          "text": "Para iniciativas con objetivos claros. Alcance, plan, entregables y presupuesto acordados desde el inicio.",
+          "best": "Ideal para sistemas nuevos, MVPs e integraciones puntuales."
+        },
+        {
+          "title": "Equipo dedicado",
+          "text": "Un equipo de Webuddy integrado a tu operación, con la capacidad que tu roadmap necesita y prioridades que defines tú.",
+          "best": "Ideal para productos en evolución constante y empresas sin equipo técnico propio."
+        },
+        {
+          "title": "Evolución y soporte continuo",
+          "text": "Mantenimiento, mejoras y soporte para sistemas en producción, con prioridades y tiempos de respuesta acordados.",
+          "best": "Ideal para sistemas críticos y plataformas que deben seguir creciendo."
+        }
+      ]
+    },
+    "principles": {
+      "eyebrow": "Cómo gestionamos los proyectos",
+      "title": "Las reglas que seguimos en cada proyecto.",
+      "items": [
+        {
+          "title": "Visibilidad total",
+          "text": "Tablero del proyecto, avances demostrables y reuniones periódicas de seguimiento."
+        },
+        {
+          "title": "Calidad desde el inicio",
+          "text": "QA y pruebas como parte de cada entrega, no al final del proyecto."
+        },
+        {
+          "title": "Gestión formal",
+          "text": "Alcance, riesgos y cambios gestionados con prácticas de PMP y Scrum."
+        },
+        {
+          "title": "Un punto de contacto",
+          "text": "Una persona responsable del proyecto, en español o en inglés."
+        },
+        {
+          "title": "Documentación y transferencia",
+          "text": "Documentamos lo que construimos para que tu equipo pueda operarlo y evolucionarlo."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Cuánto cuesta un proyecto de software a medida?",
+          "a": "Depende del alcance, la complejidad y las integraciones. Por eso empezamos entendiendo la necesidad: después de una primera conversación podemos darte un rango, y tras el Discovery, una estimación detallada."
+        },
+        {
+          "q": "¿Trabajan con empresas fuera de República Dominicana?",
+          "a": "Sí. Trabajamos de forma remota, en español e inglés, y en un horario compatible con Estados Unidos."
+        },
+        {
+          "q": "¿Firman acuerdos de confidencialidad?",
+          "a": "Sí. Podemos firmar un acuerdo de confidencialidad (NDA) antes de que nos compartas los detalles de tu proyecto."
+        },
+        {
+          "q": "¿Cómo se manejan los cambios de alcance?",
+          "a": "Los cambios son normales en cualquier proyecto. Los evaluamos contigo, estimamos su impacto en tiempo y costo, y decides cómo priorizarlos."
+        },
+        {
+          "q": "¿Qué pasa después del lanzamiento?",
+          "a": "Podemos continuar con un plan de evolución y soporte, o hacer la transferencia completa a tu equipo con la documentación necesaria."
+        }
+      ]
     }
   },
   "about": {
-    "hero": {
-      "titlePrefix": "Transformamos negocios con",
-      "titleSuffix": "tecnología inteligente.",
-      "subtitle": "Webuddy ayuda empresas a modernizar sus operaciones mediante software, automatización e inteligencia artificial.\n\nCombinamos visión de negocio con experiencia tecnológica para crear soluciones digitales que generan impacto real."
-    },
-    "values": {
-      "businessFirst": {
-        "title": "Primero los negocios",
-        "desc": "Entendemos primero el negocio.\nLuego construimos la tecnología."
-      },
-      "smartSystems": {
-        "title": "Sistemas inteligentes",
-        "desc": "Creamos soluciones pensadas para crecer, automatizar y escalar."
-      },
-      "humanTechnology": {
-        "title": "Tecnología humana",
-        "desc": "Traducimos tecnología compleja en soluciones simples y útiles."
-      },
-      "realImpact": {
-        "title": "Impacto real",
-        "desc": "Cada sistema debe generar eficiencia, ahorro o crecimiento."
-      }
-    },
+    "eyebrow": "Nosotros",
+    "title": "Ingeniería de software con visión de negocio.",
+    "lead": "Webuddy nace con una visión clara: hacer que la tecnología sea accesible, estratégica y útil para empresas reales. Unimos ingeniería de software y dirección de proyectos para entender cada negocio y construir el software que realmente necesita.",
     "story": {
-      "title": "Nacidos en la República Dominicana. Construyendo para el Mundo.",
-      "p1": "Webuddy nace con una visión clara:\nhacer que la tecnología sea accesible, estratégica y útil para empresas reales.\n\nNo creemos en desarrollar sistemas innecesarios ni en complicar procesos con términos técnicos.\n\nCreemos en entender cómo funciona un negocio y diseñar soluciones digitales que realmente impulsen su crecimiento.\n\nDesde páginas web hasta software a medida y automatización con IA, nuestro objetivo es ayudar empresas a operar mejor en la era digital."
+      "title": "Nacidos en República Dominicana. Construyendo para el mundo.",
+      "p1": "No creemos en desarrollar sistemas innecesarios ni en complicar procesos con términos técnicos. Creemos en entender cómo funciona un negocio y diseñar soluciones que impulsen su crecimiento.",
+      "p2": "Nuestros socios llevan más de una década construyendo y dirigiendo software para empresas de banca, telecomunicaciones, seguros, hospitalidad, consumo masivo y bienes raíces. Webuddy reúne esa experiencia en un solo equipo, al servicio de empresas de cualquier tamaño, en República Dominicana y fuera de ella."
     },
-    "differentiators": {
-      "title": "Lo Que Nos Distingue",
-      "solutions": {
-        "title": "Soluciones a la medida",
-        "description": "Cada proyecto se diseña según la identidad, objetivo y necesidades específicas de cada cliente."
-      },
-      "focus": {
-        "title": "Enfoque en resultados",
-        "description": "No solo desarrollamos plataformas digitales; creamos herramientas que impulsan crecimiento, eficiencia y rentabilidad."
-      },
-      "innovation": {
-        "title": "Innovación constante",
-        "description": "Nos mantenemos a la vanguardia tecnológica para ofrecer soluciones actuales, modernas y escalables."
-      },
-      "accompaniment": {
-        "title": "Acompañamiento real",
-        "description": "Más que proveedores, somos aliados digitales que te guían en todo el proceso."
-      },
-      "design": {
-        "title": "Diseño + Tecnología",
-        "description": "Combinamos creatividad, funcionalidad y experiencia de usuario para crear productos digitales memorables."
-      }
+    "founders": {
+      "eyebrow": "Socios",
+      "title": "Las personas detrás de Webuddy.",
+      "linkedin": "Perfil de LinkedIn de {{name}}"
     },
     "team": {
-      "title": "Nuestro Equipo",
-      "description": "Un grupo diverso de diseñadores, desarrolladores y estrategas apasionados por crear experiencias digitales excepcionales."
+      "title": "Un equipo multidisciplinario",
+      "lead": "Detrás de cada proyecto hay un equipo de profesionales con años de experiencia en:"
+    },
+    "principles": {
+      "eyebrow": "Principios",
+      "title": "Cómo pensamos.",
+      "items": [
+        {
+          "title": "Primero el negocio",
+          "text": "Entendemos primero el negocio. Luego construimos la tecnología."
+        },
+        {
+          "title": "Sistemas que escalan",
+          "text": "Creamos soluciones pensadas para crecer, automatizar y escalar."
+        },
+        {
+          "title": "Tecnología simple de usar",
+          "text": "Traducimos tecnología compleja en soluciones simples y útiles."
+        },
+        {
+          "title": "Impacto real",
+          "text": "Cada sistema debe generar eficiencia, ahorro o crecimiento."
+        }
+      ]
+    },
+    "location": {
+      "title": "Desde Santo Domingo, para el mundo",
+      "text": "Trabajamos con clientes de forma remota, en español e inglés.",
+      "timezone": "Hora del Atlántico (UTC−4), compatible con los horarios de EE. UU."
     }
   },
-  "services": {
-    "hero": {
-      "title": "Ingeniería del crecimiento digital",
-      "subtitle": "Construimos sistemas digitales de alto rendimiento para empresas que quieren crecer, automatizar y operar mejor."
-    },
-    "websites": {
-      "title": "Plataformas Web",
-      "description": "Creamos plataformas web modernas, rápidas y optimizadas para convertir visitantes en clientes.\n\nDiseñadas para empresas que necesitan algo más que “una página bonita”.",
-      "features": [
-        "Arquitectura de alto rendimiento",
-        "Estructura optimizada para SEO",
-        "Experiencia Responsive",
-        "Sistemas escalables"
-      ]
-    },
-    "mobileApps": {
-      "title": "Aplicaciones Móviles",
-      "description": "Construimos aplicaciones móviles intuitivas y de alto rendimiento para iOS y Android.\n\nExperiencias diseñadas para usuarios modernos y negocios en crecimiento.",
-      "features": [
-        "iOS & Android",
-        "Desarrollo multiplataforma",
-        "Diseño Centrado en Usuario",
-        "Arquitectura escalable"
-      ]
-    },
-    "customSoftware": {
-      "title": "Software a medida",
-      "description": "Desarrollamos software a medida adaptado a los procesos y necesidades reales de tu empresa.\n\nTransformamos operaciones manuales en sistemas eficientes y escalables.",
-      "features": [
-        "Optimización de procesos de negocio",
-        "Sistemas de gestión interna",
-        "Integraciones de CRM/ERP",
-        "Automatización de flujos de trabajo"
-      ]
-    },
-    "consulting": {
-      "title": "Consultoría en transformación digital",
-      "description": "Te ayudamos a entender qué tecnología necesita realmente tu negocio y cómo implementarla estratégicamente.\n\nTraducimos tecnología en resultados empresariales.",
-      "features": [
-        "Consultoría orientada al negocio",
-        "Planes tecnológicos",
-        "Optimización digital",
-        "Análisis operativo"
-      ]
-    },
-    "automation": {
-      "title": "IA & Automatización",
-      "description": "Automatizamos tareas repetitivas e implementamos soluciones inteligentes que ahorran tiempo y aumentan productividad.\n\nLa IA aplicada correctamente puede transformar completamente una operación.",
-      "features": [
-        "Flujos de trabajo impulsados ​​por IA",
-        "Automatización de procesos",
-        "Integraciones inteligentes",
-        "Sistemas de procesamiento de datos"
-      ]
-    }
-  },
-  "portfolio": {
-    "hero": {
-      "titlePrefix": "Trabajos",
-      "titleSuffix": "Seleccionados"
-    },
-    "filters": {
-      "all": "Todos",
-      "web": "Web",
-      "mobile": "Móvil",
-      "ecommerce": "E-Commerce"
-    },
-    "card": {
-      "viewSite": "Ver Sitio"
-    },
-    "empty": {
-      "title": "No hay proyectos en esta categoría... todavía!",
-      "subtitle": "Aún nadie ha reclamado este espacio. ¿Te animas a que tu proyecto sea el primero?"
-    }
+  "insights": {
+    "eyebrow": "Recursos",
+    "title": "Guías para tomar mejores decisiones sobre software.",
+    "lead": "Artículos prácticos sobre software a medida, automatización e IA, escritos para quienes toman decisiones en la empresa.",
+    "readingTime": "{{count}} min de lectura",
+    "back": "Todos los recursos",
+    "by": "Equipo Webuddy",
+    "read": "Leer artículo",
+    "print": "Imprimir o guardar como PDF",
+    "relatedSolution": "Solución relacionada",
+    "ctaTitle": "¿Quieres aplicarlo en tu empresa?",
+    "ctaText": "Conversemos sobre tu caso concreto."
   },
   "contact": {
-    "hero": {
-      "titlePrefix": "Construyamos",
-      "titleSuffix": "Algo Grandioso."
+    "eyebrow": "Contacto",
+    "title": "Hablemos de lo que necesitas resolver.",
+    "lead": "Cuéntanos tu necesidad, aunque todavía no tengas todo definido. Te responderemos con preguntas concretas o una propuesta de próximos pasos.",
+    "next": {
+      "title": "Qué pasa después",
+      "steps": [
+        "Revisamos tu mensaje y, si hace falta, te pedimos más contexto.",
+        "Agendamos una conversación para entender tu necesidad.",
+        "Te proponemos el siguiente paso: un Discovery, una propuesta o una recomendación honesta si no somos el equipo indicado."
+      ]
     },
-    "info": {
-      "email": {
-        "label": "Email",
-        "value": "hello@webuddy.dev"
-      },
-      "office": {
-        "label": "Ubicación",
-        "value": "Santo Domingo, República Dominicana"
-      },
-      "phone": {
-        "label": "Teléfono",
-        "value": "+1 (849) 918-2057"
-      }
+    "channels": {
+      "title": "Otras formas de contactarnos",
+      "calendar": "Agenda una llamada",
+      "calendarText": "Elige el horario que te convenga.",
+      "whatsapp": "WhatsApp",
+      "whatsappText": "Escribe directamente a nuestro equipo.",
+      "email": "Email",
+      "phone": "Teléfono",
+      "location": "Ubicación"
     },
     "form": {
       "name": "Nombre",
-      "namePlaceholder": "Juan Pérez",
-      "email": "Email",
-      "emailPlaceholder": "juan@ejemplo.com",
-      "message": "Mensaje",
-      "messagePlaceholder": "Cuéntanos sobre tu proyecto...",
-      "send": "Enviar Mensaje",
-      "sending": "Enviando...",
-      "success": "¡Mensaje Enviado!",
-      "error": "Por favor completa todos los campos correctamente."
+      "email": "Email de trabajo",
+      "company": "Empresa",
+      "phone": "Teléfono o WhatsApp",
+      "optional": "opcional",
+      "select": "Selecciona una opción",
+      "need": "¿Qué necesitas?",
+      "needOptions": {
+        "discovery": "Discovery o asesoría tecnológica",
+        "business-software": "Sistema interno o software empresarial",
+        "digital-products": "App web o móvil, SaaS o MVP",
+        "integrations": "Integraciones o APIs",
+        "automation-ai": "Automatización o IA",
+        "digital-commerce": "Comercio digital",
+        "modernization": "Modernizar o dar soporte a un sistema existente",
+        "other": "Otro / aún no lo sé"
+      },
+      "stage": "¿En qué etapa estás?",
+      "stageOptions": {
+        "idea": "Es una idea inicial",
+        "defined": "El alcance está definido",
+        "existing": "Hay un sistema que hay que mejorar",
+        "urgent": "Es urgente"
+      },
+      "budget": "Presupuesto estimado",
+      "budgetOptions": {
+        "under10": "Menos de US$10,000",
+        "10-25": "US$10,000 – 25,000",
+        "25-50": "US$25,000 – 50,000",
+        "50-100": "US$50,000 – 100,000",
+        "over100": "Más de US$100,000",
+        "unknown": "Aún no lo sé"
+      },
+      "message": "Cuéntanos sobre tu necesidad",
+      "messagePlaceholder": "¿Qué está pasando hoy? ¿Qué te gustaría lograr?",
+      "submit": "Enviar mensaje",
+      "sending": "Enviando…",
+      "successTitle": "¡Gracias! Recibimos tu mensaje.",
+      "successText": "Te responderemos pronto con próximos pasos. Si es urgente, escríbenos por WhatsApp.",
+      "another": "Enviar otro mensaje",
+      "error": "No pudimos enviar tu mensaje. Inténtalo de nuevo o escríbenos a",
+      "privacy": "Usamos tus datos solo para responder a tu solicitud."
     }
   },
   "notFound": {
-    "title": "404 - Página No Encontrada",
-    "description": "La página que buscas no existe o ha sido movida.",
-    "backHome": "Volver al Inicio"
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida.",
+    "backHome": "Volver al inicio"
   }
 }

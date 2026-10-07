@@ -1,59 +1,106 @@
-import { ArrowRight, Instagram, Github, Facebook, AtSign } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
+import { useLocalized, useT } from '../../i18n/lang';
+import { solutions } from '../../content/solutions';
+import { SITE, whatsappUrl } from '../../config/site';
+import { LocalizedLink } from '../LocalizedLink';
+import { Logo } from '../Logo';
 
 export const Footer = () => {
-    const { t } = useTranslation();
+  const { t } = useT();
+  const pick = useLocalized();
 
-    return (
-        <footer className="bg-webuddy-dark pb-12 overflow-hidden relative">
-            {/* Background Glow */}
-            <div className="absolute bottom-0 left-0 w-full h-[500px] bg-gradient-to-t from-webuddy-blue/10 to-transparent pointer-events-none" />
+  const company = [
+    { to: '/work', label: t('common.nav.work') },
+    { to: '/how-we-work', label: t('common.nav.howWeWork') },
+    { to: '/about', label: t('common.nav.about') },
+    { to: '/insights', label: t('common.nav.insights') },
+    { to: '/contact', label: t('common.nav.contact') },
+  ];
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
-                    <div className="max-w-2xl">
-                        <h2 className="text-6xl md:text-8xl font-bold font-display tracking-tighter text-white mb-8">
-                            {t('common.footer.readyTo')} <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-webuddy-blue to-webuddy-electric">{t('common.footer.scaleUp')}</span>
-                        </h2>
-                        <Link to="/contact" className="group flex items-center gap-4 text-2xl text-white font-medium hover:text-webuddy-blue transition-colors">
-                            {t('common.footer.startProject')} <span className="bg-white/10 p-3 rounded-full group-hover:bg-webuddy-blue group-hover:text-white transition-all"><ArrowRight /></span>
-                        </Link>
-                    </div>
+  const socials = [
+    { href: SITE.linkedin, label: 'LinkedIn', icon: Linkedin },
+    { href: SITE.github, label: 'GitHub', icon: Github },
+    { href: SITE.instagram, label: 'Instagram', icon: Instagram },
+    { href: SITE.facebook, label: 'Facebook', icon: Facebook },
+  ].filter((social) => social.href);
 
-                    <div className="flex flex-col gap-6 text-right w-full md:w-auto">
-                        <a href="mailto:hello@webuddy.dev" className="text-2xl text-gray-300 hover:text-white transition-colors">
-                            hello@webuddy.dev
-                        </a>
-                        <p className="text-gray-500">
-                            {t('common.footer.city')} <br />
-                            {t('common.footer.country')}
-                        </p>
-                    </div>
-                </div>
+  const linkClass = 'text-sm text-zinc-400 transition-colors hover:text-white';
 
-                <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-gray-500 text-sm">
-                        {t('common.footer.rights').replace('2025', new Date().getFullYear().toString())}
-                    </p>
+  return (
+    <footer className="no-print border-t border-white/[0.08] bg-ink-950">
+      <div className="wrap grid gap-12 py-16 md:grid-cols-12">
+        <div className="md:col-span-4">
+          <Logo />
+          <p className="mt-5 max-w-xs text-sm leading-relaxed text-zinc-400">{t('common.footer.tagline')}</p>
+          <p className="mt-6 text-sm leading-relaxed text-zinc-500">
+            {t('common.footer.location')}
+            <br />
+            {t('common.footer.timezone')}
+          </p>
+        </div>
 
-                    <div className="flex gap-6">
-                        <a href="https://www.instagram.com/webuddyrd/" target='_blank' className="text-gray-400 hover:text-white transition-colors">
-                            <Instagram size={20} />
-                        </a>
-                        <a href="https://www.facebook.com/Webuddyrd" target='_blank' className="text-gray-400 hover:text-white transition-colors">
-                            <Facebook size={20} />
-                        </a>
-                        <a href="https://www.threads.com/@webuddyrd" target='_blank' className="text-gray-400 hover:text-white transition-colors">
-                            <AtSign size={20} />
-                        </a>
-                        <a href="https://github.com/webuddyrd" target='_blank' className="text-gray-400 hover:text-white transition-colors">
-                            <Github size={20} />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+        <nav className="md:col-span-3" aria-label={t('common.nav.solutions')}>
+          <p className="eyebrow">{t('common.nav.solutions')}</p>
+          <ul className="mt-5 space-y-3">
+            {solutions.map((solution) => (
+              <li key={solution.slug}>
+                <LocalizedLink to={`/solutions/${solution.slug}`} className={linkClass}>
+                  {pick(solution.title)}
+                </LocalizedLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav className="md:col-span-2" aria-label={t('common.footer.company')}>
+          <p className="eyebrow">{t('common.footer.company')}</p>
+          <ul className="mt-5 space-y-3">
+            {company.map((link) => (
+              <li key={link.to}>
+                <LocalizedLink to={link.to} className={linkClass}>
+                  {link.label}
+                </LocalizedLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="md:col-span-3">
+          <p className="eyebrow">{t('common.footer.contact')}</p>
+          <ul className="mt-5 space-y-3">
+            <li>
+              <a href={`mailto:${SITE.email}`} className={linkClass}>
+                {SITE.email}
+              </a>
+            </li>
+            <li>
+              <a href={whatsappUrl(t('common.whatsappMessage'))} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                WhatsApp · {SITE.phone.display}
+              </a>
+            </li>
+          </ul>
+          <ul className="mt-6 flex gap-2">
+            {socials.map((social) => (
+              <li key={social.label}>
+                <a
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-zinc-400 transition-colors hover:border-white/25 hover:text-white"
+                >
+                  <social.icon size={16} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-white/[0.06]">
+        <p className="wrap py-6 text-xs text-zinc-500">
+          © {new Date().getFullYear()} Webuddy. {t('common.footer.rights')}
+        </p>
+      </div>
+    </footer>
+  );
 };
