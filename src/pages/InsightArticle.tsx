@@ -115,7 +115,7 @@ export const InsightArticle = () => {
     inLanguage: lang,
     url: `${SITE.url}${localizePath(`/insights/${insight.slug}`, lang)}`,
     author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
-    publisher: { '@type': 'Organization', name: SITE.name, logo: { '@type': 'ImageObject', url: `${SITE.url}/brand/webuddy-icon-512.png` } },
+    publisher: { '@type': 'Organization', name: SITE.name, logo: { '@type': 'ImageObject', url: `${SITE.url}/W.png` } },
   };
 
   return (

@@ -40,9 +40,9 @@ export function buildHead({ title, description, lang, pathname, type = 'website'
   const alternates = noindex
     ? []
     : [
-        ...LANGS.map((l) => ({ hreflang: l, href: absolute(localizePath(base, l)) })),
-        { hreflang: 'x-default', href: absolute(base) },
-      ];
+      ...LANGS.map((l) => ({ hreflang: l, href: absolute(localizePath(base, l)) })),
+      { hreflang: 'x-default', href: absolute(base) },
+    ];
   return {
     title,
     description,
@@ -148,7 +148,7 @@ export const organizationJsonLd = {
   '@type': 'Organization',
   name: SITE.name,
   url: SITE.url,
-  logo: `${SITE.url}/brand/webuddy-icon-512.png`,
+  logo: `${SITE.url}/W.png`,
   email: SITE.email,
   telephone: '+1-849-918-2057',
   address: {
