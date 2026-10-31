@@ -25,7 +25,7 @@ export const Solutions = () => {
       {entry && (
         <section className="wrap">
           <Reveal className="relative overflow-hidden rounded-2xl border border-white/[0.1] bg-ink-900 p-7 md:p-10">
-            <span className="absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-brand-violet via-brand-pink to-brand-orange" aria-hidden="true" />
+            <span className="absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-brand-teal-glow via-brand-teal-light to-brand-orange" aria-hidden="true" />
             <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
               <div>
                 <p className="eyebrow text-brand-accent">{t('solutionsPage.entryTitle')}</p>

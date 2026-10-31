@@ -42,13 +42,14 @@ export function SystemDiagram() {
     <svg viewBox="0 0 440 440" role="img" aria-label={t('home.diagram.label')} className="h-auto w-full">
       <defs>
         <linearGradient id="wb-core-stroke" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#8b5cf6" />
-          <stop offset="0.5" stopColor="#ec4899" />
-          <stop offset="1" stopColor="#f59e0b" />
+          <stop offset="0" stopColor="#6FB3C1" />
+          <stop offset="0.45" stopColor="#3E8A99" />
+          <stop offset="0.55" stopColor="#EE7330" />
+          <stop offset="1" stopColor="#F8AE36" />
         </linearGradient>
         <radialGradient id="wb-core-glow">
-          <stop offset="0" stopColor="#ec4899" stopOpacity="0.22" />
-          <stop offset="1" stopColor="#ec4899" stopOpacity="0" />
+          <stop offset="0" stopColor="#3E8A99" stopOpacity="0.26" />
+          <stop offset="1" stopColor="#3E8A99" stopOpacity="0" />
         </radialGradient>
       </defs>
 
@@ -70,7 +71,8 @@ export function SystemDiagram() {
 
       <ellipse cx={220} cy={200} rx={190} ry={90} fill="url(#wb-core-glow)" />
       <rect x={CORE.x} y={CORE.y} width={CORE.w} height={CORE.h} rx={16} fill="#111114" stroke="url(#wb-core-stroke)" strokeWidth={1.5} />
-      <text x={220} y={197} textAnchor="middle" className="font-display" fontSize={24} fontWeight={600} fill="#ffffff">
+      <image href="/images/webuddy-icono-color-fondo-oscuro.svg" x={150} y={176} width={36} height={24} />
+      <text x={194} y={197} className="font-display" fontSize={24} fontWeight={600} fill="#ffffff">
         {t('home.diagram.core')}
       </text>
       <text x={220} y={224} textAnchor="middle" className="font-mono" fontSize={11} fill="#a1a1aa">
@@ -85,7 +87,7 @@ export function SystemDiagram() {
       ))}
 
       {centers.map((cx, i) => (
-        <FlowDot key={`fi-${cx}`} path={inPath(cx)} begin={i * 0.75} color="#a78bfa" />
+        <FlowDot key={`fi-${cx}`} path={inPath(cx)} begin={i * 0.75} color="#6FB3C1" />
       ))}
       {centers.map((cx, i) => (
         <FlowDot key={`fo-${cx}`} path={outPath(cx)} begin={1.5 + i * 0.75} color="#fb923c" />

@@ -12,7 +12,7 @@ function FeaturedRow({ solution, label }: { solution: Solution; label: string })
         to={`/solutions/${solution.slug}`}
         className="group relative flex flex-col gap-6 overflow-hidden rounded-2xl border border-white/[0.1] bg-ink-900 p-7 transition-colors hover:border-white/20 md:flex-row md:items-center md:justify-between md:p-8"
       >
-        <span className="absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-brand-violet via-brand-pink to-brand-orange" aria-hidden="true" />
+        <span className="absolute inset-y-0 left-0 w-[2px] bg-gradient-to-b from-brand-teal-glow via-brand-teal-light to-brand-orange" aria-hidden="true" />
         <div className="flex gap-5">
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03]">
             <solution.icon size={20} className="text-brand-accent" />
