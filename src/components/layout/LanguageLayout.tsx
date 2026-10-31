@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { LangContext, useT } from '../../i18n/lang';
-import { LANG_STORAGE_KEY, localizePath, type Lang } from '../../i18n/routing';
+import { LANG_STORAGE_KEY, localizePath, stripLang, type Lang } from '../../i18n/routing';
+import { barePaths } from '../../routes';
 import ScrollToTop from '../ScrollToTop';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
@@ -47,6 +48,9 @@ function SkipLink() {
 }
 
 export function LanguageLayout({ lang }: { lang: Lang }) {
+  const { pathname } = useLocation();
+  const bare = barePaths.includes(stripLang(pathname));
+
   useEffect(() => {
     document.documentElement.lang = lang;
   }, [lang]);
@@ -56,11 +60,11 @@ export function LanguageLayout({ lang }: { lang: Lang }) {
       <LanguageRedirect lang={lang} />
       <ScrollToTop />
       <SkipLink />
-      <Navbar />
+      {!bare && <Navbar />}
       <main id="main">
         <Outlet />
       </main>
-      <Footer />
+      {!bare && <Footer />}
     </LangContext.Provider>
   );
 }

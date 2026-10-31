@@ -9,6 +9,7 @@ import { About } from './pages/About';
 import { Insights } from './pages/Insights';
 import { InsightArticle } from './pages/InsightArticle';
 import { Contact } from './pages/Contact';
+import { ConnectWithUs } from './pages/ConnectWithUs';
 import { NotFound } from './pages/NotFound';
 
 // The same pages are mounted at the root (English) and under /es (Spanish).
@@ -24,6 +25,7 @@ const pages = (
     <Route path="insights" element={<Insights />} />
     <Route path="insights/:slug" element={<InsightArticle />} />
     <Route path="contact" element={<Contact />} />
+    <Route path="connect-with-us" element={<ConnectWithUs />} />
     <Route path="*" element={<NotFound />} />
   </>
 );
