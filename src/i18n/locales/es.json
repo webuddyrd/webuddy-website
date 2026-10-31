@@ -76,6 +76,10 @@
     "notFound": {
       "title": "Página no encontrada | Webuddy",
       "description": "La página que buscas no existe o fue movida."
+    },
+    "connect": {
+      "title": "Conecta con Webuddy",
+      "description": "Todos los canales de Webuddy en un solo lugar: sitio web, WhatsApp, LinkedIn, Instagram, Facebook, Threads y email."
     }
   },
   "home": {
@@ -433,5 +437,16 @@
     "title": "Página no encontrada",
     "description": "La página que buscas no existe o fue movida.",
     "backHome": "Volver al inicio"
+  },
+  "connect": {
+    "subtitle": "Software a medida desde Santo Domingo, República Dominicana. Atendemos en español e inglés.",
+    "whatsapp": "Hablemos por WhatsApp",
+    "calendar": "Agenda una llamada",
+    "linksTitle": "Encuéntranos en",
+    "website": "Sitio web",
+    "websiteHint": "www.webuddy.dev",
+    "linkedinHint": "Novedades de la empresa",
+    "email": "Email",
+    "explore": "Explora el sitio"
   }
 }

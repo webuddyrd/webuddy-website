@@ -13,3 +13,9 @@ export const staticPaths = [
   ...insights.map((insight) => `/insights/${insight.slug}`),
   '/contact',
 ];
+
+// Prerendered so they load directly, but left out of the sitemap (and marked noindex).
+export const unlistedPaths = ['/connect-with-us'];
+
+// Pages rendered without the navbar and footer, like a link-in-bio page.
+export const barePaths = ['/connect-with-us'];

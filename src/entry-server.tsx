@@ -5,15 +5,16 @@ import './i18n/config';
 import App from './App';
 import { HeadContext, headToHtml, type HeadCollector } from './seo/head';
 import { LANGS, langFromPath, localizePath } from './i18n/routing';
-import { staticPaths } from './routes';
+import { staticPaths, unlistedPaths } from './routes';
 import { SITE } from './config/site';
 
 // Used at build time by scripts/prerender.mjs.
 export const siteUrl = SITE.url;
 
-export const pages = LANGS.flatMap((lang) =>
-  staticPaths.map((path) => ({ path: localizePath(path, lang), base: path, lang }))
-);
+export const pages = LANGS.flatMap((lang) => [
+  ...staticPaths.map((path) => ({ path: localizePath(path, lang), base: path, lang, listed: true })),
+  ...unlistedPaths.map((path) => ({ path: localizePath(path, lang), base: path, lang, listed: false })),
+]);
 
 export function render(url: string) {
   const collector: HeadCollector = {};

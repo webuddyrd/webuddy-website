@@ -30,8 +30,9 @@ for (const page of pages) {
 fs.writeFileSync(path.join(dist, '404.html'), fill({ ...render('/404'), html: '' }));
 
 const url = (p) => `${siteUrl}${p === '/' ? '/' : p}`;
-const entries = pages.map((page) => {
-  const alternates = pages
+const listed = pages.filter((page) => page.listed);
+const entries = listed.map((page) => {
+  const alternates = listed
     .filter((alt) => alt.base === page.base)
     .map((alt) => `    <xhtml:link rel="alternate" hreflang="${alt.lang}" href="${url(alt.path)}" />`)
     .join('\n');
