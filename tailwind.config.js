@@ -12,10 +12,13 @@ export default {
           800: '#19191e',
           700: '#24242b',
         },
+        // Taken from the logo (public/images). On the dark UI, use the "fondo oscuro" teal.
         brand: {
-          violet: '#8b5cf6',
-          pink: '#ec4899',
-          orange: '#f59e0b',
+          teal: '#0F4C5C',
+          'teal-light': '#3E8A99',
+          'teal-glow': '#6FB3C1',
+          orange: '#EE7330',
+          amber: '#F8AE36',
           accent: '#fb923c',
         },
       },
@@ -25,7 +28,7 @@ export default {
         mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
       backgroundImage: {
-        'brand-gradient': 'linear-gradient(90deg, #8b5cf6, #ec4899 50%, #f59e0b)',
+        'brand-gradient': 'linear-gradient(90deg, #3E8A99, #6FB3C1 40%, #EE7330 60%, #F8AE36)',
       },
       keyframes: {
         'fade-up': {

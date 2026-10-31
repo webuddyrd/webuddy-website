@@ -148,7 +148,7 @@ export const organizationJsonLd = {
   '@type': 'Organization',
   name: SITE.name,
   url: SITE.url,
-  logo: `${SITE.url}/W.png`,
+  logo: `${SITE.url}/images/webuddy-icono-color-512.png`,
   email: SITE.email,
   telephone: '+1-849-918-2057',
   address: {
